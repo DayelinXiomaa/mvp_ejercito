@@ -1,0 +1,3202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cronología del Terrorismo en el Perú (1980–2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-page: #020804;
+    --bg-header: #030a06;
+    --green-primary: #10b981;
+    --green-dark: #065f46;
+    --green-light: rgba(16, 185, 129, 0.15);
+    --red-accent: #ef4444;
+    --red-dark: #991b1b;
+    --red-light: #fdeded;
+    
+    --card-bg: #ffffff;
+    --text-card-title: #0f172a;
+    --text-card-body: #334155;
+    --text-card-muted: #64748b;
+    --card-border: #e2e8f0;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html, body {
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: #f8fafc;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+  }
+
+  /* Custom Scrollbar */
+  .timeline-wrapper::-webkit-scrollbar {
+    height: 10px;
+  }
+  .timeline-wrapper::-webkit-scrollbar-track {
+    background: #030a06;
+    border-radius: 6px;
+  }
+  .timeline-wrapper::-webkit-scrollbar-thumb {
+    background: #065f46;
+    border-radius: 6px;
+    border: 2px solid #030a06;
+  }
+  .timeline-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #10b981;
+  }
+
+  /* HEADER OSCURO */
+  header {
+    padding: 0.75rem 3vw 0.5rem;
+    background: var(--bg-header);
+    border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+
+  .header-top-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.2rem 0.65rem;
+    background: var(--green-light);
+    border: 1.5px solid var(--green-primary);
+    color: #6ee7b7;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 9999px;
+  }
+
+  h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.2rem, 2vw, 1.65rem);
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 0.2rem;
+  }
+
+  h1 span {
+    color: #34d399;
+  }
+
+  .subhead {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    max-width: 850px;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+  }
+
+  .legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #cbd5e1;
+  }
+  .swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+  }
+  .swatch.attack {
+    background: #991b1b;
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.5);
+  }
+  .swatch.op {
+    background: #14532d;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+  }
+
+  /* TIMELINE SCROLL WRAPPER (FONDO NEGRO) */
+  .timeline-wrapper {
+    flex: 1;
+    min-height: 0;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1.5rem 3.5vw 1.2rem;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    align-items: flex-start;
+    background: #020804;
+    cursor: grab;
+  }
+  .timeline-wrapper.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+  }
+
+  .timeline-track {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.8rem;
+    width: max-content;
+    padding-top: 54px; /* Espacio para el eje superior */
+    padding-left: 55px; /* Espacio para la flecha de inicio */
+    padding-right: 75px; /* Espacio para la flecha de fin */
+  }
+
+  /* EJE HORIZONTAL CONTINUO CON FLECHAS EN LOS EXTREMOS */
+  .axis-line {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    right: 20px;
+    height: 4px;
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+    border-radius: 2px;
+    z-index: 1;
+  }
+
+  /* FLECHA DE INICIO (IZQUIERDA) */
+  .axis-arrow-start {
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.8));
+    pointer-events: none;
+  }
+
+  /* FLECHA DE FIN (DERECHA) */
+  .axis-arrow-end {
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.8));
+    pointer-events: none;
+  }
+
+  /* COLUMNA DE EVENTO INDIVIDUAL */
+  .event-column {
+    position: relative;
+    width: 290px;
+    flex: 0 0 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    z-index: 2;
+  }
+
+  /* NODO Y AÑO EN EL EJE */
+  .node-anchor {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    z-index: 3;
+  }
+
+  .node-dot {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #10b981;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.9);
+    transition: transform 0.2s ease;
+  }
+  .event-column.attack .node-dot {
+    background: #ef4444;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.9);
+  }
+  .event-column:hover .node-dot {
+    transform: scale(1.25);
+  }
+
+  .year-tag {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: #34d399;
+    letter-spacing: 0.02em;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .event-column.attack .year-tag {
+    color: #dc2626;
+  }
+
+  /* TARJETA DE TEXTO - FONDO BLANCO */
+  .card-text {
+    background: #ffffff;
+    color: var(--text-card-title);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .event-column:hover .card-text {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8);
+    border-color: #cbd5e1;
+  }
+
+  .card-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .date-badge {
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: var(--text-card-title);
+    letter-spacing: 0.01em;
+  }
+
+  .category-pill {
+    font-size: 0.62rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    background: #991b1b;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  }
+  .event-column.op .category-pill {
+    background: #14532d;
+    color: #ffffff;
+  }
+
+  .event-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: var(--text-card-title);
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+  }
+
+  .place-line {
+    font-size: 0.7rem;
+    color: var(--text-card-muted);
+    margin-bottom: 0.45rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .place-line b {
+    color: var(--text-card-body);
+    font-weight: 600;
+  }
+
+  .desc-text {
+    font-size: 0.78rem;
+    color: var(--text-card-body);
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .desc-text b {
+    color: var(--text-card-title);
+    font-weight: 700;
+  }
+  .event-column.attack .desc-text b {
+    color: #991b1b;
+  }
+  .event-column.op .desc-text b {
+    color: #14532d;
+  }
+
+  /* TARJETA DE PLACEHOLDER DE IMAGEN - FONDO BLANCO */
+  .card-image-placeholder {
+    width: 100%;
+    height: 105px;
+    border-radius: 10px;
+    border: 1.5px dashed #cbd5e1;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+  .event-column:hover .card-image-placeholder {
+    border-color: #10b981;
+    background: #f0fdf4;
+  }
+
+  .placeholder-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    user-select: none;
+  }
+
+  .placeholder-icon-wrap {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e653c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+  }
+
+  .placeholder-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: #475569;
+    text-transform: uppercase;
+  }
+
+  /* BOTONES FLOTANTES DE NAVEGACIÓN */
+  .nav-arrow-btn {
+    position: fixed;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(3, 10, 6, 0.9);
+    border: 2px solid #10b981;
+    color: #10b981;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 50;
+    transition: all 0.2s ease;
+    backdrop-blur: 8px;
+  }
+  .nav-arrow-btn:hover {
+    background: #10b981;
+    color: #020804;
+    transform: translateY(-50%) scale(1.1);
+  }
+  .nav-arrow-btn:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+  .nav-arrow-btn.left {
+    left: 14px;
+  }
+  .nav-arrow-btn.right {
+    right: 14px;
+  }
+
+  /* FOOTER OSCURO */
+  footer {
+    padding: 0.4rem 2vw;
+    border-top: 1px solid rgba(16, 185, 129, 0.2);
+    background: var(--bg-header);
+    font-size: 0.68rem;
+    color: #94a3b8;
+    text-align: center;
+    line-height: 1.4;
+    flex-shrink: 0;
+  }
+  footer strong {
+    color: #34d399;
+  }
+
+  /* BOTÓN TOGGLE COLAPSABLE DE TEXTO / VISOR FOTOGRÁFICO (H-P3-M2) */
+  .card-toggle-btn {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+  .card-toggle-btn:hover {
+    background: #10b981;
+    color: #ffffff;
+    border-color: #10b981;
+  }
+  .toggle-icon {
+    transition: transform 0.25s ease;
+  }
+  .event-column.collapsed-text .card-toggle-btn {
+    background: #064e3b;
+    color: #34d399;
+    border-color: #10b981;
+  }
+  .event-column.collapsed-text .toggle-icon {
+    transform: rotate(180deg);
+  }
+  .event-column.collapsed-text .desc-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 2.8em;
+    opacity: 0.85;
+  }
+  .event-column.collapsed-text .card-image-placeholder {
+    height: 135px;
+    border-color: #10b981;
+    background: #f0fdf4;
+  }
+
+  /* BOTÓN TOGGLE COLAPSABLE DE TEXTO / VISOR FOTOGRÁFICO (H-P3-M2) */
+  .card-toggle-btn {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+  .card-toggle-btn:hover {
+    background: #10b981;
+    color: #ffffff;
+    border-color: #10b981;
+  }
+  .toggle-icon {
+    transition: transform 0.25s ease;
+  }
+  .event-column.collapsed-text .card-toggle-btn {
+    background: #064e3b;
+    color: #34d399;
+    border-color: #10b981;
+  }
+  .event-column.collapsed-text .toggle-icon {
+    transform: rotate(180deg);
+  }
+  .event-column.collapsed-text .desc-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 2.8em;
+    opacity: 0.85;
+  }
+  .event-column.collapsed-text .card-image-placeholder {
+    height: 140px;
+  }
+  .event-column.collapsed-text .card-image-placeholder.has-image {
+    height: 165px;
+  }
+
+  /* VISOR DE FOTOGRAFÍAS REALES EN TARJETA */
+  .card-image-placeholder {
+    width: 100%;
+    height: 108px;
+    border-radius: 10px;
+    border: 1.5px dashed #cbd5e1;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    transition: all 0.25s ease;
+  }
+  .card-image-placeholder.has-image {
+    border: 1.5px solid rgba(16, 185, 129, 0.45);
+    background: #020804;
+    cursor: pointer;
+  }
+  .card-image-placeholder.has-image:hover {
+    border-color: #10b981;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+  }
+  .event-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+  .card-image-placeholder.has-image:hover .event-card-img {
+    transform: scale(1.08);
+  }
+  .image-zoom-overlay {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(3, 10, 6, 0.88);
+    border: 1px solid rgba(16, 185, 129, 0.6);
+    color: #34d399;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    pointer-events: none;
+    backdrop-filter: blur(6px);
+    transition: all 0.2s ease;
+  }
+  .card-image-placeholder.has-image:hover .image-zoom-overlay {
+    background: #10b981;
+    color: #020804;
+    font-weight: 900;
+  }
+
+  /* MODAL LIGHTBOX HD */
+  .lightbox-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    animation: fadeInModal 0.2s ease;
+  }
+  @keyframes fadeInModal {
+    from { opacity: 0; transform: scale(0.97); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .lightbox-content {
+    background: #090f0b;
+    border: 2px solid rgba(16, 185, 129, 0.5);
+    border-radius: 18px;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.95);
+  }
+  .lightbox-header {
+    padding: 0.85rem 1.25rem;
+    background: #020804;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .lightbox-header h4 {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .lightbox-close {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    transition: color 0.2s;
+  }
+  .lightbox-close:hover {
+    color: #ef4444;
+  }
+  .lightbox-body {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 72vh;
+    background: #000000;
+  }
+  .lightbox-body img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  }
+  .lightbox-footer {
+    padding: 0.6rem 1rem;
+    background: #020804;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #94a3b8;
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+
+<!-- BOTONES FLOTANTES PARA LAPTOPS Y MONITORES -->
+<button id="btn-scroll-left" class="nav-arrow-btn left" data-i18n-title="btn_prev" title="Desplazar a la izquierda">‹</button>
+<button id="btn-scroll-right" class="nav-arrow-btn right" data-i18n-title="btn_next" title="Desplazar a la derecha">›</button>
+
+<header>
+  <div class="header-top-row">
+    <div class="eyebrow" data-i18n="eyebrow">PERÚ · SALA DE PACIFICACIÓN Y MEMORIA HISTÓRICA</div>
+    <div class="legend">
+      <div class="legend-item"><span class="swatch attack"></span> <span data-i18n="legend_attack">Atentado / Masacre</span></div>
+      <div class="legend-item"><span class="swatch op"></span> <span data-i18n="legend_op">Operativo / Enfrentamiento</span></div>
+    </div>
+  </div>
+  <h1 data-i18n="title">Cronología del <span>Terrorismo</span> en el Perú (1980 — 2026)</h1>
+  <p class="subhead" data-i18n="subhead">Línea de tiempo de atentados, masacres y enfrentamientos vinculados a Sendero Luminoso y al Militarizado Partido Comunista del Perú (MPCP) en Ayacucho, Junín, Huancavelica, Cusco y la zona del VRAEM.</p>
+</header>
+
+<!-- CONTENEDOR DE LA LINEA DE TIEMPO EN UNA SOLA FILA -->
+<main id="timeline-container" class="timeline-wrapper">
+  <div class="timeline-track">
+    <!-- Eje Horizontal Continuo Verde Esmeralda con Flechas de Inicio y Fin -->
+    <div class="axis-line">
+      <!-- Flecha de Inicio (Izquierda) -->
+      <div class="axis-arrow-start">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M16 3L3 12L16 21" stroke="#10b981" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <!-- Flecha de Fin (Derecha) -->
+      <div class="axis-arrow-end">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M8 3L21 12L8 21" stroke="#059669" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 1. 1980 -->
+    <div class="event-column attack" data-ev="1">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1980</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">17 de mayo, 1980</span>
+          <span class="category-pill" data-field="cat">Atentado</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Atentado de Chuschi</h3>
+        <div class="place-line" data-field="place">Cangallo, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Quema de ánforas y cédulas electorales por parte de Sendero Luminoso. <b>Marcó el inicio del accionar terrorista</b> en el Perú.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/atentado_chuschi.jpeg', 'Atentado de Chuschi')">
+        <img src="assets/terrorismo/atentado_chuschi.jpeg" alt="Atentado de Chuschi" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. 1982 -->
+    <div class="event-column attack" data-ev="2">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1982</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">5 de julio, 1982</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque al puesto policial de Ñaña</h3>
+        <div class="place-line" data-field="place">Ñaña, <b>Lima</b></div>
+        <p class="desc-text" data-field="desc">Asalto nocturno de Sendero Luminoso para apoderarse de armas y municiones. Murieron los guardias <b>Luis Muñoz</b> y <b>Luis Navarrete</b>; la valerosa defensa evitó la toma del puesto.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. 1982 -->
+    <div class="event-column attack" data-ev="3">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1982</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">6 de octubre, 1982</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque al puesto de Mayocc</h3>
+        <div class="place-line" data-field="place">Mayocc, <b>Huancavelica</b> y Huanta</div>
+        <p class="desc-text" data-field="desc">Enfrentamiento armado entre Sendero Luminoso y la Guardia Civil en Mayocc con <b>4 policías muertos</b> y 3 heridos. En Huanta perpetraron 18 atentados con dinamita como distracción.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. 1982–84 -->
+    <div class="event-column attack" data-ev="4">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1982–84</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">1982–1984</span>
+          <span class="category-pill" data-field="cat">Masacre</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Violencia en Chungui y Oreja de Perro</h3>
+        <div class="place-line" data-field="place">Chungui y Oreja de Perro, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Campaña sistemática de terror senderista contra comunidades rurales: <b>asesinatos masivos</b>, secuestros, desapariciones, saqueo y desplazamiento forzado de campesinos.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. 1983 -->
+    <div class="event-column attack" data-ev="5">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1983</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">3 de abril, 1983</span>
+          <span class="category-pill" data-field="cat">Masacre</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Masacre de Lucanamarca</h3>
+        <div class="place-line" data-field="place">Huanca Sancos, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Asesinato de <b>69 comuneros</b> con hachas, machetes y armas de fuego por orden directa de Abimael Guzmán.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/masacre_lucanamarca.jpeg', 'Masacre de Lucanamarca')">
+        <img src="assets/terrorismo/masacre_lucanamarca.jpeg" alt="Masacre de Lucanamarca" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. 1984 -->
+    <div class="event-column attack" data-ev="6">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1984</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">Enero y Julio, 1984</span>
+          <span class="category-pill" data-field="cat">Incursión</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Incursiones en Aucayacu</h3>
+        <div class="place-line" data-field="place">Aucayacu, Leoncio Prado, <b>Huánuco</b></div>
+        <p class="desc-text" data-field="desc">Incursiones armadas contra el puesto policial y campaña de violencia en el Alto Huallaga con <b>asesinatos selectivos</b> de autoridades y comuneros opuestos a la organización.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. 1985 -->
+    <div class="event-column attack" data-ev="7">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1985</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">29 de agosto, 1985</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque a Vilcashuamán</h3>
+        <div class="place-line" data-field="place">Vilcashuamán, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Destrucción con dinamita del puesto de la Guardia Civil y la sede municipal, resultando en <b>6 policías</b> y varios civiles muertos.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. 1987 -->
+    <div class="event-column attack" data-ev="8">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1987</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">17 de febrero, 1987</span>
+          <span class="category-pill" data-field="cat">Masacre</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Masacre de Cochas</h3>
+        <div class="place-line" data-field="place">Cochas, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Ocurrió el 17 de febrero de 1987 en la comunidad de Cochas, Ayacucho. Una columna armada de Sendero Luminoso asaltó la localidad violentamente, obligando a los pobladores a concentrarse en la plaza principal y abriendo fuego indiscriminado contra la multitud, dejando un saldo de <b>30 pobladores muertos</b> como represalia por resistirse a la ideología senderista y defender su territorio.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/masacre_cochas.jpg', 'Masacre de Cochas')">
+        <img src="assets/terrorismo/masacre_cochas.jpg" alt="Masacre de Cochas" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. 1987 -->
+    <div class="event-column attack" data-ev="9">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1987</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">Año 1987</span>
+          <span class="category-pill" data-field="cat">Sabotaje</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataques a SAIS Cahuide y Pachacútec</h3>
+        <div class="place-line" data-field="place">Jauja y Huancayo, <b>Junín</b></div>
+        <p class="desc-text" data-field="desc">Ataques sistemáticos contra cooperativas agrarias SAIS Cahuide y Pachacútec; <b>asesinato del administrador</b>, destrucción de maquinaria, saqueo e incendio de instalaciones.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. 1987 -->
+    <div class="event-column attack" data-ev="10">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1987</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">18 de octubre, 1987</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque del MRTA a Soritor</h3>
+        <div class="place-line" data-field="place">Soritor, Moyobamba, <b>San Martín</b></div>
+        <p class="desc-text" data-field="desc">Columna del MRTA tomó por asalto Soritor, atacó dependencias policiales y municipales, realizando una concentración armada forzada para difusión de su propaganda.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. 1987 -->
+    <div class="event-column attack" data-ev="11">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1987</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">6 de noviembre, 1987</span>
+          <span class="category-pill" data-field="cat">Incursión</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Incursión del MRTA en Juanjuí</h3>
+        <div class="place-line" data-field="place">Juanjuí, <b>San Martín</b></div>
+        <p class="desc-text" data-field="desc">Incursión armada contra instalaciones públicas y policiales de Juanjuí, cobrando la vida de un policía. Se registraron incursiones paralelas en Campanilla, Tabalosos y Sisa.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. 1988 -->
+    <div class="event-column attack" data-ev="12">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1988</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">2 de enero, 1988</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque a Puerto Ocopa</h3>
+        <div class="place-line" data-field="place">Puerto Ocopa, Satipo, <b>Junín</b></div>
+        <p class="desc-text" data-field="desc">Integrantes de Sendero Luminoso ingresaron a la comunidad nativa de Puerto Ocopa, saquearon establecimientos comerciales y <b>asesinaron a un poblador</b>.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13. 1988 -->
+    <div class="event-column attack" data-ev="13">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1988</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">18 de febrero, 1988</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque de Sendero en Lachocc</h3>
+        <div class="place-line" data-field="place">Lachocc, <b>Huancavelica</b></div>
+        <p class="desc-text" data-field="desc">Ataque armado y emboscada senderista perpetrada contra civiles y transportistas que se desplazaban por la carretera de Lachocc.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14. 1988 -->
+    <div class="event-column attack" data-ev="14">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1988</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">13 de marzo, 1988</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque del MRTA en Pichanaki</h3>
+        <div class="place-line" data-field="place">Pichanaki, Chanchamayo, <b>Junín</b></div>
+        <p class="desc-text" data-field="desc">Hostigamiento armado y ataque contra el puesto policial de Pichanaki dentro de una escalada terrorista del MRTA en la selva central.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15. 1988 -->
+    <div class="event-column attack" data-ev="15">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1988</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">20 de abril, 1988</span>
+          <span class="category-pill" data-field="cat">Masacre</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Masacre de Aranhuay</h3>
+        <div class="place-line" data-field="place">Aranhuay, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Ocurrió el 20 de abril de 1988 en la comunidad de Aranhuay, Ayacucho. Miembros de Sendero Luminoso ingresaron al pueblo disfrazados con uniformes militares. Mediante engaños, reunieron a la población en la plaza principal, formaron a los comuneros en filas y <b>asesinaron a 27 campesinos</b>. El ataque fue una represalia del grupo terrorista porque la comunidad se negaba a apoyarlos y había organizado comités de autodefensa.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/masacre_aranhuay.jpg', 'Masacre de Aranhuay')">
+        <img src="assets/terrorismo/masacre_aranhuay.jpg" alt="Masacre de Aranhuay" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 16. 1988 -->
+    <div class="event-column attack" data-ev="16">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1988</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">20 de abril, 1988</span>
+          <span class="category-pill" data-field="cat">Incursión</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Toma e incursión en Pichanaki</h3>
+        <div class="place-line" data-field="place">Pichanaki, <b>Junín</b></div>
+        <p class="desc-text" data-field="desc">Columna del MRTA volvió a ingresar a Pichanaki realizando una concentración pública armada vinculada a su campaña de propaganda.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 17. 1988 -->
+    <div class="event-column attack" data-ev="17">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1988</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">17 de noviembre, 1988</span>
+          <span class="category-pill" data-field="cat">Asesinato</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataques a comunidades de Pasco</h3>
+        <div class="place-line" data-field="place">Pillao y Astobamba, <b>Pasco</b></div>
+        <p class="desc-text" data-field="desc">Sendero Luminoso asesinó a autoridades y dirigentes comunales en su estrategia de aniquilamiento de liderazgos locales para imponer su dominio.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 18. 1989 -->
+    <div class="event-column attack" data-ev="18">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1989</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">27 de marzo, 1989</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque al puesto de Uchiza</h3>
+        <div class="place-line" data-field="place">Tocache, <b>San Martín</b></div>
+        <p class="desc-text" data-field="desc">Sitio y destrucción del puesto policial por una alianza entre Sendero Luminoso y narcotraficantes, dejando <b>10 policías muertos</b>.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/ataque_uchiza.jpg', 'Ataque al puesto de Uchiza')">
+        <img src="assets/terrorismo/ataque_uchiza.jpg" alt="Ataque al puesto de Uchiza" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 19. 1989 -->
+    <div class="event-column attack" data-ev="19">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1989</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">21 de mayo, 1989</span>
+          <span class="category-pill" data-field="cat">Sabotaje</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque a la ONERG en Tulumayo</h3>
+        <div class="place-line" data-field="place">Leoncio Prado, <b>Huánuco</b></div>
+        <p class="desc-text" data-field="desc">Asesinato de ingenieros y destrucción sistemática de infraestructura agrícola estatal por Sendero Luminoso.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 20. 1989 -->
+    <div class="event-column attack" data-ev="20">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1989</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">3 de junio, 1989</span>
+          <span class="category-pill" data-field="cat">Atentado</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Atentado a los Húsares de Junín</h3>
+        <div class="place-line" data-field="place">Jirón Junín, <b>Lima</b></div>
+        <p class="desc-text" data-field="desc">Carga de dinamita destruyó el ómnibus del Regimiento Húsares de Junín rumbo al relevo en Palacio. Murieron <b>6 militares</b> y 25 quedaron heridos de gravedad.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/atentado_husaresdejunin.jpg', 'Atentado a los Húsares de Junín')">
+        <img src="assets/terrorismo/atentado_husaresdejunin.jpg" alt="Atentado a los Húsares de Junín" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 21. 1989 -->
+    <div class="event-column attack" data-ev="21">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1989</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">Año 1989</span>
+          <span class="category-pill" data-field="cat">Asesinato</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Asesinatos en Chongos Alto y Chicche</h3>
+        <div class="place-line" data-field="place">Chongos Alto y Chicche, <b>Junín</b></div>
+        <p class="desc-text" data-field="desc">Sendero Luminoso intensificó asesinatos selectivos de autoridades comunales y alcaldes para destruir el orden legal e imponer su 'nuevo poder'.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 22. 1990–93 -->
+    <div class="event-column attack" data-ev="22">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1990–93</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">1990–1993</span>
+          <span class="category-pill" data-field="cat">Masacre</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataques en la Selva Central</h3>
+        <div class="place-line" data-field="place">Satipo, Pangoa y Valle del Ene, <b>Junín</b></div>
+        <p class="desc-text" data-field="desc">Campaña de asesinatos, secuestros forzados y desplazamiento de comunidades asháninkas y colonos en la selva central por columnas senderistas.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 23. 1991 -->
+    <div class="event-column attack" data-ev="23">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1991</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">22 de enero, 1991</span>
+          <span class="category-pill" data-field="cat">Emboscada</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Emboscada Rancha–Huascahura</h3>
+        <div class="place-line" data-field="place">Rancha–Huascahura, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Sendero Luminoso emboscó una patrulla de la Policía Nacional en la carretera con explosivos y ráfagas de fusil, causando la muerte de <b>11 policías</b>.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 24. 1993 -->
+    <div class="event-column attack" data-ev="24">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1993</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">8 de enero, 1993</span>
+          <span class="category-pill" data-field="cat">Incursión</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Incursión del MRTA en Moyobamba</h3>
+        <div class="place-line" data-field="place">Moyobamba, Rioja y Juanjuí, <b>San Martín</b></div>
+        <p class="desc-text" data-field="desc">Incursión armada del MRTA en Moyobamba atacando dependencias policiales, locales públicos y el penal San Cristóbal para liberar presos e intimidar a la región.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 25. 1993 -->
+    <div class="event-column attack" data-ev="25">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1993</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">18 de agosto, 1993</span>
+          <span class="category-pill" data-field="cat">Masacre</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Masacre del Valle del Mazamari</h3>
+        <div class="place-line" data-field="place">Satipo, <b>Junín / VRAEM</b></div>
+        <p class="desc-text" data-field="desc">Campaña de exterminio senderista contra la etnia asháninka organizada en comités de autodefensa. Fueron masacrados <b>72 indígenas</b>.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 26. 1996 -->
+    <div class="event-column attack" data-ev="26">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1996</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">31 de mayo, 1996</span>
+          <span class="category-pill" data-field="cat">Emboscada</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Emboscada de Nuevo Bambamarca</h3>
+        <div class="place-line" data-field="place">Tocache, <b>San Martín</b></div>
+        <p class="desc-text" data-field="desc">Columnas de Sendero Luminoso bajo el mando del camarada 'Artemio' realizaron una emboscada armada contra una patrulla del Ejército en Nuevo Bambamarca.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 27. 1999 -->
+    <div class="event-column attack" data-ev="27">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">1999</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">2 de octubre, 1999</span>
+          <span class="category-pill" data-field="cat">Emboscada</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Emboscada de Anapati</h3>
+        <div class="place-line" data-field="place">Satipo, <b>Junín / VRAEM</b></div>
+        <p class="desc-text" data-field="desc">Las columnas de los hermanos Quispe Palomino emboscaron una patrulla militar, dejando <b>5 militares muertos</b>.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 28. 2000–07 -->
+    <div class="event-column attack" data-ev="28">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2000–07</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">2000–2007</span>
+          <span class="category-pill" data-field="cat">Remanentes</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Persistencia de remanentes terroristas</h3>
+        <div class="place-line" data-field="place">Alto Huallaga y <b>VRAEM</b></div>
+        <p class="desc-text" data-field="desc">Tras la captura de Guzmán, remanentes armados continuaron operando en el Huallaga con 'Artemio' y en el VRAEM con los Quispe Palomino aliados al narcotráfico.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 29. 2008 -->
+    <div class="event-column attack" data-ev="29">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2008</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">2 de octubre, 2008</span>
+          <span class="category-pill" data-field="cat">Emboscada</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Emboscada de Ocobamba</h3>
+        <div class="place-line" data-field="place">La Convención, <b>Cusco</b></div>
+        <p class="desc-text" data-field="desc">Ataque con explosivos a un convoy de la 31.ª Brigada de Infantería del Ejército, dejando <b>19 muertos</b> (12 militares y 7 civiles).</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 30. 2009 -->
+    <div class="event-column attack" data-ev="30">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2009</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">9 de abril, 2009</span>
+          <span class="category-pill" data-field="cat">Ataque</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque en Sanabamba</h3>
+        <div class="place-line" data-field="place">Huanta, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Emboscada contra patrullas de las Fuerzas Armadas con minas caseras y francotiradores. Saldo de <b>15 militares fallecidos</b>.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/ataque_sanabamba.jpg', 'Ataque en Sanabamba')">
+        <img src="assets/terrorismo/ataque_sanabamba.jpg" alt="Ataque en Sanabamba" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 31. 2009 -->
+    <div class="event-column attack" data-ev="31">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2009</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">2 de septiembre, 2009</span>
+          <span class="category-pill" data-field="cat">Ataque Aéreo</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Derribo del helicóptero Mi-17</h3>
+        <div class="place-line" data-field="place">Santo Domingo de Acobamba, <b>Junín</b></div>
+        <p class="desc-text" data-field="desc">Derribo con armamento pesado de una nave de la Fuerza Aérea durante una misión de rescate, dejando <b>3 militares muertos</b>.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/derribohelicoptero2009.jpg', 'Derribo del helicóptero Mi-17')">
+        <img src="assets/terrorismo/derribohelicoptero2009.jpg" alt="Derribo del helicóptero Mi-17" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 32. 2010 -->
+    <div class="event-column attack" data-ev="32">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2010</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">21 de abril, 2010</span>
+          <span class="category-pill" data-field="cat">Enfrentamiento</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Ataque a la base de Anco</h3>
+        <div class="place-line" data-field="place">La Mar, <b>Ayacucho</b></div>
+        <p class="desc-text" data-field="desc">Hostigamiento con morteros y fusilería contra la base militar, causando la muerte de <b>1 militar</b>.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 33. 2012 -->
+    <div class="event-column attack" data-ev="33">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2012</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">9 de abril, 2012</span>
+          <span class="category-pill" data-field="cat">Secuestro</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Secuestro masivo en Camisea</h3>
+        <div class="place-line" data-field="place">Kepashiato, Echarate, <b>Cusco</b></div>
+        <p class="desc-text" data-field="desc">Secuestro de <b>36 trabajadores</b> del proyecto Camisea por Sendero Luminoso exigiendo 10 millones de dólares. Todos los rehenes fueron liberados tras el asedio militar de la Operación Libertad.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/secuestro_camisea.jpg', 'Secuestro masivo en Camisea')">
+        <img src="assets/terrorismo/secuestro_camisea.jpg" alt="Secuestro masivo en Camisea" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 34. 2012 -->
+    <div class="event-column attack" data-ev="34">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2012</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">12 de abril, 2012</span>
+          <span class="category-pill" data-field="cat">Ataque Aéreo</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Derribo de helicóptero en Kepashiato</h3>
+        <div class="place-line" data-field="place">Alto Lagunas, Kepashiato, <b>Cusco</b></div>
+        <p class="desc-text" data-field="desc">Columna terrorista atacó un helicóptero de la PNP en misión de rescate por el secuestro de Camisea. Falleció heroicamente la <b>capitana PNP Nancy Flores Páucar</b>.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/derribo_kepashiato.jpg', 'Derribo de helicóptero en Kepashiato')">
+        <img src="assets/terrorismo/derribo_kepashiato.jpg" alt="Derribo de helicóptero en Kepashiato" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 35. 2016 -->
+    <div class="event-column attack" data-ev="35">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2016</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">9 de abril, 2016</span>
+          <span class="category-pill" data-field="cat">Emboscada</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Emboscada electoral de Acobamba</h3>
+        <div class="place-line" data-field="place">Santo Domingo de Acobamba, <b>Junín</b></div>
+        <p class="desc-text" data-field="desc">Ataque a una patrulla que custodiaba material electoral a un día de los comicios generales, dejando <b>10 muertos</b> (8 militares y 2 civiles).</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 36. 2017 -->
+    <div class="event-column attack" data-ev="36">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2017</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">6 de septiembre, 2017</span>
+          <span class="category-pill" data-field="cat">Atentado</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Atentado a la patrulla en Anco</h3>
+        <div class="place-line" data-field="place">Churcampa, <b>Huancavelica</b></div>
+        <p class="desc-text" data-field="desc">Emboscada a dos patrulleros de la PNP en la carretera hacia Churcampa, cobrando la vida de <b>4 efectivos policiales</b>.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/ataque_comisaria_anco.jpg', 'Atentado a la patrulla en Anco')">
+        <img src="assets/terrorismo/ataque_comisaria_anco.jpg" alt="Atentado a la patrulla en Anco" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 37. 2018 -->
+    <div class="event-column attack" data-ev="37">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2018</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">8 de junio, 2018</span>
+          <span class="category-pill" data-field="cat">Emboscada</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Emboscada de Churcampa</h3>
+        <div class="place-line" data-field="place">Churcampa, <b>Huancavelica</b> — zona de Huachocolpa</div>
+        <p class="desc-text" data-field="desc">Ataque contra una patrulla policial en labores de patrullaje rutinario en Huachocolpa, donde fallecieron <b>4 agentes de la PNP</b>.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 38. 2021 -->
+    <div class="event-column attack" data-ev="38">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2021</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">23 de mayo, 2021</span>
+          <span class="category-pill" data-field="cat">Masacre</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Masacre de San Miguel del Ene</h3>
+        <div class="place-line" data-field="place">Satipo, <b>Junín / VRAEM</b></div>
+        <p class="desc-text" data-field="desc">Incursión del MPCP en una zona de locales nocturnos a orillas del río Ene. Ejecutaron a <b>16 personas</b>, incluyendo mujeres y menores de edad.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 39. 2023 -->
+    <div class="event-column attack" data-ev="39">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2023</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">11 de febrero, 2023</span>
+          <span class="category-pill" data-field="cat">Emboscada</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Emboscada en Natividad</h3>
+        <div class="place-line" data-field="place">Pichari, <b>Cusco / VRAEM</b></div>
+        <p class="desc-text" data-field="desc">Atentado contra un vehículo blindado de la PNP con ráfagas de fusil en un camino afirmado, causando el fallecimiento de <b>7 policías</b>.</p>
+      </div>
+      <div class="card-image-placeholder has-image" onclick="openImageModal('assets/terrorismo/emboscada_natividad.jpg', 'Emboscada en Natividad')">
+        <img src="assets/terrorismo/emboscada_natividad.jpg" alt="Emboscada en Natividad" class="event-card-img" loading="lazy" />
+        <div class="image-zoom-overlay">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span data-i18n="photo_view">VER FOTO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 40. 2024 -->
+    <div class="event-column op" data-ev="40">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2024</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">15 de abril, 2024</span>
+          <span class="category-pill" data-field="cat">Operación</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Operación de combate en Vizcatán</h3>
+        <div class="place-line" data-field="place">Valle de Vizcatán, Satipo, <b>Junín / VRAEM</b></div>
+        <p class="desc-text" data-field="desc"><b>Historial:</b> La cúpula del MPCP abrió fuego contra los efectivos durante un enfrentamiento en plena selva, resultando en la muerte del valeroso oficial de la Marina de Guerra del Perú <b>Wilmer Delgado</b> (Técnico 3.°).</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 41. 2025 -->
+    <div class="event-column op" data-ev="41">
+      <div class="node-anchor">
+        <div class="node-dot"></div>
+        <span class="year-tag">2025</span>
+      </div>
+      <div class="card-text">
+        <div class="card-top-bar">
+          <span class="date-badge" data-field="date">6 de abril, 2025</span>
+          <span class="category-pill" data-field="cat">Operativo</span>
+          <button class="card-toggle-btn" onclick="toggleCardText(this, event)" title="Minimizar texto / Ver foto" aria-label="Toggle">
+            <svg class="toggle-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+        <h3 class="event-title" data-field="title">Operativo y choque en Huancavelica</h3>
+        <div class="place-line" data-field="place">Sector montañoso, distrito de Anco, <b>Huancavelica</b></div>
+        <p class="desc-text" data-field="desc"><b>Historial:</b> Células armadas del MPCP sostuvieron un choque armado con patrullas de las Fuerzas Especiales para frenar la destrucción de campos de entrenamiento. Se incautó armamento de guerra y pertrechos.</p>
+      </div>
+      <div class="card-image-placeholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <span class="placeholder-label" data-i18n="photo_label">REGISTRO FOTOGRÁFICO</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+<footer>
+  <strong data-i18n="footer_army">EJÉRCITO DEL PERÚ</strong> · <span data-i18n="footer_text">Registro histórico oficial sobre atentados y enfrentamientos vinculados al conflicto armado interno en el Perú (1980–2026). Sala de Pacificación Nacional y Memoria Histórica.</span>
+</footer>
+
+<!-- MODAL LIGHTBOX HD PARA VISUALIZACIÓN FOTOGRÁFICA -->
+<div id="image-lightbox-modal" class="lightbox-modal" onclick="closeImageModal()" style="display:none;">
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    <div class="lightbox-header">
+      <h4 id="lightbox-title">Registro Fotográfico Histórico</h4>
+      <button class="lightbox-close" onclick="closeImageModal()" aria-label="Cerrar">&times;</button>
+    </div>
+    <div class="lightbox-body">
+      <img id="lightbox-img" src="" alt="Fotografía histórica" />
+    </div>
+    <div class="lightbox-footer">
+      <span id="lightbox-caption">TOQUE EN CUALQUIER PARTE PARA CERRAR</span>
+    </div>
+  </div>
+</div>
+<script>
+  // DICCIONARIO COMPLETO DE TRADUCCIÓN (ES / EN / QU)
+  const I18N_DATA = {
+    es: {
+      eyebrow: "PERÚ · SALA DE PACIFICACIÓN Y MEMORIA HISTÓRICA",
+      title: "Cronología del <span>Terrorismo</span> en el Perú (1980 — 2026)",
+      subhead: "Línea de tiempo histórica de atentados, masacres, incursiones y enfrentamientos vinculados a Sendero Luminoso, el MRTA y el Militarizado Partido Comunista del Perú (MPCP) en Ayacucho, Junín, Huancavelica, Cusco, Lima, San Martín, Huánuco, Pasco y el VRAEM.",
+      legend_attack: "Atentado / Masacre",
+      legend_op: "Operativo / Enfrentamiento",
+      photo_label: "REGISTRO FOTOGRÁFICO",
+      photo_view: "VER FOTO",
+      btn_prev: "Desplazar a la izquierda",
+      btn_next: "Desplazar a la derecha",
+      footer_army: "EJÉRCITO DEL PERÚ",
+      footer_text: "Registro histórico oficial sobre atentados y enfrentamientos vinculados al conflicto armado interno en el Perú (1980–2026). Sala de Pacificación Nacional y Memoria Histórica.",
+      events: {
+        "1": {
+                "date": "17 de mayo, 1980",
+                "cat": "Atentado",
+                "title": "Atentado de Chuschi",
+                "place": "Cangallo, <b>Ayacucho</b>",
+                "desc": "Quema de ánforas y cédulas electorales por parte de Sendero Luminoso. <b>Marcó el inicio del accionar terrorista</b> en el Perú."
+        },
+        "2": {
+                "date": "5 de julio, 1982",
+                "cat": "Ataque",
+                "title": "Ataque al puesto policial de Ñaña",
+                "place": "Ñaña, <b>Lima</b>",
+                "desc": "Asalto nocturno de Sendero Luminoso para apoderarse de armas y municiones. Murieron los guardias <b>Luis Muñoz</b> y <b>Luis Navarrete</b>; la valerosa defensa evitó la toma del puesto."
+        },
+        "3": {
+                "date": "6 de octubre, 1982",
+                "cat": "Ataque",
+                "title": "Ataque al puesto de Mayocc",
+                "place": "Mayocc, <b>Huancavelica</b> y Huanta",
+                "desc": "Enfrentamiento armado entre Sendero Luminoso y la Guardia Civil en Mayocc con <b>4 policías muertos</b> y 3 heridos. En Huanta perpetraron 18 atentados con dinamita como distracción."
+        },
+        "4": {
+                "date": "1982–1984",
+                "cat": "Masacre",
+                "title": "Violencia en Chungui y Oreja de Perro",
+                "place": "Chungui y Oreja de Perro, <b>Ayacucho</b>",
+                "desc": "Campaña sistemática de terror senderista contra comunidades rurales: <b>asesinatos masivos</b>, secuestros, desapariciones, saqueo y desplazamiento forzado de campesinos."
+        },
+        "5": {
+                "date": "3 de abril, 1983",
+                "cat": "Masacre",
+                "title": "Masacre de Lucanamarca",
+                "place": "Huanca Sancos, <b>Ayacucho</b>",
+                "desc": "Asesinato de <b>69 comuneros</b> con hachas, machetes y armas de fuego por orden directa de Abimael Guzmán."
+        },
+        "6": {
+                "date": "Enero y Julio, 1984",
+                "cat": "Incursión",
+                "title": "Incursiones en Aucayacu",
+                "place": "Aucayacu, Leoncio Prado, <b>Huánuco</b>",
+                "desc": "Incursiones armadas contra el puesto policial y campaña de violencia en el Alto Huallaga con <b>asesinatos selectivos</b> de autoridades y comuneros opuestos a la organización."
+        },
+        "7": {
+                "date": "29 de agosto, 1985",
+                "cat": "Ataque",
+                "title": "Ataque a Vilcashuamán",
+                "place": "Vilcashuamán, <b>Ayacucho</b>",
+                "desc": "Destrucción con dinamita del puesto de la Guardia Civil y la sede municipal, resultando en <b>6 policías</b> y varios civiles muertos."
+        },
+        "8": {
+                "date": "17 de febrero, 1987",
+                "cat": "Masacre",
+                "title": "Masacre de Cochas",
+                "place": "Cochas, <b>Ayacucho</b>",
+                "desc": "Ocurrió el 17 de febrero de 1987 en la comunidad de Cochas, Ayacucho. Una columna armada de Sendero Luminoso asaltó la localidad violentamente, obligando a los pobladores a concentrarse en la plaza principal y abriendo fuego indiscriminado contra la multitud, dejando un saldo de <b>30 pobladores muertos</b> como represalia por resistirse a la ideología senderista y defender su territorio."
+        },
+        "9": {
+                "date": "Año 1987",
+                "cat": "Sabotaje",
+                "title": "Ataques a SAIS Cahuide y Pachacútec",
+                "place": "Jauja y Huancayo, <b>Junín</b>",
+                "desc": "Ataques sistemáticos contra cooperativas agrarias SAIS Cahuide y Pachacútec; <b>asesinato del administrador</b>, destrucción de maquinaria, saqueo e incendio de instalaciones."
+        },
+        "10": {
+                "date": "18 de octubre, 1987",
+                "cat": "Ataque",
+                "title": "Ataque del MRTA a Soritor",
+                "place": "Soritor, Moyobamba, <b>San Martín</b>",
+                "desc": "Columna del MRTA tomó por asalto Soritor, atacó dependencias policiales y municipales, realizando una concentración armada forzada para difusión de su propaganda."
+        },
+        "11": {
+                "date": "6 de noviembre, 1987",
+                "cat": "Incursión",
+                "title": "Incursión del MRTA en Juanjuí",
+                "place": "Juanjuí, <b>San Martín</b>",
+                "desc": "Incursión armada contra instalaciones públicas y policiales de Juanjuí, cobrando la vida de un policía. Se registraron incursiones paralelas en Campanilla, Tabalosos y Sisa."
+        },
+        "12": {
+                "date": "2 de enero, 1988",
+                "cat": "Ataque",
+                "title": "Ataque a Puerto Ocopa",
+                "place": "Puerto Ocopa, Satipo, <b>Junín</b>",
+                "desc": "Integrantes de Sendero Luminoso ingresaron a la comunidad nativa de Puerto Ocopa, saquearon establecimientos comerciales y <b>asesinaron a un poblador</b>."
+        },
+        "13": {
+                "date": "18 de febrero, 1988",
+                "cat": "Ataque",
+                "title": "Ataque de Sendero en Lachocc",
+                "place": "Lachocc, <b>Huancavelica</b>",
+                "desc": "Ataque armado y emboscada senderista perpetrada contra civiles y transportistas que se desplazaban por la carretera de Lachocc."
+        },
+        "14": {
+                "date": "13 de marzo, 1988",
+                "cat": "Ataque",
+                "title": "Ataque del MRTA en Pichanaki",
+                "place": "Pichanaki, Chanchamayo, <b>Junín</b>",
+                "desc": "Hostigamiento armado y ataque contra el puesto policial de Pichanaki dentro de una escalada terrorista del MRTA en la selva central."
+        },
+        "15": {
+                "date": "20 de abril, 1988",
+                "cat": "Masacre",
+                "title": "Masacre de Aranhuay",
+                "place": "Aranhuay, <b>Ayacucho</b>",
+                "desc": "Ocurrió el 20 de abril de 1988 en la comunidad de Aranhuay, Ayacucho. Miembros de Sendero Luminoso ingresaron al pueblo disfrazados con uniformes militares. Mediante engaños, reunieron a la población en la plaza principal, formaron a los comuneros en filas y <b>asesinaron a 27 campesinos</b>. El ataque fue una represalia del grupo terrorista porque la comunidad se negaba a apoyarlos y había organizado comités de autodefensa."
+        },
+        "16": {
+                "date": "20 de abril, 1988",
+                "cat": "Incursión",
+                "title": "Toma e incursión en Pichanaki",
+                "place": "Pichanaki, <b>Junín</b>",
+                "desc": "Columna del MRTA volvió a ingresar a Pichanaki realizando una concentración pública armada vinculada a su campaña de propaganda."
+        },
+        "17": {
+                "date": "17 de noviembre, 1988",
+                "cat": "Asesinato",
+                "title": "Ataques a comunidades de Pasco",
+                "place": "Pillao y Astobamba, <b>Pasco</b>",
+                "desc": "Sendero Luminoso asesinó a autoridades y dirigentes comunales en su estrategia de aniquilamiento de liderazgos locales para imponer su dominio."
+        },
+        "18": {
+                "date": "27 de marzo, 1989",
+                "cat": "Ataque",
+                "title": "Ataque al puesto de Uchiza",
+                "place": "Tocache, <b>San Martín</b>",
+                "desc": "Sitio y destrucción del puesto policial por una alianza entre Sendero Luminoso y narcotraficantes, dejando <b>10 policías muertos</b>."
+        },
+        "19": {
+                "date": "21 de mayo, 1989",
+                "cat": "Sabotaje",
+                "title": "Ataque a la ONERG en Tulumayo",
+                "place": "Leoncio Prado, <b>Huánuco</b>",
+                "desc": "Asesinato de ingenieros y destrucción sistemática de infraestructura agrícola estatal por Sendero Luminoso."
+        },
+        "20": {
+                "date": "3 de junio, 1989",
+                "cat": "Atentado",
+                "title": "Atentado a los Húsares de Junín",
+                "place": "Jirón Junín, <b>Lima</b>",
+                "desc": "Carga de dinamita destruyó el ómnibus del Regimiento Húsares de Junín rumbo al relevo en Palacio. Murieron <b>6 militares</b> y 25 quedaron heridos de gravedad."
+        },
+        "21": {
+                "date": "Año 1989",
+                "cat": "Asesinato",
+                "title": "Asesinatos en Chongos Alto y Chicche",
+                "place": "Chongos Alto y Chicche, <b>Junín</b>",
+                "desc": "Sendero Luminoso intensificó asesinatos selectivos de autoridades comunales y alcaldes para destruir el orden legal e imponer su 'nuevo poder'."
+        },
+        "22": {
+                "date": "1990–1993",
+                "cat": "Masacre",
+                "title": "Ataques en la Selva Central",
+                "place": "Satipo, Pangoa y Valle del Ene, <b>Junín</b>",
+                "desc": "Campaña de asesinatos, secuestros forzados y desplazamiento de comunidades asháninkas y colonos en la selva central por columnas senderistas."
+        },
+        "23": {
+                "date": "22 de enero, 1991",
+                "cat": "Emboscada",
+                "title": "Emboscada Rancha–Huascahura",
+                "place": "Rancha–Huascahura, <b>Ayacucho</b>",
+                "desc": "Sendero Luminoso emboscó una patrulla de la Policía Nacional en la carretera con explosivos y ráfagas de fusil, causando la muerte de <b>11 policías</b>."
+        },
+        "24": {
+                "date": "8 de enero, 1993",
+                "cat": "Incursión",
+                "title": "Incursión del MRTA en Moyobamba",
+                "place": "Moyobamba, Rioja y Juanjuí, <b>San Martín</b>",
+                "desc": "Incursión armada del MRTA en Moyobamba atacando dependencias policiales, locales públicos y el penal San Cristóbal para liberar presos e intimidar a la región."
+        },
+        "25": {
+                "date": "18 de agosto, 1993",
+                "cat": "Masacre",
+                "title": "Masacre del Valle del Mazamari",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "Campaña de exterminio senderista contra la etnia asháninka organizada en comités de autodefensa. Fueron masacrados <b>72 indígenas</b>."
+        },
+        "26": {
+                "date": "31 de mayo, 1996",
+                "cat": "Emboscada",
+                "title": "Emboscada de Nuevo Bambamarca",
+                "place": "Tocache, <b>San Martín</b>",
+                "desc": "Columnas de Sendero Luminoso bajo el mando del camarada 'Artemio' realizaron una emboscada armada contra una patrulla del Ejército en Nuevo Bambamarca."
+        },
+        "27": {
+                "date": "2 de octubre, 1999",
+                "cat": "Emboscada",
+                "title": "Emboscada de Anapati",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "Las columnas de los hermanos Quispe Palomino emboscaron una patrulla militar, dejando <b>5 militares muertos</b>."
+        },
+        "28": {
+                "date": "2000–2007",
+                "cat": "Remanentes",
+                "title": "Persistencia de remanentes terroristas",
+                "place": "Alto Huallaga y <b>VRAEM</b>",
+                "desc": "Tras la captura de Guzmán, remanentes armados continuaron operando en el Huallaga con 'Artemio' y en el VRAEM con los Quispe Palomino aliados al narcotráfico."
+        },
+        "29": {
+                "date": "2 de octubre, 2008",
+                "cat": "Emboscada",
+                "title": "Emboscada de Ocobamba",
+                "place": "La Convención, <b>Cusco</b>",
+                "desc": "Ataque con explosivos a un convoy de la 31.ª Brigada de Infantería del Ejército, dejando <b>19 muertos</b> (12 militares y 7 civiles)."
+        },
+        "30": {
+                "date": "9 de abril, 2009",
+                "cat": "Ataque",
+                "title": "Ataque en Sanabamba",
+                "place": "Huanta, <b>Ayacucho</b>",
+                "desc": "Emboscada contra patrullas de las Fuerzas Armadas con minas caseras y francotiradores. Saldo de <b>15 militares fallecidos</b>."
+        },
+        "31": {
+                "date": "2 de septiembre, 2009",
+                "cat": "Ataque Aéreo",
+                "title": "Derribo del helicóptero Mi-17",
+                "place": "Santo Domingo de Acobamba, <b>Junín</b>",
+                "desc": "Derribo con armamento pesado de una nave de la Fuerza Aérea durante una misión de rescate, dejando <b>3 militares muertos</b>."
+        },
+        "32": {
+                "date": "21 de abril, 2010",
+                "cat": "Enfrentamiento",
+                "title": "Ataque a la base de Anco",
+                "place": "La Mar, <b>Ayacucho</b>",
+                "desc": "Hostigamiento con morteros y fusilería contra la base militar, causando la muerte de <b>1 militar</b>."
+        },
+        "33": {
+                "date": "9 de abril, 2012",
+                "cat": "Secuestro",
+                "title": "Secuestro masivo en Camisea",
+                "place": "Kepashiato, Echarate, <b>Cusco</b>",
+                "desc": "Secuestro de <b>36 trabajadores</b> del proyecto Camisea por Sendero Luminoso exigiendo 10 millones de dólares. Todos los rehenes fueron liberados tras el asedio militar de la Operación Libertad."
+        },
+        "34": {
+                "date": "12 de abril, 2012",
+                "cat": "Ataque Aéreo",
+                "title": "Derribo de helicóptero en Kepashiato",
+                "place": "Alto Lagunas, Kepashiato, <b>Cusco</b>",
+                "desc": "Columna terrorista atacó un helicóptero de la PNP en misión de rescate por el secuestro de Camisea. Falleció heroicamente la <b>capitana PNP Nancy Flores Páucar</b>."
+        },
+        "35": {
+                "date": "9 de abril, 2016",
+                "cat": "Emboscada",
+                "title": "Emboscada electoral de Acobamba",
+                "place": "Santo Domingo de Acobamba, <b>Junín</b>",
+                "desc": "Ataque a una patrulla que custodiaba material electoral a un día de los comicios generales, dejando <b>10 muertos</b> (8 militares y 2 civiles)."
+        },
+        "36": {
+                "date": "6 de septiembre, 2017",
+                "cat": "Atentado",
+                "title": "Atentado a la patrulla en Anco",
+                "place": "Churcampa, <b>Huancavelica</b>",
+                "desc": "Emboscada a dos patrulleros de la PNP en la carretera hacia Churcampa, cobrando la vida de <b>4 efectivos policiales</b>."
+        },
+        "37": {
+                "date": "8 de junio, 2018",
+                "cat": "Emboscada",
+                "title": "Emboscada de Churcampa",
+                "place": "Churcampa, <b>Huancavelica</b> — zona de Huachocolpa",
+                "desc": "Ataque contra una patrulla policial en labores de patrullaje rutinario en Huachocolpa, donde fallecieron <b>4 agentes de la PNP</b>."
+        },
+        "38": {
+                "date": "23 de mayo, 2021",
+                "cat": "Masacre",
+                "title": "Masacre de San Miguel del Ene",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "Incursión del MPCP en una zona de locales nocturnos a orillas del río Ene. Ejecutaron a <b>16 personas</b>, incluyendo mujeres y menores de edad."
+        },
+        "39": {
+                "date": "11 de febrero, 2023",
+                "cat": "Emboscada",
+                "title": "Emboscada en Natividad",
+                "place": "Pichari, <b>Cusco / VRAEM</b>",
+                "desc": "Atentado contra un vehículo blindado de la PNP con ráfagas de fusil en un camino afirmado, causando el fallecimiento de <b>7 policías</b>."
+        },
+        "40": {
+                "date": "15 de abril, 2024",
+                "cat": "Operación",
+                "title": "Operación de combate en Vizcatán",
+                "place": "Valle de Vizcatán, Satipo, <b>Junín / VRAEM</b>",
+                "desc": "<b>Historial:</b> La cúpula del MPCP abrió fuego contra los efectivos durante un enfrentamiento en plena selva, resultando en la muerte del valeroso oficial de la Marina de Guerra del Perú <b>Wilmer Delgado</b> (Técnico 3.°)."
+        },
+        "41": {
+                "date": "6 de abril, 2025",
+                "cat": "Operativo",
+                "title": "Operativo y choque en Huancavelica",
+                "place": "Sector montañoso, distrito de Anco, <b>Huancavelica</b>",
+                "desc": "<b>Historial:</b> Células armadas del MPCP sostuvieron un choque armado con patrullas de las Fuerzas Especiales para frenar la destrucción de campos de entrenamiento. Se incautó armamento de guerra y pertrechos."
+        }
+}
+    },
+    en: {
+      eyebrow: "PERU · PACIFICATION AND HISTORICAL MEMORY HALL",
+      title: "Chronology of <span>Terrorism</span> in Peru (1980 — 2026)",
+      subhead: "Historical timeline of attacks, massacres, incursions, and clashes linked to Sendero Luminoso, the MRTA, and the MPCP in Ayacucho, Junín, Huancavelica, Cusco, Lima, San Martín, Huánuco, Pasco, and the VRAEM.",
+      legend_attack: "Attack / Massacre",
+      legend_op: "Operation / Engagement",
+      photo_label: "PHOTOGRAPHIC RECORD",
+      photo_view: "VIEW PHOTO",
+      btn_prev: "Scroll to left",
+      btn_next: "Scroll to right",
+      footer_army: "PERUVIAN ARMY",
+      footer_text: "Official historical record of attacks and armed clashes during the internal conflict in Peru (1980–2026). National Pacification and Historical Memory Hall.",
+      events: {
+        "1": {
+                "date": "May 17, 1980",
+                "cat": "Attack",
+                "title": "Chuschi Attack",
+                "place": "Cangallo, <b>Ayacucho</b>",
+                "desc": "Burning of ballot boxes and electoral records by Sendero Luminoso. <b>Marked the start of terrorist violence</b> in Peru."
+        },
+        "2": {
+                "date": "July 5, 1982",
+                "cat": "Attack",
+                "title": "Attack on Ñaña Police Post",
+                "place": "Ñaña, <b>Lima</b>",
+                "desc": "Night assault by Sendero Luminoso to seize weapons and ammunition. Officers <b>Luis Muñoz</b> and <b>Luis Navarrete</b> were killed; heroic resistance prevented the post from being captured."
+        },
+        "3": {
+                "date": "October 6, 1982",
+                "cat": "Attack",
+                "title": "Attack on Mayocc Outpost",
+                "place": "Mayocc, <b>Huancavelica</b> and Huanta",
+                "desc": "Clash between Sendero Luminoso and Civil Guard leaving <b>4 police dead</b> and 3 wounded. In Huanta, 18 dynamite bombings were staged as diversions."
+        },
+        "4": {
+                "date": "1982–1984",
+                "cat": "Massacre",
+                "title": "Violence in Chungui and Oreja de Perro",
+                "place": "Chungui and Oreja de Perro, <b>Ayacucho</b>",
+                "desc": "Systematic Sendero Luminoso terror against rural communities: <b>mass executions</b>, kidnappings, disappearances, looting, and forced peasant displacement."
+        },
+        "5": {
+                "date": "April 3, 1983",
+                "cat": "Massacre",
+                "title": "Lucanamarca Massacre",
+                "place": "Huanca Sancos, <b>Ayacucho</b>",
+                "desc": "Slaughter of <b>69 peasants</b> with axes, machetes, and firearms by direct command of Abimael Guzmán."
+        },
+        "6": {
+                "date": "January and July, 1984",
+                "cat": "Incursion",
+                "title": "Incursions into Aucayacu",
+                "place": "Aucayacu, Leoncio Prado, <b>Huánuco</b>",
+                "desc": "Armed raids against the police station and terror campaign in the Alto Huallaga, including <b>targeted murders</b> of local authorities and opposed villagers."
+        },
+        "7": {
+                "date": "August 29, 1985",
+                "cat": "Attack",
+                "title": "Attack on Vilcashuamán",
+                "place": "Vilcashuamán, <b>Ayacucho</b>",
+                "desc": "Dynamite blast against the Civil Guard outpost and town hall, leaving <b>6 police officers</b> and several civilians dead."
+        },
+        "8": {
+                "date": "February 17, 1987",
+                "cat": "Massacre",
+                "title": "Cochas Massacre",
+                "place": "Cochas, <b>Ayacucho</b>",
+                "desc": "Occurred on February 17, 1987, in the community of Cochas, Ayacucho. An armed Sendero Luminoso column violently raided the town, forcing residents into the main square and opening fire indiscriminately on the crowd, leaving <b>30 villagers dead</b> as punishment for resisting senderista ideology and defending their territory."
+        },
+        "9": {
+                "date": "Year 1987",
+                "cat": "Sabotage",
+                "title": "Attacks on SAIS Cahuide & Pachacútec",
+                "place": "Jauja and Huancayo, <b>Junín</b>",
+                "desc": "Systematic attacks against agricultural societies SAIS Cahuide and Pachacútec; <b>murder of the administrator</b>, machinery destruction, looting, and arson."
+        },
+        "10": {
+                "date": "October 18, 1987",
+                "cat": "Attack",
+                "title": "MRTA Attack on Soritor",
+                "place": "Soritor, Moyobamba, <b>San Martín</b>",
+                "desc": "MRTA column raided Soritor, attacking police and municipal buildings and staging a forced public armed gathering for propaganda."
+        },
+        "11": {
+                "date": "November 6, 1987",
+                "cat": "Incursion",
+                "title": "MRTA Incursion in Juanjuí",
+                "place": "Juanjuí, <b>San Martín</b>",
+                "desc": "Armed raid targeting public offices and police posts in Juanjuí, killing one police officer. Simultaneous incursions occurred in Campanilla, Tabalosos, and Sisa."
+        },
+        "12": {
+                "date": "January 2, 1988",
+                "cat": "Attack",
+                "title": "Attack on Puerto Ocopa",
+                "place": "Puerto Ocopa, Satipo, <b>Junín</b>",
+                "desc": "Sendero Luminoso militants raided the native community of Puerto Ocopa, looting stores and <b>murdering a local resident</b>."
+        },
+        "13": {
+                "date": "February 18, 1988",
+                "cat": "Attack",
+                "title": "Sendero Attack in Lachocc",
+                "place": "Lachocc, <b>Huancavelica</b>",
+                "desc": "Armed assault and ambush by Sendero Luminoso targeting civilians and passenger vehicles along the Lachocc mountain highway."
+        },
+        "14": {
+                "date": "March 13, 1988",
+                "cat": "Attack",
+                "title": "MRTA Attack in Pichanaki",
+                "place": "Pichanaki, Chanchamayo, <b>Junín</b>",
+                "desc": "Armed harassment and assault on the Pichanaki police outpost during an MRTA offensive across the central jungle."
+        },
+        "15": {
+                "date": "April 20, 1988",
+                "cat": "Massacre",
+                "title": "Aranhuay Massacre",
+                "place": "Aranhuay, <b>Ayacucho</b>",
+                "desc": "Occurred on April 20, 1988, in the community of Aranhuay, Ayacucho. Sendero Luminoso members entered the town disguised in military uniforms. By deceit, they gathered the population in the main square, lined up the villagers, and <b>murdered 27 peasants</b> in retaliation because the community refused to support them and had organized self-defense committees."
+        },
+        "16": {
+                "date": "April 20, 1988",
+                "cat": "Incursion",
+                "title": "Raid & Takeover of Pichanaki",
+                "place": "Pichanaki, <b>Junín</b>",
+                "desc": "An MRTA column re-entered Pichanaki, holding a public armed gathering as part of its armed propaganda drive."
+        },
+        "17": {
+                "date": "November 17, 1988",
+                "cat": "Assassination",
+                "title": "Attacks on Pasco Communities",
+                "place": "Pillao and Astobamba, <b>Pasco</b>",
+                "desc": "Sendero Luminoso assassinated community leaders and local officials in Pillao and Astobamba to crush civic governance."
+        },
+        "18": {
+                "date": "March 27, 1989",
+                "cat": "Attack",
+                "title": "Attack on Uchiza Outpost",
+                "place": "Tocache, <b>San Martín</b>",
+                "desc": "Siege and destruction of the police post by an alliance of Sendero Luminoso and narcotraffickers, leaving <b>10 police dead</b>."
+        },
+        "19": {
+                "date": "May 21, 1989",
+                "cat": "Sabotage",
+                "title": "Attack on ONERG Tulumayo",
+                "place": "Leoncio Prado, <b>Huánuco</b>",
+                "desc": "Assassination of agricultural engineers and systematic demolition of governmental farming infrastructure."
+        },
+        "20": {
+                "date": "June 3, 1989",
+                "cat": "Attack",
+                "title": "Attack on Húsares de Junín",
+                "place": "Jirón Junín, <b>Lima</b>",
+                "desc": "Dynamite bomb destroyed the bus carrying the Húsares de Junín Regiment to the Presidential Palace guard relief. <b>6 soldiers died</b> and 25 were severely wounded."
+        },
+        "21": {
+                "date": "Year 1989",
+                "cat": "Assassination",
+                "title": "Murders in Chongos Alto & Chicche",
+                "place": "Chongos Alto and Chicche, <b>Junín</b>",
+                "desc": "Sendero Luminoso escalated targeted killings of village mayors and community leaders to impose its self-proclaimed 'new power'."
+        },
+        "22": {
+                "date": "1990–1993",
+                "cat": "Massacre",
+                "title": "Attacks in Central Jungle",
+                "place": "Satipo, Pangoa & Ene Valley, <b>Junín</b>",
+                "desc": "Wave of murders, forced abductions, and mass displacement of native Asháninkas and settlers across the central jungle by Sendero Luminoso."
+        },
+        "23": {
+                "date": "January 22, 1991",
+                "cat": "Ambush",
+                "title": "Rancha–Huascahura Ambush",
+                "place": "Rancha–Huascahura, <b>Ayacucho</b>",
+                "desc": "Sendero Luminoso ambushed a National Police patrol on the road with explosives and rifle fire, killing <b>11 police officers</b>."
+        },
+        "24": {
+                "date": "January 8, 1993",
+                "cat": "Incursion",
+                "title": "MRTA Incursion in Moyobamba",
+                "place": "Moyobamba, Rioja & Juanjuí, <b>San Martín</b>",
+                "desc": "Armed incursion by MRTA attacking police quarters, civic offices, and the San Cristóbal penitentiary to free inmates and terrorize the region."
+        },
+        "25": {
+                "date": "August 18, 1993",
+                "cat": "Massacre",
+                "title": "Mazamari Valley Massacre",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "Extermination campaign targeting the native Asháninka organized in self-defense groups. <b>72 indigenous people</b> were killed."
+        },
+        "26": {
+                "date": "May 31, 1996",
+                "cat": "Ambush",
+                "title": "Nuevo Bambamarca Ambush",
+                "place": "Tocache, <b>San Martín</b>",
+                "desc": "Sendero Luminoso elements under comrade 'Artemio' executed an armed ambush against a Peruvian Army military patrol in Nuevo Bambamarca."
+        },
+        "27": {
+                "date": "October 2, 1999",
+                "cat": "Ambush",
+                "title": "Anapati Ambush",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "Quispe Palomino columns ambushed a military patrol, claiming the lives of <b>5 military personnel</b>."
+        },
+        "28": {
+                "date": "2000–2007",
+                "cat": "Remnants",
+                "title": "Persistence of Terrorist Remnants",
+                "place": "Alto Huallaga and <b>VRAEM</b>",
+                "desc": "Following Guzmán's arrest, armed remnants continued attacks: Artemio's faction in Huallaga and the Quispe Palomino clan in VRAEM backed by narcotrafficking."
+        },
+        "29": {
+                "date": "October 2, 2008",
+                "cat": "Ambush",
+                "title": "Ocobamba Ambush",
+                "place": "La Convención, <b>Cusco</b>",
+                "desc": "Explosives blast against an Army 31st Infantry Brigade convoy, leaving <b>19 dead</b> (12 soldiers and 7 civilians)."
+        },
+        "30": {
+                "date": "April 9, 2009",
+                "cat": "Attack",
+                "title": "Sanabamba Attack",
+                "place": "Huanta, <b>Ayacucho</b>",
+                "desc": "Ambush against Armed Forces patrols using homemade mines and snipers. Toll of <b>15 soldiers killed in action</b>."
+        },
+        "31": {
+                "date": "September 2, 2009",
+                "cat": "Air Attack",
+                "title": "Downing of Mi-17 Helicopter",
+                "place": "Santo Domingo de Acobamba, <b>Junín</b>",
+                "desc": "Downing with heavy anti-materiel gunfire of an Air Force helicopter on a rescue mission, killing <b>3 crew members</b>."
+        },
+        "32": {
+                "date": "April 21, 2010",
+                "cat": "Clash",
+                "title": "Attack on Anco Base",
+                "place": "La Mar, <b>Ayacucho</b>",
+                "desc": "Harassment with mortar shells and rifle fire against the army base, causing the death of <b>1 soldier</b>."
+        },
+        "33": {
+                "date": "April 9, 2012",
+                "cat": "Kidnapping",
+                "title": "Mass Kidnapping in Camisea",
+                "place": "Kepashiato, Echarate, <b>Cusco</b>",
+                "desc": "Abduction of <b>36 gas workers</b> by Sendero Luminoso demanding 10 million dollars. All hostages were released following relentless pressure in Operation Libertad."
+        },
+        "34": {
+                "date": "April 12, 2012",
+                "cat": "Air Attack",
+                "title": "Downing of Police Helicopter in Kepashiato",
+                "place": "Alto Lagunas, Kepashiato, <b>Cusco</b>",
+                "desc": "Terrorist column fired upon a PNP search and rescue helicopter during Operation Libertad. <b>PNP Captain Nancy Flores Páucar</b> heroically gave her life."
+        },
+        "35": {
+                "date": "April 9, 2016",
+                "cat": "Ambush",
+                "title": "Pre-Election Day Ambush",
+                "place": "Santo Domingo de Acobamba, <b>Junín</b>",
+                "desc": "Attack on a military convoy transporting ballot papers one day before elections, killing <b>10 individuals</b> (8 soldiers, 2 civilians)."
+        },
+        "36": {
+                "date": "September 6, 2017",
+                "cat": "Attack",
+                "title": "Attack on Police Patrol in Anco",
+                "place": "Churcampa, <b>Huancavelica</b>",
+                "desc": "Ambush of two patrol cruisers on the Churcampa route, taking the lives of <b>4 police officers</b>."
+        },
+        "37": {
+                "date": "June 8, 2018",
+                "cat": "Ambush",
+                "title": "Churcampa Ambush",
+                "place": "Churcampa, <b>Huancavelica</b> — Huachocolpa sector",
+                "desc": "Attack against a police cruiser conducting routine patrols in Huachocolpa, killing <b>4 PNP officers</b>."
+        },
+        "38": {
+                "date": "May 23, 2021",
+                "cat": "Massacre",
+                "title": "San Miguel del Ene Massacre",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "MPCP incursion into entertainment establishments near the Ene River. They murdered <b>16 people</b>, including women and children."
+        },
+        "39": {
+                "date": "February 11, 2023",
+                "cat": "Ambush",
+                "title": "Natividad Ambush",
+                "place": "Pichari, <b>Cusco / VRAEM</b>",
+                "desc": "Ambush against a police tactical pickup truck using rifle fire on a rural dirt road, killing <b>7 police officers</b>."
+        },
+        "40": {
+                "date": "April 15, 2024",
+                "cat": "Operation",
+                "title": "Combat Operation in Vizcatán",
+                "place": "Vizcatán Valley, Satipo, <b>Junín / VRAEM</b>",
+                "desc": "<b>History:</b> MPCP armed leaders opened fire during a deep jungle skirmish, causing the heroic death of Navy Officer <b>Wilmer Delgado</b>."
+        },
+        "41": {
+                "date": "April 6, 2025",
+                "cat": "Operation",
+                "title": "Operation & Clashes in Huancavelica",
+                "place": "Mountain sector, Anco district, <b>Huancavelica</b>",
+                "desc": "<b>History:</b> Armed cells of the MPCP engaged Special Forces patrols attempting to disrupt secret training encampments. War weaponry and supplies were captured."
+        }
+}
+    },
+    qu: {
+      eyebrow: "PERÚ · QASIKAY HINALLATAQ WIÑAY KAWSAY HALLP'A",
+      title: "Perú suyupi <span>Terrorismo</span> pacha siq'i (1980 — 2026)",
+      subhead: "Sendero Luminoso, MRTA hinallataq MPCP terrorismo tantanakuykuna ruwasqanku atentadokuna, wañuchiyninkuna, maqanakuyninkuna Ayacucho, Junín, Huancavelica, Cusco, Lima, San Martín, Huánuco, Pasco hinallataq VRAEM suyukunapi.",
+      legend_attack: "Atentado / Wañuchiy",
+      legend_op: "Operativo / Maqanakuy",
+      photo_label: "FOTO QILLQA",
+      photo_view: "FOTOTA QHAWAY",
+      btn_prev: "Lloq'eman puriy",
+      btn_next: "Pañaman puriy",
+      footer_army: "PERÚ MAMALLAQTA AWQALLIQ",
+      footer_text: "Perú suyupi ukhu awqanakuypi atentadokunamanta maqanakuykunamanta kamachisqa wiñay qillqa (1980–2026). Qasikay Hallp'a.",
+      events: {
+        "1": {
+                "date": "17 mayo, 1980",
+                "cat": "Atentado",
+                "title": "Chuschipi Atentado",
+                "place": "Cangallo, <b>Ayacucho</b>",
+                "desc": "Sendero Luminoso akllana k'aspikunata papilkunatapas kañaykurqan. <b>Perú suyupi terrorismo ruway qallarisqanmi</b> karqan."
+        },
+        "2": {
+                "date": "5 julio, 1982",
+                "cat": "Maqanakuy",
+                "title": "Ñañapi Pulisya Wasiman Yaykuy",
+                "place": "Ñaña, <b>Lima</b>",
+                "desc": "Sendero Luminoso tutapi pulisya wasiman yaykurqan armakunata suwanankupaq. Pulisiya <b>Luis Muñoz</b> hinallataq <b>Luis Navarrete</b> wañurqanku, amachaywan wasita mana qechuchikurqankuchu."
+        },
+        "3": {
+                "date": "6 octubre, 1982",
+                "cat": "Maqanakuy",
+                "title": "Mayocpi Pulisya Wasiman Yaykuy",
+                "place": "Mayocc, <b>Huancavelica</b> hinallataq Huanta",
+                "desc": "Sendero Luminoso Guardia Civilwan Mayocpi maqanakurqan, <b>4 pulisiyakuna wañurqanku</b>. Huantapi 18 dinamitawan pantachiy atentadokunata rurarqanku."
+        },
+        "4": {
+                "date": "1982–1984",
+                "cat": "Wañuchiy",
+                "title": "Chunguipi Oreja de Perropi Wañuchiykuna",
+                "place": "Chungui hinallataq Oreja de Perro, <b>Ayacucho</b>",
+                "desc": "Sendero Luminoso ayllu runakunapa contranpi llumpay millay ruwaykunata rurarqan: <b>achka runakuna wañuchiy</b>, runa suway, chinkachiy hinallataq allpamanta qarquy."
+        },
+        "5": {
+                "date": "3 abril, 1983",
+                "cat": "Wañuchiy",
+                "title": "Lucanamarcapi Wañuchiy",
+                "place": "Huanca Sancos, <b>Ayacucho</b>",
+                "desc": "Abimael Guzmánpa kamachiyninwan <b>69 ayllu runakunata</b> hachawan, machitewan, illapakunawan wañuchirqanku."
+        },
+        "6": {
+                "date": "Enero hinallataq Julio, 1984",
+                "cat": "Yaykuy",
+                "title": "Aucayacuman Yaykuykuna",
+                "place": "Aucayacu, Leoncio Prado, <b>Huánuco</b>",
+                "desc": "Pulisya wasiman armayuq yaykuykuna hinallataq Alto Huallagapi <b>umalliqkunata wañuchiykuna</b> Sendero Luminosopa contranpi churakuptinku."
+        },
+        "7": {
+                "date": "29 agosto, 1985",
+                "cat": "Maqanakuy",
+                "title": "Vilcashuamánpi Maqanakuy",
+                "place": "Vilcashuamán, <b>Ayacucho</b>",
+                "desc": "Guardia Civil wasita munisipyu wasitapas dinamitawan tuñichirqanku, <b>6 pulisiyakuna</b> hinallataq llaqta runakunapas wañurqanku."
+        },
+        "8": {
+                "date": "17 febrero, 1987",
+                "cat": "Wañuchiy",
+                "title": "Cochaspi Wañuchiy",
+                "place": "Cochas, <b>Ayacucho</b>",
+                "desc": "17 febrero 1987 watapi Cochas ayllupi, Ayacuchopi karqan. Sendero Luminoso armayuq t'aqa llaqtaman llumpay maqaspa yaykurqan, runakunata plazaman huñuchispa nina armawan illaparqanku, <b>30 ayllu runakunata wañuchispa</b> senderismoman mana k'umuykusqankurayku hinallataq allpankuta amachasqankurayku."
+        },
+        "9": {
+                "date": "Wata 1987",
+                "cat": "Waqlliy",
+                "title": "SAIS Cahuide Pachacútec Wasikunata Waqlliy",
+                "place": "Jauja hinallataq Huancayo, <b>Junín</b>",
+                "desc": "SAIS Cahuide hinallataq Pachacútec chakra wasikunata tuñichirqanku; <b>umalliqninta wañuchispa</b>, makinakunata kañaykuspa uywakunatapas suwarqanku."
+        },
+        "10": {
+                "date": "18 octubre, 1987",
+                "cat": "Maqanakuy",
+                "title": "MRTApa Soritorman Yaykuynin",
+                "place": "Soritor, Moyobamba, <b>San Martín</b>",
+                "desc": "MRTA armayuq t'aqa Soritor llaqtaman yaykurqan, pulisya wasita munisipyutapas maqaparqan, propagandata ruranankupaq llaqtata huñuchispa."
+        },
+        "11": {
+                "date": "6 noviembre, 1987",
+                "cat": "Yaykuy",
+                "title": "MRTApa Juanjuíman Yaykuynin",
+                "place": "Juanjuí, <b>San Martín</b>",
+                "desc": "MRTA Juanjuí pulisya wasikunaman yaykurqan, huk pulisiya wañurqan. Campanillapi, Tabalosospi hinallataq Sisapipas chhayna yaykuykunata rurarqanku."
+        },
+        "12": {
+                "date": "2 enero, 1988",
+                "cat": "Maqanakuy",
+                "title": "Puerto Ocopaman Yaykuy",
+                "place": "Puerto Ocopa, Satipo, <b>Junín</b>",
+                "desc": "Sendero Luminoso runakuna Puerto Ocopa nativo aylluman yaykurqanku, tiendakunata suwarqanku hinallataq <b>huk llaqta runata wañuchirqanku</b>."
+        },
+        "13": {
+                "date": "18 febrero, 1988",
+                "cat": "Maqanakuy",
+                "title": "Lachoccpi Sendero Maqanakuy",
+                "place": "Lachocc, <b>Huancavelica</b>",
+                "desc": "Sendero Luminoso Lachocc ñanpi puriq runakunata karrokunatapas armakunawan pakakuspa maqaparqanku."
+        },
+        "14": {
+                "date": "13 marzo, 1988",
+                "cat": "Maqanakuy",
+                "title": "MRTApa Pichanakipi Maqanakuynin",
+                "place": "Pichanaki, Chanchamayo, <b>Junín</b>",
+                "desc": "MRTA pulisya wasita Pichanakipi fusilkunawan maqaparqan, chawpi sach'a-sach'a suyupi manchachiyta mast'arispa."
+        },
+        "15": {
+                "date": "20 abril, 1988",
+                "cat": "Wañuchiy",
+                "title": "Aranhuaypi Wañuchiy",
+                "place": "Aranhuay, <b>Ayacucho</b>",
+                "desc": "20 abril 1988 watapi Aranhuay ayllupi, Ayacuchopi karqan. Sendero Luminoso runakuna militar pachawan pachasqa yaykurqanku. Pantachispa runakunata plazaman huñurqanku, filapi sayachispa <b>27 chakra runakunata wañuchirqanku</b> yanapayta mana munasqankurayku hinallataq amachakuy ronderokunata qallarisqankurayku."
+        },
+        "16": {
+                "date": "20 abril, 1988",
+                "cat": "Yaykuy",
+                "title": "Pichanakiman Yapamanta Yaykuy",
+                "place": "Pichanaki, <b>Junín</b>",
+                "desc": "MRTA t'aqa yapamanta Pichanaki llaqtaman yaykurqan, runakunata plazapi huñuspa propagandata ruranankupaq."
+        },
+        "17": {
+                "date": "17 noviembre, 1988",
+                "cat": "Wañuchiy",
+                "title": "Pascopi Ayllukunata Maqay",
+                "place": "Pillao hinallataq Astobamba, <b>Pasco</b>",
+                "desc": "Sendero Luminoso llaqta umalliqkunata wañuchirqan ayllu kamachiyninta p'akispa paykunapa munayninta churanankupaq."
+        },
+        "18": {
+                "date": "27 marzo, 1989",
+                "cat": "Maqanakuy",
+                "title": "Uchiza Pulisya Wasipi Maqanakuy",
+                "place": "Tocache, <b>San Martín</b>",
+                "desc": "Sendero Luminoso narcotráficowan huñunakuspa pulisya wasita tuñichirqanku, <b>10 pulisiyakunata wañuchispa</b>."
+        },
+        "19": {
+                "date": "21 mayo, 1989",
+                "cat": "Sabotaje",
+                "title": "Tulumayopi ONERG Wasipi Maqanakuy",
+                "place": "Leoncio Prado, <b>Huánuco</b>",
+                "desc": "Ingenierokunata wañuchirqanku hinallataq chakra kamachiq wasikunata tuñichirqanku."
+        },
+        "20": {
+                "date": "3 junio, 1989",
+                "cat": "Atentado",
+                "title": "Húsares de Junín Wasinman Bombaswan Maqay",
+                "place": "Jirón Junín, <b>Lima</b>",
+                "desc": "Dinamitawan Húsares de Junín soldadokunapa busta tuñichirqanku Palacio de Gobiernoman richkaptinku. <b>6 soldadokunam wañurqanku</b>, 25 k'irisqa karqanku."
+        },
+        "21": {
+                "date": "Wata 1989",
+                "cat": "Wañuchiy",
+                "title": "Chongos Alto Chicchepi Umalliqkunata Wañuchiy",
+                "place": "Chongos Alto hinallataq Chicche, <b>Junín</b>",
+                "desc": "Sendero Luminoso alcaldekuna ayllu umalliqkunata wañuchiyta kallpachirqan, paykunapa 'mosoq kamachiyta' churanankupaq."
+        },
+        "22": {
+                "date": "1990–1993",
+                "cat": "Wañuchiy",
+                "title": "Chawpi Sach'a-sach'api Wañuchiykuna",
+                "place": "Satipo, Pangoa hinallataq Valle del Ene, <b>Junín</b>",
+                "desc": "Sendero Luminoso Asháninka runakunata chakra runakunatapas wañuchirqan, suwarqan hinallataq wasinkumanta qarqumurqan."
+        },
+        "23": {
+                "date": "22 enero, 1991",
+                "cat": "Emboscada",
+                "title": "Rancha–Huascahurapi Pakasqa Maqanakuy",
+                "place": "Rancha–Huascahura, <b>Ayacucho</b>",
+                "desc": "Sendero Luminoso ñanpi pulisya patrullata bombaswan illapakunawan maqaparqanku, <b>11 pulisiyakuna wañurqanku</b>."
+        },
+        "24": {
+                "date": "8 enero, 1993",
+                "cat": "Yaykuy",
+                "title": "MRTApa Moyobambaman Yaykuynin",
+                "place": "Moyobamba, Rioja hinallataq Juanjuí, <b>San Martín</b>",
+                "desc": "MRTA Moyobamba llaqtaman yaykuspa pulisya wasikunata, San Cristóbal carcel nisqatapas maqaparqan presoskunata kacharinankupaq."
+        },
+        "25": {
+                "date": "18 agosto, 1993",
+                "cat": "Wañuchiy",
+                "title": "Mazamari Qallupi Wañuchiy",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "Asháninka ayllukunapa contranpi hatun wañuchiy. <b>72 indíjena runakunata</b> wañuchirqanku."
+        },
+        "26": {
+                "date": "31 mayo, 1996",
+                "cat": "Emboscada",
+                "title": "Nuevo Bambamarcapi Pakasqa Maqanakuy",
+                "place": "Tocache, <b>San Martín</b>",
+                "desc": "'Artemio'pa umallisqan Sendero Luminoso t'aqa Ejército soldadokunapa patrullanta Nuevo Bambamarcapi pakakuspa maqaparqanku."
+        },
+        "27": {
+                "date": "2 octubre, 1999",
+                "cat": "Emboscada",
+                "title": "Anapatipi Pakasqa Maqanakuy",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "Quispe Palomino runakuna militar patrullata pakakuspa maqaparqanku, <b>5 militarkunata wañuchispa</b>."
+        },
+        "28": {
+                "date": "2000–2007",
+                "cat": "Puchukuna",
+                "title": "Terrorismo Puchukunapa Kawsasqan",
+                "place": "Alto Huallaga hinallataq <b>VRAEM</b>",
+                "desc": "Guzmán hap'isqa kaptinpas, 'Artemio' Huallagapi hinallataq Quispe Palomino wawkikuna VRAEMpi maqanakuykunata narcotráficowan kuska qatichirqanku."
+        },
+        "29": {
+                "date": "2 octubre, 2008",
+                "cat": "Emboscada",
+                "title": "Ocobambapi Pakasqa Maqanakuy",
+                "place": "La Convención, <b>Cusco</b>",
+                "desc": "31ª Brigada de Infantería convoyta bombaswan maqaparqanku, <b>19 runakuna wañurqanku</b> (12 militarkuna, 7 llaqta runakuna)."
+        },
+        "30": {
+                "date": "9 abril, 2009",
+                "cat": "Maqanakuy",
+                "title": "Sanabambapi Maqanakuy",
+                "place": "Huanta, <b>Ayacucho</b>",
+                "desc": "Fuerzas Armadas patrullata minakunawan francotiradorkunawan maqaparqanku. <b>15 militarkunam wañurqanku</b>."
+        },
+        "31": {
+                "date": "2 septiembre, 2009",
+                "cat": "Wayra Maqanakuy",
+                "title": "Mi-17 Helicóptero Urmachiy",
+                "place": "Santo Domingo de Acobamba, <b>Junín</b>",
+                "desc": "Fuerza Aérea helicópterota hatun illapakunawan urmachirqanku qespichiy ruwaypi, <b>3 militarkunata wañuchispa</b>."
+        },
+        "32": {
+                "date": "21 abril, 2010",
+                "cat": "Maqanakuy",
+                "title": "Ancopi Base Militarman Yaykuy",
+                "place": "La Mar, <b>Ayacucho</b>",
+                "desc": "Base militarta morterokunawan fusilkunawan maqaparqanku, <b>huk militarmi wañurqan</b>."
+        },
+        "33": {
+                "date": "9 abril, 2012",
+                "cat": "Runa Suway",
+                "title": "Camiseapi Hatun Runa Suway",
+                "place": "Kepashiato, Echarate, <b>Cusco</b>",
+                "desc": "Camiseamanta <b>36 llamk'aqkunata</b> Sendero Luminoso suwarqan 10 millon dólarta mañaspa. Llapankunam qispichisqa karqanku Operación Libertad ruwaypi."
+        },
+        "34": {
+                "date": "12 abril, 2012",
+                "cat": "Wayra Maqanakuy",
+                "title": "Kepashiatopi Pulisya Helicóptero Urmachiy",
+                "place": "Alto Lagunas, Kepashiato, <b>Cusco</b>",
+                "desc": "Terrorista t'aqa PNP helicópteroman illaparqan Camisea llamk'aqkunata qispichiy llamk'aypi. Valerosa <b>capitana PNP Nancy Flores Páucar</b> kawsayninta qurqan."
+        },
+        "35": {
+                "date": "9 abril, 2016",
+                "cat": "Emboscada",
+                "title": "Akllanakuy Ñawpaqninpi Maqanakuy",
+                "place": "Santo Domingo de Acobamba, <b>Junín</b>",
+                "desc": "Akllana papilta amachaq patrullata maqaparqanku akllanakuy ñawpaqnin p'unchawpi, <b>10 runakuna wañurqanku</b> (8 militarkuna, 2 llaqta runakuna)."
+        },
+        "36": {
+                "date": "6 septiembre, 2017",
+                "cat": "Atentado",
+                "title": "Ancopi Pulisya Patrullaman Atentado",
+                "place": "Churcampa, <b>Huancavelica</b>",
+                "desc": "Iskay PNP patrulleronkunata Churcampa ñanpi maqaparqanku, <b>4 pulisiyakunapa kawsayninta qusqanwan</b>."
+        },
+        "37": {
+                "date": "8 junio, 2018",
+                "cat": "Emboscada",
+                "title": "Churcampapi Pakasqa Maqanakuy",
+                "place": "Churcampa, <b>Huancavelica</b> — Huachocolpa suyupi",
+                "desc": "Pulisya patrullata rutinapi llamkachkaptin Huachocolpapi maqaparqanku, <b>4 PNP pulisiyakuna wañurqanku</b>."
+        },
+        "38": {
+                "date": "23 mayo, 2021",
+                "cat": "Wañuchiy",
+                "title": "San Miguel del Enepi Wañuchiy",
+                "place": "Satipo, <b>Junín / VRAEM</b>",
+                "desc": "MPCP runakuna Ene mayu patapi wasikunaman yaykurqanku. <b>16 runakunatam wañuchirqanku</b>, warmikunata wawakunata ima."
+        },
+        "39": {
+                "date": "11 febrero, 2023",
+                "cat": "Emboscada",
+                "title": "Natividadpi Pakasqa Maqanakuy",
+                "place": "Pichari, <b>Cusco / VRAEM</b>",
+                "desc": "PNP blindado karrota fusilkunawan maqaparqanku allpa ñanpi, <b>7 pulisiyakunatam wañuchirqanku</b>."
+        },
+        "40": {
+                "date": "15 abril, 2024",
+                "cat": "Operación",
+                "title": "Vizcatánpi Operación hinallataq Maqanakuy",
+                "place": "Vizcatán Qallupi, Satipo, <b>Junín / VRAEM</b>",
+                "desc": "<b>Willakuy:</b> MPCP umalliqkuna k'ita sach'a ukhupi militarkunaman illaparqanku, Marina de Guerra del Perú valeroso oficial <b>Wilmer Delgado</b> wañupurqan."
+        },
+        "41": {
+                "date": "6 abril, 2025",
+                "cat": "Operación",
+                "title": "Huancavelicapi Operativo hinallataq Maqanakuy",
+                "place": "Urqu suyupi, Anco distritu, <b>Huancavelica</b>",
+                "desc": "<b>Willakuy:</b> MPCP armayuq runakuna Fuerzas Especiales patrullakunawan maqanakurqanku yachana wasikuna mana tuñichisqa kananpaq. Awqa illapakunata hap'irqanku."
+        }
+}
+    }
+  };
+
+  // Función para aplicar idioma
+  function applyLanguage(lang) {
+    const active = I18N_DATA[lang] || I18N_DATA['es'];
+    
+    // Header & Globales
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (active[key]) {
+        el.innerHTML = active[key];
+      }
+    });
+
+    // Tooltips / Titles
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+      const key = el.getAttribute('data-i18n-title');
+      if (active[key]) {
+        el.setAttribute('title', active[key]);
+      }
+    });
+
+    // Eventos
+    document.querySelectorAll('.event-column[data-ev]').forEach(col => {
+      const evId = col.getAttribute('data-ev');
+      const evData = active.events && active.events[evId];
+      if (evData) {
+        const dateEl = col.querySelector('[data-field="date"]');
+        const catEl = col.querySelector('[data-field="cat"]');
+        const titleEl = col.querySelector('[data-field="title"]');
+        const placeEl = col.querySelector('[data-field="place"]');
+        const descEl = col.querySelector('[data-field="desc"]');
+
+        if (dateEl && evData.date) dateEl.innerHTML = evData.date;
+        if (catEl && evData.cat) catEl.innerHTML = evData.cat;
+        if (titleEl && evData.title) titleEl.innerHTML = evData.title;
+        if (placeEl && evData.place) placeEl.innerHTML = evData.place;
+        if (descEl && evData.desc) descEl.innerHTML = evData.desc;
+      }
+    });
+  }
+
+  // 1. Detectar idioma de URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialLang = urlParams.get('lang') || 'es';
+  applyLanguage(initialLang);
+
+  // 2. Escuchar cambios vía postMessage desde la aplicación React
+  window.addEventListener('message', (e) => {
+    if (e.data && e.data.type === 'CHANGE_LANG' && e.data.lang) {
+      applyLanguage(e.data.lang);
+    }
+  });
+
+  // 3. Escuchar cambios de idioma vía BroadcastChannel del Kiosko
+  if ('BroadcastChannel' in window) {
+    const channel = new BroadcastChannel('ejercito_kiosk_sync');
+    channel.onmessage = (e) => {
+      if (e.data && e.data.type === 'SET_LANGUAGE' && e.data.payload) {
+        applyLanguage(e.data.payload);
+      }
+    };
+  }
+
+  // CONTROLES INTERACTIVOS PARA LAPTOPS Y DESKTOP
+  const container = document.getElementById('timeline-container');
+  const btnLeft = document.getElementById('btn-scroll-left');
+  const btnRight = document.getElementById('btn-scroll-right');
+
+  btnLeft.addEventListener('click', () => {
+    container.scrollBy({ left: -420, behavior: 'smooth' });
+  });
+
+  btnRight.addEventListener('click', () => {
+    container.scrollBy({ left: 420, behavior: 'smooth' });
+  });
+
+  container.addEventListener('wheel', (e) => {
+    if (e.deltaY !== 0) {
+      e.preventDefault();
+      container.scrollLeft += e.deltaY * 1.5;
+    }
+  }, { passive: false });
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  container.addEventListener('mousedown', (e) => {
+    isDown = true;
+    container.classList.add('dragging');
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
+  });
+
+  window.addEventListener('mouseup', () => {
+    isDown = false;
+    container.classList.remove('dragging');
+  });
+
+  container.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    container.scrollLeft = scrollLeft - walk;
+  });
+
+  // Función interactiva de colapso de texto / visibilidad de registro fotográfico (H-P3-M2)
+  function toggleCardText(btn, e) {
+    if (e) e.stopPropagation();
+    const col = btn.closest('.event-column');
+    if (!col) return;
+    col.classList.toggle('collapsed-text');
+  }
+
+  // Modal Lightbox HD de Registro Fotográfico
+  function openImageModal(url, title) {
+    const modal = document.getElementById('image-lightbox-modal');
+    const img = document.getElementById('lightbox-img');
+    const t = document.getElementById('lightbox-title');
+    if (!modal || !img) return;
+    img.src = url;
+    img.alt = title || 'Fotografía histórica';
+    if (t) t.textContent = title || 'Registro Fotográfico Histórico';
+    modal.style.display = 'flex';
+  }
+
+  function closeImageModal() {
+    const modal = document.getElementById('image-lightbox-modal');
+    if (modal) modal.style.display = 'none';
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeImageModal();
+  });
+</script>
+</body>
+</html>

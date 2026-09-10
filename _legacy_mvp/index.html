@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Táctil del Ejército del Perú - Escuelas de Armas y Héroes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Contenedor Principal (Pantalla Completa) -->
+  <main class="app-container">
+    
+    <!-- Encabezado de la Aplicación -->
+    <header class="app-header">
+      <div class="header-logo">
+        <svg viewBox="0 0 100 100" class="shield-svg">
+          <polygon points="50,5 90,25 90,65 50,95 10,65 10,25" fill="#1b2e1e" stroke="#d4af37" stroke-width="4"/>
+          <line x1="50" y1="5" x2="50" y2="95" stroke="#d4af37" stroke-width="2"/>
+          <polygon points="50,20 70,35 60,65 40,65 30,35" fill="#d4af37"/>
+        </svg>
+      </div>
+      <div class="header-title">
+        <h1>Ejército del Perú</h1>
+        <h2>Mapa Táctil de las Escuelas de Armas y Héroes Nacionales</h2>
+      </div>
+    </header>
+
+    <!-- Contenedor del Mapa Relativo -->
+    <section class="map-viewport">
+      <div id="map-wrapper" class="map-wrapper">
+        <!-- Imagen de Fondo del Mapa -->
+        <img src="assets/mapa_peru.jpg" alt="Mapa del Perú" id="map-bg" class="map-bg">
+        
+        <!-- Contenedor de Marcadores (Se inyectan dinámicamente) -->
+        <div id="markers-container" class="markers-container"></div>
+        
+        <!-- Popup Táctico Rápido (Se muestra sobre el marcador) -->
+        <div id="quick-popup" class="quick-popup hidden">
+          <div class="popup-arrow"></div>
+          <div class="popup-content">
+            <h3 id="popup-title">Nombre de la Escuela</h3>
+            <button id="popup-btn" class="tactical-btn">Ver Detalles</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra de Estado / Instrucciones -->
+    <footer class="app-status-bar">
+      <p><span class="pulse-indicator"></span> Toque un marcador en el mapa para explorar las Escuelas de Armas y sus héroes oficiales.</p>
+    </footer>
+
+    <!-- MODAL PRINCIPAL: Detalle de la Escuela -->
+    <div id="details-modal" class="modal-overlay hidden">
+      <div class="modal-card">
+        <!-- Botón Cerrar Grande (Táctil Friendly) -->
+        <button id="close-modal-btn" class="close-btn" aria-label="Cerrar modal">&times;</button>
+        
+        <!-- Cabecera del Modal -->
+        <div class="modal-header">
+          <div class="school-brand">
+            <div id="school-logo-container" class="school-logo-container">
+              <!-- Se inyecta logo o fallback SVG -->
+            </div>
+            <div class="school-titles">
+              <h2 id="modal-school-name">Escuela de Armas</h2>
+              <span id="modal-school-sede" class="badge-sede">Sede: ---</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cuerpo del Modal -->
+        <div class="modal-body">
+          
+          <!-- Sección del Video y Estado de Reproducción -->
+          <div class="video-section">
+            <div class="video-container">
+              <video id="main-video-player" controls preload="metadata" poster="">
+                <source id="video-source" src="" type="video/mp4">
+                Tu navegador no soporta reproducción de video local.
+              </video>
+              <div id="video-badge" class="video-badge hidden">
+                <span class="pulse-indicator red"></span> <span id="video-badge-text">Reproduciendo Escuela</span>
+              </div>
+            </div>
+            <button id="restore-video-btn" class="tactical-btn-outline hidden">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                <path d="M3 3v5h5"/>
+              </svg>
+              Restaurar Video de Escuela
+            </button>
+          </div>
+
+          <!-- Misión e Información General -->
+          <div class="info-section">
+            <h3 class="section-title">Misión Institucional</h3>
+            <blockquote id="modal-school-mision" class="tactical-quote">
+              Misión de la escuela...
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Sección de Héroes Vinculados -->
+        <div class="modal-footer">
+          <h3 class="section-title">Héroe de la Especialidad</h3>
+          <div id="heroes-container" class="heroes-list">
+            <!-- Se inyectan las tarjetas de héroes dinámicamente -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

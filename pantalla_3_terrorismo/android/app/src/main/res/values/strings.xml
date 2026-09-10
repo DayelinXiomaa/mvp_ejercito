@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Terrorismo</string>
+    <string name="title_activity_main">Terrorismo</string>
+    <string name="package_name">pe.mil.ejercito.terrorismo</string>
+    <string name="custom_url_scheme">pe.mil.ejercito.terrorismo</string>
+</resources>

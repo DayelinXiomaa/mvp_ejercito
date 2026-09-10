@@ -1,0 +1,28 @@
+services:
+  pantalla_1_timeline:
+    build: ./pantalla_1_timeline
+    container_name: pantalla_1_timeline
+    ports:
+      - "5181:80"
+    restart: unless-stopped
+
+  pantalla_2_armas:
+    build: ./pantalla_2_armas
+    container_name: pantalla_2_armas
+    ports:
+      - "5182:80"
+    restart: unless-stopped
+
+  pantalla_3_terrorismo:
+    build: ./pantalla_3_terrorismo
+    container_name: pantalla_3_terrorismo
+    ports:
+      - "5183:80"
+    restart: unless-stopped
+
+  pantalla_4_divisiones:
+    build: ./pantalla_4_divisiones
+    container_name: pantalla_4_divisiones
+    ports:
+      - "5184:80"
+    restart: unless-stopped

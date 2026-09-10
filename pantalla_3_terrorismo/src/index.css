@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* ============================================
+   KIOSK MUSEUM BASE STYLES — PANTALLA 3 (TERRORISMO)
+   PALETA: VERDE MILITAR / CAMUFLAJE
+   ============================================ */
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: auto;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #030A06;
+  color: #f1f5f9;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  touch-action: pan-x pan-y;
+}
+
+.kiosk-scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16,185,129,0.3) transparent;
+}
+.kiosk-scroll::-webkit-scrollbar { width: 6px; }
+.kiosk-scroll::-webkit-scrollbar-track { background: transparent; }
+.kiosk-scroll::-webkit-scrollbar-thumb { background: rgba(16,185,129,0.4); border-radius: 3px; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(16,185,129,0.3); }
+  50% { box-shadow: 0 0 40px rgba(16,185,129,0.6); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-fade-in { animation: fade-in 0.5s ease-out both; }
+.animate-glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
+.animate-float { animation: float 4s ease-in-out infinite; }
+
+.touch-active:active {
+  transform: scale(0.96);
+  transition: transform 100ms ease;
+}
+
+.high-contrast-mode { filter: contrast(1.4) brightness(1.1); }
+.large-text-mode { font-size: 120%; }

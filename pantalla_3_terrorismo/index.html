@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pantalla_3_terrorismo</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then((reg) => {
+            console.log('[Kiosk PWA] Terrorismo Service Worker registrado en scope:', reg.scope);
+          }).catch((err) => {
+            console.warn('[Kiosk PWA] Fallo de registro de Terrorismo Service Worker:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

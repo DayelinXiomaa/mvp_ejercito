@@ -1,0 +1,890 @@
+[
+  {
+    "slide_num": 4,
+    "pptx_title": "I DIVISIÓN DE EJÉRCITO",
+    "db_key": "",
+    "db_nombre": "",
+    "db_alias": "",
+    "db_page": 2
+  },
+  {
+    "slide_num": 18,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZARUMILLA\" N° 5",
+    "db_key": "batallndeinfanteramotorizadon5",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 5",
+    "db_alias": "",
+    "db_page": 17
+  },
+  {
+    "slide_num": 20,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"TUMBES\" N° 11",
+    "db_key": "batallndeinfanteramotorizadon11",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 11",
+    "db_alias": "",
+    "db_page": 19
+  },
+  {
+    "slide_num": 22,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"CUSCO\" N° 23",
+    "db_key": "batallndeinfanteramotorizadon23",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 23",
+    "db_alias": "",
+    "db_page": 21
+  },
+  {
+    "slide_num": 24,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CAP JUAN ANTONIO PORTUGAL\" N° 112",
+    "db_key": "grupodeartilleradecamapaan112",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMAPAÑA N° 112",
+    "db_alias": "",
+    "db_page": 23
+  },
+  {
+    "slide_num": 26,
+    "pptx_title": "GRUPO DE ARTILLERÍA ANTIAÉREA \" TTE CRL RICARDO O´DONOVAN\" N° 113",
+    "db_key": "grupodeartilleraantiareron113",
+    "db_nombre": "Grupo de Artillería Antiaéreo 'Tte Crl Ricardo O'Donovan' N° 113",
+    "db_alias": "Tte Crl Ricardo O'Donovan",
+    "db_page": 25
+  },
+  {
+    "slide_num": 28,
+    "pptx_title": "BATALLÓN DE SERVICIOS \"MY ELÍAS BODERO RODRÍGUEZ\" N° 1",
+    "db_key": "batallndeserviciosn1",
+    "db_nombre": "BATALLÓN DE SERVICIOS N° 1",
+    "db_alias": "",
+    "db_page": 27
+  },
+  {
+    "slide_num": 41,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZEPITA\" N° 7",
+    "db_key": "batallndeinfanteramotorizadon7",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 7",
+    "db_alias": "",
+    "db_page": 40
+  },
+  {
+    "slide_num": 43,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"AREQUIPA\" N° 14",
+    "db_key": "batallndeinfanteramotorizadon14",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 14",
+    "db_alias": "",
+    "db_page": 42
+  },
+  {
+    "slide_num": 45,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"TRUJILLO\" N° 38",
+    "db_key": "batallndeinfanteramotorizadon38",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 38",
+    "db_alias": "",
+    "db_page": 44
+  },
+  {
+    "slide_num": 47,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MARCAVALLE\" N° 9",
+    "db_key": "grupodeartileradecampaan9",
+    "db_nombre": "GRUPO DE ARTILERÍA DE CAMPAÑA N° 9",
+    "db_alias": "",
+    "db_page": 46
+  },
+  {
+    "slide_num": 49,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO \"SACSAYHUAMÁN\" N° 7",
+    "db_key": "batallndeingenieradecombaten7",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE COMBATE N° 7",
+    "db_alias": "",
+    "db_page": 48
+  },
+  {
+    "slide_num": 62,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" CAP JUAN HOYLE PALACIOS\" N° 6",
+    "db_key": "batallndeinfanteramotorizadon6",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 6",
+    "db_alias": "",
+    "db_page": 61
+  },
+  {
+    "slide_num": 64,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" ´PUCARÁ\" N° 37",
+    "db_key": "batallndeinfanteramotorizadon37",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 37",
+    "db_alias": "",
+    "db_page": 63
+  },
+  {
+    "slide_num": 81,
+    "pptx_title": "BATALLÓN DE INFANTERÍA BLINDADO \" CAHUIDE\" N° 211",
+    "db_key": "batallndeinfanterablindadon211",
+    "db_nombre": "BATALLÓN DE INFANTERÍA BLINDADO N° 211",
+    "db_alias": "",
+    "db_page": 80
+  },
+  {
+    "slide_num": 87,
+    "pptx_title": "GRUPO DE ARTILLERÍA ANTIAÉREO \"MY ARMANDO BLONDEL\" N° 111",
+    "db_key": "grupodeartilleraantiareon111",
+    "db_nombre": "GRUPO DE ARTILLERÍA ANTIAÉREO N° 111",
+    "db_alias": "",
+    "db_page": 86
+  },
+  {
+    "slide_num": 89,
+    "pptx_title": "GRUPO DE ARTILLERÍA BLINDADO \"CRL JOSÉ GÁLVEZ\" N° 211",
+    "db_key": "grupodeartillerablindadon211",
+    "db_nombre": "GRUPO DE ARTILLERÍA BLINDADO N° 211",
+    "db_alias": "",
+    "db_page": 88
+  },
+  {
+    "slide_num": 91,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO \"MACHUPICCHU\" N° 211",
+    "db_key": "batallndeingenieradecombateblindadon211",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 211",
+    "db_alias": "",
+    "db_page": 90
+  },
+  {
+    "slide_num": 93,
+    "pptx_title": "BATALLÓN DE SERVICIOS \" CACIQUE CHILIMASA\" N° 211",
+    "db_key": "batallndeserviciosn211",
+    "db_nombre": "BATALLÓN DE SERVICIOS N° 211",
+    "db_alias": "",
+    "db_page": 92
+  },
+  {
+    "slide_num": 95,
+    "pptx_title": "COMPAÑÍA COMANDO N° 211",
+    "db_key": "compaiacomandon211",
+    "db_nombre": "COMPAÑIA COMANDO N° 211",
+    "db_alias": "",
+    "db_page": 94
+  },
+  {
+    "slide_num": 110,
+    "pptx_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \" SARGENTO 1° DEMETRIO ACOSTA CHUEZ N° 85",
+    "db_key": "batallndeinfanteradeselvadeproteccindelaamazonan85",
+    "db_nombre": "Batallón de Infantería de Selva de Protección de la Amazonía N° 85",
+    "db_alias": "BIS PA N° 85",
+    "db_page": null
+  },
+  {
+    "slide_num": 112,
+    "pptx_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \"SGTO1 JUAN DE LA CRUZ ROJAS\" N° 111",
+    "db_key": "batallndeinfanteradeselvadeproteccindelaamazonan111",
+    "db_nombre": "Batallón de Infantería de Selva de Protección de la Amazonía N° 111",
+    "db_alias": "BIS PA N° 111",
+    "db_page": null
+  },
+  {
+    "slide_num": 114,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" GRAL DIV FRANCISCO VIDAL LAOS\" N° 61",
+    "db_key": "grupodeartileradecampaan61",
+    "db_nombre": "GRUPO DE ARTILERÍA DE CAMPAÑA N° 61",
+    "db_alias": "",
+    "db_page": 113
+  },
+  {
+    "slide_num": 116,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN \" MORRO SOLAR\" N° 1",
+    "db_key": "batallndeingenieradeconstruccinn1",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 1",
+    "db_alias": "",
+    "db_page": 115
+  },
+  {
+    "slide_num": 122,
+    "pptx_title": "BATALLÓN DE SERVICIOS \"CAP CÉSAR JÁUREGUI FALCÓN\" N° 116",
+    "db_key": "batallndeserviciosn116",
+    "db_nombre": "BATALLÓN DE SERVICIOS N° 116",
+    "db_alias": "",
+    "db_page": 121
+  },
+  {
+    "slide_num": 126,
+    "pptx_title": "COMPAÑÍA POLICÍA MILITAR \"CABO JACOBO SALDAÑA DELGADO\" N° 116",
+    "db_key": "compaapolicamilitarn116",
+    "db_nombre": "COMPAÑÍA POLICÍA MILITAR N° 116",
+    "db_alias": "",
+    "db_page": 125
+  },
+  {
+    "slide_num": 133,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"LANCEROS DE TORATA\" N° 5",
+    "db_key": "regimientodecaballerablindadon5",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 5",
+    "db_alias": "",
+    "db_page": 132
+  },
+  {
+    "slide_num": 135,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"CRL GREGORIO ALBARRACÍN\" N° 13",
+    "db_key": "regimientodecaballerablindadon13",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 13",
+    "db_alias": "",
+    "db_page": 134
+  },
+  {
+    "slide_num": 137,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"CRL ISIDORO SUÁREZ\" N° 15",
+    "db_key": "regimientodecaballerablindadon15",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 15",
+    "db_alias": "",
+    "db_page": 136
+  },
+  {
+    "slide_num": 139,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA \"GRAL MARISCAL NECOCHEA\" N° 7",
+    "db_key": "regimientodecaballeran7",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA N° 7",
+    "db_alias": "",
+    "db_page": 138
+  },
+  {
+    "slide_num": 141,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CAP ENRIQUE DELHORME\" N° 51",
+    "db_key": "grupodeartilleradecampaan51",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 51",
+    "db_alias": "",
+    "db_page": 140
+  },
+  {
+    "slide_num": 143,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO \"TTE BARTOLOMÉ TRUJILLO\" N° 51",
+    "db_key": "batallndeingenieradecombateblindadon51",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 51",
+    "db_alias": "",
+    "db_page": 142
+  },
+  {
+    "slide_num": 153,
+    "pptx_title": "AGRUPAMIENTO DE ARTILLERÍA \" CRL JOSÉ JOAQUÍN INCLAN\"",
+    "db_key": "agrupamientodeartillerajosjoaqunincln",
+    "db_nombre": "AGRUPAMIENTO DE ARTILLERÍA \"JOSÉ JOAQUÍN INCLÁN\"",
+    "db_alias": "",
+    "db_page": 152
+  },
+  {
+    "slide_num": 156,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"DOS DE MAYO\" N° 1",
+    "db_key": "grupodeartilleradecampaan1",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 1",
+    "db_alias": "",
+    "db_page": 155
+  },
+  {
+    "slide_num": 160,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CAP ADOLFO KING\" N° 502",
+    "db_key": "grupodeartilleradecampaan502",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 502",
+    "db_alias": "",
+    "db_page": 159
+  },
+  {
+    "slide_num": 162,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"QHAPACÑAN\" N° 521",
+    "db_key": "grupodeartilleradecampaan521",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 521",
+    "db_alias": "",
+    "db_page": 161
+  },
+  {
+    "slide_num": 192,
+    "pptx_title": "COMPAÑÍA DE INTELIGENCIA \"CAP MARCO AYALA GALVÁB\" N° 112",
+    "db_key": "compaadeinteligencian112",
+    "db_nombre": "COMPAÑÍA DE INTELIGENCIA N° 112",
+    "db_alias": "",
+    "db_page": 191
+  },
+  {
+    "slide_num": 209,
+    "pptx_title": "BATALLÓN DE LOGÍSTICO N° 21",
+    "db_key": "batallnlogsticon21",
+    "db_nombre": "BATALLÓN LOGÍSTICO N° 21",
+    "db_alias": "",
+    "db_page": 208
+  },
+  {
+    "slide_num": 226,
+    "pptx_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE \" CÉSAR AUGUSTO LOPEZ ROJAS\" N° 26",
+    "db_key": "batallndeinfanteradeselvadeproteccindelaamazonan26",
+    "db_nombre": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 26",
+    "db_alias": "",
+    "db_page": 225
+  },
+  {
+    "slide_num": 232,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO \"HUASCARÁN\" N° 112",
+    "db_key": "batallndeingenieradecombatemotorizadon112",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO N° 112",
+    "db_alias": "",
+    "db_page": 231
+  },
+  {
+    "slide_num": 245,
+    "pptx_title": "BATALLÓN DE COMANDOS \"COMANDANTE ESPINAR\" N° 19",
+    "db_key": "batallndecomandosn19",
+    "db_nombre": "BATALLÓN DE COMANDOS N° 19",
+    "db_alias": "",
+    "db_page": 244
+  },
+  {
+    "slide_num": 249,
+    "pptx_title": "BATALLÓN DE SERVICIOS \"SO1 HUGO LARICO PAMPA\" N° 61",
+    "db_key": "batallndeserviciosn61",
+    "db_nombre": "BATALLÓN DE SERVICIOS N° 61",
+    "db_alias": "",
+    "db_page": 248
+  },
+  {
+    "slide_num": 268,
+    "pptx_title": "DESTACAMENTO AEROTRASPORTADO",
+    "db_key": "destacamentoaerotransportado",
+    "db_nombre": "DESTACAMENTO AERO TRANSPORTADO",
+    "db_alias": "",
+    "db_page": 267
+  },
+  {
+    "slide_num": 282,
+    "pptx_title": "BATALLÓN DE INFANTERÍA BLINDADO \" CRL VÍCTOR FAJARDO GARCÍA\" N° 57",
+    "db_key": "batallndeinfanterablindadon57",
+    "db_nombre": "BATALLÓN DE INFANTERÍA BLINDADO N° 57",
+    "db_alias": "",
+    "db_page": 281
+  },
+  {
+    "slide_num": 299,
+    "pptx_title": "BATALLÓN DE INFANTERÍA BLINDADO \" SAN PABLO\" N° 41",
+    "db_key": "batallndeinfanterablindadon41",
+    "db_nombre": "BATALLÓN DE INFANTERÍA BLINDADO N° 41",
+    "db_alias": "",
+    "db_page": 298
+  },
+  {
+    "slide_num": 301,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CRL JUSTO ARIAS ARAGÜEZ\" N° 3",
+    "db_key": "grupodeartilleradecampaan3",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 3",
+    "db_alias": "",
+    "db_page": 300
+  },
+  {
+    "slide_num": 303,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO \"7 DE JUNIO\" N° 3",
+    "db_key": "batallndeingenieradecombateblindadon3",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 3",
+    "db_alias": "",
+    "db_page": 302
+  },
+  {
+    "slide_num": 320,
+    "pptx_title": "BATALLÓN DE INFANTERÍA BLINDADO \"CONCEPCIÓN\" N° 45",
+    "db_key": "batallndeinfanterablindadon45",
+    "db_nombre": "BATALLÓN DE INFANTERÍA BLINDADO N° 45",
+    "db_alias": "",
+    "db_page": 319
+  },
+  {
+    "slide_num": 328,
+    "pptx_title": "BATALLÓN DE SERVICIOS \" GRAL DIV PEDRO MUÑIZ SEVILLA\" N° 6",
+    "db_key": "batallndeserviciosn6",
+    "db_nombre": "BATALLÓN DE SERVICIOS N° 6",
+    "db_alias": "",
+    "db_page": 327
+  },
+  {
+    "slide_num": 339,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"CAQUETÁ \" N° 9",
+    "db_key": "batallndeinfanteramotorizadon9",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 9",
+    "db_alias": "",
+    "db_page": 338
+  },
+  {
+    "slide_num": 341,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"TTE EDUARDO ASTETE MENDOZA\" N° 30",
+    "db_key": "batallndeinfanteramotorizadon30",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 30",
+    "db_alias": "",
+    "db_page": 340
+  },
+  {
+    "slide_num": 343,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" GRAL FELIPE SANTIAGO SALAVERRY\" N° 35",
+    "db_key": "batallndeinfanteramotorizadon35",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 35",
+    "db_alias": "",
+    "db_page": 342
+  },
+  {
+    "slide_num": 345,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE COMBATE \"CRL GERARDO DIANDERAS SÁNCHEZ \" N° 241",
+    "db_key": "batallndeingenieradecombaten241",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE COMBATE N° 241",
+    "db_alias": "",
+    "db_page": 344
+  },
+  {
+    "slide_num": 358,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" CRL MARIANO BUSTAMANTE\" N° 55",
+    "db_key": "batallndeinfanteramotorizadon55",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 55",
+    "db_alias": "",
+    "db_page": 357
+  },
+  {
+    "slide_num": 360,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"JUNÍN\" N° 21",
+    "db_key": "batallndeinfanteramotorizadon21",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 21",
+    "db_alias": "",
+    "db_page": 359
+  },
+  {
+    "slide_num": 362,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"LIMA\" N° 33",
+    "db_key": "batallndeinfanteramotorizadon33",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 33",
+    "db_alias": "",
+    "db_page": 361
+  },
+  {
+    "slide_num": 364,
+    "pptx_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"CRL BELISARIO BARRIGA\" N° 59",
+    "db_key": "batallndeinfanteramotorizadon59",
+    "db_nombre": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 59",
+    "db_alias": "",
+    "db_page": 363
+  },
+  {
+    "slide_num": 366,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \" MY ALFREDO NOVOA CAVA\" N° 123",
+    "db_key": "regimientodecaballerablindadon123",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 123",
+    "db_alias": "",
+    "db_page": 365
+  },
+  {
+    "slide_num": 368,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \" GRAL BRIG JOSÉ IDELFONSO COLOMA\" N° 111",
+    "db_key": "regimientodecaballerablindadon111",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 111",
+    "db_alias": "",
+    "db_page": 367
+  },
+  {
+    "slide_num": 370,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \" MY RÁZURI\" N° 9",
+    "db_key": "regimientodecaballerablindadon9",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 9",
+    "db_alias": "",
+    "db_page": 369
+  },
+  {
+    "slide_num": 372,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CRL JÓSÉ JUAQUÍN INCLAN\" N° 4",
+    "db_key": "grupodeartilleradecampaan4",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 4",
+    "db_alias": "",
+    "db_page": 371
+  },
+  {
+    "slide_num": 376,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CRL PEDRO RUIZ GALLO\" N° 8",
+    "db_key": "grupodeartilleradecampaan8",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 8",
+    "db_alias": "",
+    "db_page": 375
+  },
+  {
+    "slide_num": 391,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \" TTE CRL JOSE´ BUENAVENTURA SEPÚLVEDA FERNÁNDEZ\" N° 113",
+    "db_key": "regimientodecaballerablindadon113",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 113",
+    "db_alias": "",
+    "db_page": 390
+  },
+  {
+    "slide_num": 395,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"GRAL SAN MARTÍN\" N° 3",
+    "db_key": "regimientodecaballerablindadon3",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 3",
+    "db_alias": "",
+    "db_page": 394
+  },
+  {
+    "slide_num": 397,
+    "pptx_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"MARISCAL CASTILLA\" N° 211",
+    "db_key": "regimientodecaballerablindadon211",
+    "db_nombre": "REGIMIENTO DE CABALLERÍA BLINDADO N° 211",
+    "db_alias": "",
+    "db_page": 396
+  },
+  {
+    "slide_num": 399,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MARISCAL ELOY G. URETA MONTEHERMOSO\" N° 113",
+    "db_key": "grupodeartilleradecampaan113",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 113",
+    "db_alias": "",
+    "db_page": 398
+  },
+  {
+    "slide_num": 403,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE COMBATE \"SUBTENIENTE JORGE MONTENEGRO GASCO\" N° 20",
+    "db_key": "batallndeingenieradecombaten20",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE COMBATE N° 20",
+    "db_alias": "",
+    "db_page": 402
+  },
+  {
+    "slide_num": 407,
+    "pptx_title": "ESCUADRON COMANDO \"ALFÉREZ LIZARDO PEDRAJA\" N° 20",
+    "db_key": "escuadrncomandon20",
+    "db_nombre": "ESCUADRÓN COMANDO N° 20",
+    "db_alias": "",
+    "db_page": 406
+  },
+  {
+    "slide_num": 424,
+    "pptx_title": "BATALLÓN DE INGENIERÍA Y CONSTRUCCIÓN \"CAP MOISÉS TOMÁS BUENO\" N° 4",
+    "db_key": "batallndeingenierayconstruccinn4",
+    "db_nombre": "BATALLÓN DE INGENIERÍA Y CONSTRUCCIÓN N° 4",
+    "db_alias": "",
+    "db_page": 423
+  },
+  {
+    "slide_num": 428,
+    "pptx_title": "BATALLÓN DE SERVICIOS \" SO1 EDGAR GARCÍA VILLENA\" N° 600",
+    "db_key": "batallndedeserviciosn600",
+    "db_nombre": "BATALLÓN DE DE SERVICIOS N° 600",
+    "db_alias": "",
+    "db_page": 427
+  },
+  {
+    "slide_num": 432,
+    "pptx_title": "COMPAÑIA POLICÍA MILITAR \"SO1 HUGO LARICO PAMPA\" N° 600",
+    "db_key": "compaapolicamilitarn600",
+    "db_nombre": "COMPAÑÍA POLICÍA MILITAR N° 600",
+    "db_alias": "",
+    "db_page": 431
+  },
+  {
+    "slide_num": 439,
+    "pptx_title": "COMPAÑÍA ANTITANQUE \"MY EP FERNANDO SUAREZ PICHILINGUE\" N° 642",
+    "db_key": "compaaantitanquen642",
+    "db_nombre": "COMPAÑÍA ANTITANQUE N° 642",
+    "db_alias": "",
+    "db_page": 438
+  },
+  {
+    "slide_num": 443,
+    "pptx_title": "COMPAÑÍA ANTITANQUE \"STTE EP JORGE DIEGUEZ HUAMAN\" N° 638",
+    "db_key": "compaaantitanquen638",
+    "db_nombre": "COMPAÑÍA ANTITANQUE N° 638",
+    "db_alias": "",
+    "db_page": 442
+  },
+  {
+    "slide_num": 445,
+    "pptx_title": "COMPAÑÍA ANTITANQUE \"CAP EP MILTON MOLINA JIMENEZ\" N° 644",
+    "db_key": "compaaantitanquen644",
+    "db_nombre": "COMPAÑÍA ANTITANQUE N° 644",
+    "db_alias": "",
+    "db_page": 444
+  },
+  {
+    "slide_num": 447,
+    "pptx_title": "COMPAÑÍA ANTITANQUE \"STTE INF ORTIZ FLORES CELSO JUAN\" N° 636",
+    "db_key": "compaaantitanquen636",
+    "db_nombre": "COMPAÑÍA ANTITANQUE N° 636",
+    "db_alias": "",
+    "db_page": 447
+  },
+  {
+    "slide_num": 449,
+    "pptx_title": "COMPAÑÍA ANTITANQUE \"TTE ALBERTO BURGA DIOS\" N° 633",
+    "db_key": "compaaantitanquen633",
+    "db_nombre": "COMPAÑÍA ANTITANQUE N° 633",
+    "db_alias": "",
+    "db_page": 448
+  },
+  {
+    "slide_num": 453,
+    "pptx_title": "COMPAÑÍA ANTITANQUE \"MY EP JENNER VIDARTE CAMPOS\" N° 640",
+    "db_key": "compaaantitanquen640",
+    "db_nombre": "COMPAÑÍA ANTITANQUE N° 640",
+    "db_alias": "",
+    "db_page": 452
+  },
+  {
+    "slide_num": 455,
+    "pptx_title": "COMPAÑÍA ANTITANQUE \"CAP JOSE´PEÑA NAVARRO\" N° 630",
+    "db_key": "compaaantitanquen630",
+    "db_nombre": "COMPAÑÍA ANTITANQUE N° 630",
+    "db_alias": "",
+    "db_page": 454
+  },
+  {
+    "slide_num": 457,
+    "pptx_title": "COMPAÑÍA ANTITANQUE \"MY HECTOR SUAREZ GOMEZ\" N° 632",
+    "db_key": "compaaantitanquen632",
+    "db_nombre": "COMPAÑÍA ANTITANQUE N° 632",
+    "db_alias": "",
+    "db_page": 456
+  },
+  {
+    "slide_num": 459,
+    "pptx_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 603",
+    "db_key": "compaacomandon603",
+    "db_nombre": "COMPAÑÍA COMANDO N° 603",
+    "db_alias": "",
+    "db_page": 458
+  },
+  {
+    "slide_num": 472,
+    "pptx_title": "BATERÍA DE SERVICIOS \"CAP JHONY VALDERRAMA PRADO\" N° 4",
+    "db_key": "bateradeserviciosn4",
+    "db_nombre": "BATERÍA DE SERVICIOS N° 4",
+    "db_alias": "",
+    "db_page": 471
+  },
+  {
+    "slide_num": 477,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" GRAL PEDRO SILVA GIL\" N° 501",
+    "db_key": "grupodeartilleradecampaan501",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 501",
+    "db_alias": "",
+    "db_page": 476
+  },
+  {
+    "slide_num": 479,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CABO ALFREDO MALDONADO\" N° 123",
+    "db_key": "grupodeartilleradecampaan123",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 123",
+    "db_alias": "",
+    "db_page": 478
+  },
+  {
+    "slide_num": 481,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" MY ART LUIS GARCÍA ROJAS\" N° 503",
+    "db_key": "grupodeartilleradecampaan503",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 503",
+    "db_alias": "",
+    "db_page": 480
+  },
+  {
+    "slide_num": 483,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MY JORGE ELÍAS ROBLEDO TIRADO\" N° 116",
+    "db_key": "grupodeartilleradecampaan116",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 116",
+    "db_alias": "",
+    "db_page": 482
+  },
+  {
+    "slide_num": 485,
+    "pptx_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CAP HERNANDO DE LAVALLE\" N° 122",
+    "db_key": "grupodeartilleradecampaan122",
+    "db_nombre": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 122",
+    "db_alias": "",
+    "db_page": 484
+  },
+  {
+    "slide_num": 487,
+    "pptx_title": "BATERÍA COMANDO Y OBSERVACIÓN \" CAP BELISARIO CÁCERES\" N° 113",
+    "db_key": "bateracomandoyobservacinn113",
+    "db_nombre": "BATERÍA COMANDO Y OBSERVACIÓN N° 113",
+    "db_alias": "",
+    "db_page": 486
+  },
+  {
+    "slide_num": 496,
+    "pptx_title": "COMPAÑÍA DE GUERRA ELECTRÓNICA \" GRAL PEDRO PUENTE REVILLA\" N° 113",
+    "db_key": "compaadeguerraelectrnican113",
+    "db_nombre": "COMPAÑÍA DE GUERRA ELECTRÓNICA N° 113",
+    "db_alias": "",
+    "db_page": 495
+  },
+  {
+    "slide_num": 517,
+    "pptx_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 113",
+    "db_key": "comaacomandoyserviciosn113",
+    "db_nombre": "COMAÑÍA COMANDO Y SERVICIOS N° 113",
+    "db_alias": "",
+    "db_page": 516
+  },
+  {
+    "slide_num": 524,
+    "pptx_title": "COMPAÑÍA DE INTELIGENCIA \" CAP EP ROBERTSON SOTO RUIZ\" N° 114",
+    "db_key": "compaadeinteligencian114",
+    "db_nombre": "COMPAÑÍA DE INTELIGENCIA N° 114",
+    "db_alias": "",
+    "db_page": 523
+  },
+  {
+    "slide_num": 529,
+    "pptx_title": "BATALLÓN DE CONTRATERRORISTA \" MARISCAL CÁCERES\" N° 43",
+    "db_key": "batallncontraterroristan43",
+    "db_nombre": "BATALLÓN CONTRATERRORISTA N° 43",
+    "db_alias": "",
+    "db_page": 528
+  },
+  {
+    "slide_num": 531,
+    "pptx_title": "BATALLÓN DE CONTRATERRORISTA \"ALTO COMAINA\" N° 79",
+    "db_key": "batallncontraterroristan79",
+    "db_nombre": "BATALLÓN CONTRATERRORISTA N° 79",
+    "db_alias": "",
+    "db_page": 530
+  },
+  {
+    "slide_num": 533,
+    "pptx_title": "BATALLÓN DE CONTRATERRORISTA \" CRL DOMINGO AYARZA\" N° 311",
+    "db_key": "batallncontraterroristan311",
+    "db_nombre": "BATALLÓN CONTRATERRORISTA N° 311",
+    "db_alias": "",
+    "db_page": 532
+  },
+  {
+    "slide_num": 537,
+    "pptx_title": "BATALLÓN CONTRATERRORISTA \" TTE CRL NATALIO SÁNCHEZ PAREDES\" N° 324",
+    "db_key": "batallncontraterroristan324",
+    "db_nombre": "BATALLÓN CONTRATERRORISTA N° 324",
+    "db_alias": "",
+    "db_page": 536
+  },
+  {
+    "slide_num": 539,
+    "pptx_title": "BATALLÓN DE SERVICIOS \"CAP ROBERTO HUACO MORENO\" N° 31",
+    "db_key": "batallndeserviciosn31",
+    "db_nombre": "BATALLÓN DE SERVICIOS N° 31",
+    "db_alias": "",
+    "db_page": 538
+  },
+  {
+    "slide_num": 541,
+    "pptx_title": "COMPAÑÍA ESPECIAL DE COMANDOS \"PACHACUTEC\" N° 31",
+    "db_key": "compaaespecialdecomandosn31",
+    "db_nombre": "COMPAÑÍA ESPECIAL DE COMANDOS N° 31",
+    "db_alias": "",
+    "db_page": 540
+  },
+  {
+    "slide_num": 552,
+    "pptx_title": "BATALLÓN CONTRATERRORISTA \" CRL BUENAVENTURA AGUIRRE\" N° 314",
+    "db_key": "batallncontraterroristan314",
+    "db_nombre": "BATALLÓN CONTRATERRORISTA N° 314",
+    "db_alias": "",
+    "db_page": 551
+  },
+  {
+    "slide_num": 554,
+    "pptx_title": "BATALLÓN CONTRATERRORISTA \"TTE EDUARDO ASTETE MENDOZA\" N° 331",
+    "db_key": "batallncontraterroristan331",
+    "db_nombre": "BATALLÓN CONTRATERRORISTA N° 331",
+    "db_alias": "",
+    "db_page": 553
+  },
+  {
+    "slide_num": 556,
+    "pptx_title": "BATALLÓN CONTRATERRORISTA \"QUILLABAMBA\" N° 333",
+    "db_key": "batallncontraterroristan333",
+    "db_nombre": "BATALLÓN CONTRATERRORISTA N° 333",
+    "db_alias": "",
+    "db_page": 555
+  },
+  {
+    "slide_num": 560,
+    "pptx_title": "COMPAÑÍA ESPECIAL DE COMANDOS \"ARICA\" N° 33",
+    "db_key": "compaaespecialdecomandosn33",
+    "db_nombre": "COMPAÑÍA ESPECIAL DE COMANDOS N° 33",
+    "db_alias": "",
+    "db_page": 559
+  },
+  {
+    "slide_num": 571,
+    "pptx_title": "BATALLÓN DE COMANDOS \"MY MARKO JARA SCHENONE\" N° 116",
+    "db_key": "batallndecomandosn116",
+    "db_nombre": "BATALLÓN DE COMANDOS N° 116",
+    "db_alias": "",
+    "db_page": 570
+  },
+  {
+    "slide_num": 575,
+    "pptx_title": "BATALLÓN CONTRATERRORISTA \"MOQUEGUA\" N° 42",
+    "db_key": "batallncontraterroristan42",
+    "db_nombre": "BATALLÓN CONTRATERRORISTA N° 42",
+    "db_alias": "",
+    "db_page": 574
+  },
+  {
+    "slide_num": 583,
+    "pptx_title": "BATERÍA DE ARTILLERÍA DE CAMPAÑA \"CAP ROBERTO OBREGÓN ÁNGELES\" N° 115",
+    "db_key": "bateradeartilleradecampaan115",
+    "db_nombre": "BATERÍA DE ARTILLERÍA DE CAMPAÑA N° 115",
+    "db_alias": "",
+    "db_page": 582
+  },
+  {
+    "slide_num": 585,
+    "pptx_title": "COMPAÑÍA ESPECIAL DE COMANDOS \"LINCE\" N° 2",
+    "db_key": "compaaespecialdecomandosn2",
+    "db_nombre": "COMPAÑÍA ESPECIAL DE COMANDOS N° 2",
+    "db_alias": "",
+    "db_page": 584
+  },
+  {
+    "slide_num": 596,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO \" JOSÉ OLAYA\" N° 2",
+    "db_key": "batallndeingenieradecombatemotorizadon2",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO N° 2",
+    "db_alias": "",
+    "db_page": 595
+  },
+  {
+    "slide_num": 600,
+    "pptx_title": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN \"OLLANTAYTAMBO\" N° 3",
+    "db_key": "batallndeingenieradeconstruccinn3",
+    "db_nombre": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 3",
+    "db_alias": "",
+    "db_page": 599
+  },
+  {
+    "slide_num": 622,
+    "pptx_title": "BATALLÓN DE SELVA \"TACNA\" N° 27",
+    "db_key": "batallndeselvan27",
+    "db_nombre": "BATALLÓN DE SELVA N° 27",
+    "db_alias": "",
+    "db_page": 621
+  },
+  {
+    "slide_num": 628,
+    "pptx_title": "BATALLÓN DE SELVA \" LORETO\" N° 53",
+    "db_key": "batallndeselvan53",
+    "db_nombre": "BATALLÓN DE SELVA N° 53",
+    "db_alias": "",
+    "db_page": 627
+  },
+  {
+    "slide_num": 638,
+    "pptx_title": "COMPAÑÍA ESPECIAL DE COMANDOS \"OTORONGO\" N° 125",
+    "db_key": "compaaespecialdecomandosn125",
+    "db_nombre": "COMPAÑÍA ESPECIAL DE COMANDOS N° 125",
+    "db_alias": "",
+    "db_page": 637
+  },
+  {
+    "slide_num": 670,
+    "pptx_title": "COMPAÑÍA COMANDO \"SARAGURO\" N° 35",
+    "db_key": "compaasanidadyveterinarian115",
+    "db_nombre": "COMPAÑÍA SANIDAD Y VETERINARIA N° 115",
+    "db_alias": "",
+    "db_page": 669
+  },
+  {
+    "slide_num": 672,
+    "pptx_title": "COMPAÑÍA INGENIERÍA DE SERVICIOS N° 115",
+    "db_key": "compaadeingenieradeserviciosn115",
+    "db_nombre": "COMPAÑÍA DE INGENIERÍA DE SERVICIOS N° 115",
+    "db_alias": "",
+    "db_page": 671
+  }
+]

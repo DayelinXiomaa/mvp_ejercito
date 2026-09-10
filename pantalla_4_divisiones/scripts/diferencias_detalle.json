@@ -1,0 +1,2360 @@
+[
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN POLICÍA Militar N° 111(Piura)",
+    "app_modal_title": "BATALLÓN POLICÍA Militar N° 111(Piura)",
+    "pptx_slide_num": 7,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 111",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN de COMUNICACIONES 'Tte Crl José Meléndez' N° 111(Piura)",
+    "app_modal_title": "Batallón de Comunicaciones 'Tte Crl José Meléndez' N° 111",
+    "pptx_slide_num": 9,
+    "pptx_slide_title": "BATALLÓN DE COMUNICACIONES \" TTE CRL JOSÉ MELÉNDEZ\" N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Compañía Comando N° 111(Piura)",
+    "app_modal_title": "Compañía Comando N° 111(Piura)",
+    "pptx_slide_num": 7,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 111",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Compañía de INGENIERÍA Anfibia N° 111(Sechura)",
+    "app_modal_title": "Compañía de INGENIERÍA Anfibia N° 111(Sechura)",
+    "pptx_slide_num": 7,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 111",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 1",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 1",
+    "pptx_slide_num": 30,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 1",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 1",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 1",
+    "pptx_slide_num": 32,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 1",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 1",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 1",
+    "pptx_slide_num": 28,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \"MY ELÍAS BODERO RODRÍGUEZ\" N° 1",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 5",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 5",
+    "pptx_slide_num": 18,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZARUMILLA\" N° 5",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 11",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 11",
+    "pptx_slide_num": 20,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"TUMBES\" N° 11",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 23",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 23",
+    "pptx_slide_num": 22,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"CUSCO\" N° 23",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 112",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 112",
+    "pptx_slide_num": 24,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CAP JUAN ANTONIO PORTUGAL\" N° 112",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "GRUPO DE ARTILLERÍA ANTIAÉREO N° 113",
+    "app_modal_title": "Grupo de Artillería Antiaéreo 'Tte Crl Ricardo O'Donovan' N° 113",
+    "pptx_slide_num": 26,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA ANTIAÉREA \" TTE CRL RICARDO O´DONOVAN\" N° 113",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA ANTITANQUE N° 1",
+    "app_modal_title": "COMPAÑÍA ANTITANQUE N° 1",
+    "pptx_slide_num": 28,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \"MY ELÍAS BODERO RODRÍGUEZ\" N° 1",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 1",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 1",
+    "pptx_slide_num": 28,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \"MY ELÍAS BODERO RODRÍGUEZ\" N° 1",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "ESCUADRÓN° COMANDO Y SERVICIOS N° 51",
+    "app_modal_title": "ESCUADRÓN COMANDO Y SERVICIOS N° 51",
+    "pptx_slide_num": 147,
+    "pptx_slide_title": "ESCUADRÓN COMANDO Y SERVICIOS N° 51",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "ESCUADRÓN° POLICÍA MILITAR N° 51",
+    "app_modal_title": "ESCUADRÓN POLICÍA MILITAR N° 51",
+    "pptx_slide_num": 149,
+    "pptx_slide_title": "ESCUADRÓN POLICÍA MILITAR N° 51",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "COMPAN° IA COMUNICACIONES N° 51",
+    "app_modal_title": "COMPAN° IA COMUNICACIONES N° 51",
+    "pptx_slide_num": 141,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CAP ENRIQUE DELHORME\" N° 51",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 5",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 5",
+    "pptx_slide_num": 133,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"LANCEROS DE TORATA\" N° 5",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 13",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 13",
+    "pptx_slide_num": 135,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"CRL GREGORIO ALBARRACÍN\" N° 13",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 15",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 15",
+    "pptx_slide_num": 137,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"CRL ISIDORO SUÁREZ\" N° 15",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA N° 7",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA N° 7",
+    "pptx_slide_num": 139,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA \"GRAL MARISCAL NECOCHEA\" N° 7",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 51",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 51",
+    "pptx_slide_num": 141,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CAP ENRIQUE DELHORME\" N° 51",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE BLIN° N° 51",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE BLIN° N° 51",
+    "pptx_slide_num": 141,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CAP ENRIQUE DELHORME\" N° 51",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE SERVICIOS N° 51",
+    "app_modal_title": "REGIMIENTO DE SERVICIOS N° 51",
+    "pptx_slide_num": 145,
+    "pptx_slide_title": "REGIMIENTO DE SERVICIOS N° 51",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 7",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 7",
+    "pptx_slide_num": 53,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 7",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 7",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 7",
+    "pptx_slide_num": 55,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 7",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 7",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 7",
+    "pptx_slide_num": 57,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 7",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 7",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 7",
+    "pptx_slide_num": 41,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZEPITA\" N° 7",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 14",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 14",
+    "pptx_slide_num": 43,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"AREQUIPA\" N° 14",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 38",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 38",
+    "pptx_slide_num": 45,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"TRUJILLO\" N° 38",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 9",
+    "app_modal_title": "GRUPO DE ARTILERÍA DE CAMPAÑA N° 9",
+    "pptx_slide_num": 47,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MARCAVALLE\" N° 9",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE N° 7",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE N° 7",
+    "pptx_slide_num": 49,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO \"SACSAYHUAMÁN\" N° 7",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "7ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 7",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 7",
+    "pptx_slide_num": 51,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 7",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 211",
+    "app_modal_title": "COMPAÑIA COMANDO N° 211",
+    "pptx_slide_num": 95,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 211",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 211",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 211",
+    "pptx_slide_num": 97,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 211",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 211",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 211",
+    "pptx_slide_num": 99,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 211",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA BLINDADO N° 211",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA BLINDADO N° 211",
+    "pptx_slide_num": 81,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA BLINDADO \" CAHUIDE\" N° 211",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE TANQUES N° 222",
+    "app_modal_title": "BATALLÓN DE TANQUES N° 222",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE TANQUES N° 223",
+    "app_modal_title": "BATALLÓN DE TANQUES N° 223",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "GRUPO DE ARTILLERÍA ANTIAÉREO N° 111",
+    "app_modal_title": "GRUPO DE ARTILLERÍA ANTIAÉREO N° 111",
+    "pptx_slide_num": 51,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 7",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "GRUPO DE ARTILLERÍA BLINDADO N° 211",
+    "app_modal_title": "GRUPO DE ARTILLERÍA BLINDADO N° 211",
+    "pptx_slide_num": 64,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" ´PUCARÁ\" N° 37",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 211",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 211",
+    "pptx_slide_num": 51,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 7",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "9ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 211",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 211",
+    "pptx_slide_num": 93,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \" CACIQUE CHILIMASA\" N° 211",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "32ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 32",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 32",
+    "pptx_slide_num": 72,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 32",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "32ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 32",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 32",
+    "pptx_slide_num": 74,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 32",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "32ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 32",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 32",
+    "pptx_slide_num": 74,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 32",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "32ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 6",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 6",
+    "pptx_slide_num": 51,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 7",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "32ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 37",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 37",
+    "pptx_slide_num": 64,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" ´PUCARÁ\" N° 37",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "32ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 323",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 323",
+    "pptx_slide_num": 66,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" CRL ÓSCAR DE LA BARRERA\" N° 323",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "32ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE N° 32",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE N° 32",
+    "pptx_slide_num": 68,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE COMBATE N° 32",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "32ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 32",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 32",
+    "pptx_slide_num": 70,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 32",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía «Callao» N° 25",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía «Callao» N° 25",
+    "pptx_slide_num": 104,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \"CALLAO\" N° 25",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía «Crl José Leal» N° 32",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía «Crl José Leal» N° 32",
+    "pptx_slide_num": 104,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \"CALLAO\" N° 25",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía N° 69",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía N° 69",
+    "pptx_slide_num": 108,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 69",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía N° 85",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía N° 85",
+    "pptx_slide_num": 110,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \" SARGENTO 1° DEMETRIO ACOSTA CHUEZ N° 85",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía N° 111",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía N° 111",
+    "pptx_slide_num": 112,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \"SGTO1 JUAN DE LA CRUZ ROJAS\" N° 111",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Grupo de Artillería de Campaña «Gral Div Manuel Freyre Santander» N° 61",
+    "app_modal_title": "Grupo de Artillería de Campaña «Gral Div Manuel Freyre Santander» N° 61",
+    "pptx_slide_num": 114,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" GRAL DIV FRANCISCO VIDAL LAOS\" N° 61",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Ingeniería de Construcción «Morro Solar» N° 1",
+    "app_modal_title": "Batallón de Ingeniería de Construcción «Morro Solar» N° 1",
+    "pptx_slide_num": 116,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN \" MORRO SOLAR\" N° 1",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Ingeniería de Combate Selva «Cap EP Eduardo Gutiérrez Rondón» N° 116",
+    "app_modal_title": "Batallón de Ingeniería de Combate Selva «Cap EP Eduardo Gutiérrez Rondón» N° 116",
+    "pptx_slide_num": 118,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE COMBATE SELVA N° 116",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Unidad Militar de Asentamiento Rural N° 1",
+    "app_modal_title": "Unidad Militar de Asentamiento Rural N° 1",
+    "pptx_slide_num": 120,
+    "pptx_slide_title": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 1",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Servicios «Capitán César Jáuregui Falcón» N° 116",
+    "app_modal_title": "Batallón de Servicios «Capitán César Jáuregui Falcón» N° 116",
+    "pptx_slide_num": 122,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \"CAP CÉSAR JÁUREGUI FALCÓN\" N° 116",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía Comando N° 116",
+    "app_modal_title": "Compañía Comando N° 116",
+    "pptx_slide_num": 124,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 116",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía de Policía Militar «Cabo Jacobo Saldaña Delgado» N° 116",
+    "app_modal_title": "Compañía de Policía Militar «Cabo Jacobo Saldaña Delgado» N° 116",
+    "pptx_slide_num": 126,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR \"CABO JACOBO SALDAÑA DELGADO\" N° 116",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía de Comunicaciones N° 116",
+    "app_modal_title": "Compañía de Comunicaciones N° 116",
+    "pptx_slide_num": 128,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 116",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Servicios",
+    "organigrama_name": "COMPAÑÍA COMANDO Y SERVICIOS N° 111",
+    "app_modal_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 111",
+    "pptx_slide_num": 179,
+    "pptx_slide_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Servicios",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES DE SERVICIOS N° 111",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES DE SERVICIOS N° 111",
+    "pptx_slide_num": 181,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES DE SERVICIOS N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Servicios",
+    "organigrama_name": "BATALLÓN DE INTENDENCIA A/M N° 111",
+    "app_modal_title": "BATALLÓN DE INTENDENCIA A/M N° 111",
+    "pptx_slide_num": 169,
+    "pptx_slide_title": "BATALLÓN DE INTENDENCIA A/M N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Servicios",
+    "organigrama_name": "BATALLÓN DE MATERIAL DE GUERRA N° 111",
+    "app_modal_title": "BATALLÓN DE MATERIAL DE GUERRA N° 111",
+    "pptx_slide_num": 171,
+    "pptx_slide_title": "BATALLÓN DE MATERIAL DE GUERRA N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Servicios",
+    "organigrama_name": "BATALLÓN DE TRANSPORTES N° 111",
+    "app_modal_title": "BATALLÓN DE TRANSPORTES N° 111",
+    "pptx_slide_num": 173,
+    "pptx_slide_title": "BATALLÓN DE TRANSPORTES N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Servicios",
+    "organigrama_name": "COMPAÑÍA INGENIERÍA DE SERVICIOS N° 111",
+    "app_modal_title": "COMPAÑÍA INGENIERÍA DE SERVICIOS N° 111",
+    "pptx_slide_num": 177,
+    "pptx_slide_title": "COMPAÑÍA INGENIERÍA DE SERVICIOS N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Servicios",
+    "organigrama_name": "COMPAÑÍA SANIDAD N° 111",
+    "app_modal_title": "COMPAÑÍA SANIDAD N° 111",
+    "pptx_slide_num": 175,
+    "pptx_slide_title": "COMPAÑÍA SANIDAD N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería «Crl José Joaquín Inclán»",
+    "organigrama_name": "Grupo de Artillería de Campaña «Dos de Mayo» N° 1",
+    "app_modal_title": "Grupo de Artillería de Campaña «Dos de Mayo» N° 1",
+    "pptx_slide_num": 156,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"DOS DE MAYO\" N° 1",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería «Crl José Joaquín Inclán»",
+    "organigrama_name": "Grupo de Artillería de Campaña «Mariscal La Mar» N° 111",
+    "app_modal_title": "Grupo de Artillería de Campaña «Mariscal La Mar» N° 111",
+    "pptx_slide_num": 158,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MARISCAL LA MAR\" N° 111",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería «Crl José Joaquín Inclán»",
+    "organigrama_name": "Grupo de Artillería de Campaña «Cap Adolfo King» N° 502",
+    "app_modal_title": "Grupo de Artillería de Campaña «Cap Adolfo King» N° 502",
+    "pptx_slide_num": 160,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CAP ADOLFO KING\" N° 502",
+    "different": false
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería «Crl José Joaquín Inclán»",
+    "organigrama_name": "Grupo de Artillería de Campaña «Qhapaq Ñan» N° 521",
+    "app_modal_title": "Grupo de Artillería de Campaña «Qhapaq Ñan» N° 521",
+    "pptx_slide_num": 162,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"QHAPACÑAN\" N° 521",
+    "different": true
+  },
+  {
+    "div": "I DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería «Crl José Joaquín Inclán»",
+    "organigrama_name": "Batería Comando y Observación «Gral Alejandro Cuadra» N° 111",
+    "app_modal_title": "Batería Comando y Observación «Gral Alejandro Cuadra» N° 111",
+    "pptx_slide_num": 164,
+    "pptx_slide_title": "BATERÍA COMANDO Y OBSERVACIÓN\" GRAL ALEJANDRO CUADRA\" N° 111",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN de POLICÍA Militar N° 501(Rímac)",
+    "app_modal_title": "BATALLÓN de POLICÍA Militar N° 501(Rímac)",
+    "pptx_slide_num": 186,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 501",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN de COMUNICACIONES N° 501(Lima)",
+    "app_modal_title": "BATALLÓN de COMUNICACIONES N° 501(Lima)",
+    "pptx_slide_num": 186,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 501",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Compañía Comando N° 501(Rímac)",
+    "app_modal_title": "Compañía Comando N° 501(Rímac)",
+    "pptx_slide_num": 186,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 501",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "COMPAÑÍA COMANDO Y SERVICIOS N° 21",
+    "app_modal_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 21",
+    "pptx_slide_num": 207,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA N° 21",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 21",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 21",
+    "pptx_slide_num": 217,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 21",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 21",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 21",
+    "pptx_slide_num": 219,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 21",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "BATALLÓN DE INTERVENCIÓN° RÁPIDA ANTE DESASTRES N° 21",
+    "app_modal_title": "BATALLÓN DE INTERVENCIÓN RÁPIDA ANTE DESASTRES N° 21",
+    "pptx_slide_num": 199,
+    "pptx_slide_title": "BATALLÓN DE INTERVENCIÓN RÁPIDA ANTE DESASTRES N° 21",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 20",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 20",
+    "pptx_slide_num": 201,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" MY FERNANDO ANTONIO SUÁRES\" N° 20",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 22",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 22",
+    "pptx_slide_num": 203,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 22",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "BATALLÓN DE TANQUES N° 232",
+    "app_modal_title": "BATALLÓN DE TANQUES N° 232",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA N° 21",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA N° 21",
+    "pptx_slide_num": 207,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA N° 21",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "COMPAÑÍADE DEFENSA NUCLEAR QUÍMICO RADIOLÓGICO N° 21",
+    "app_modal_title": "COMPAÑÍADE DEFENSA NUCLEAR QUÍMICO RADIOLÓGICO N° 21",
+    "pptx_slide_num": 207,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA N° 21",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "ESCUADRÓN° DE RECONOCIMIENTO AÉREO TERRESTRE N° 21",
+    "app_modal_title": "ESCUADRÓN° DE RECONOCIMIENTO AÉREO TERRESTRE N° 21",
+    "pptx_slide_num": 207,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA N° 21",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA MULTIPROPÓSITO",
+    "organigrama_name": "BATALLÓN LOGÍSTICO N° 21",
+    "app_modal_title": "BATALLÓN LOGÍSTICO N° 21",
+    "pptx_slide_num": 209,
+    "pptx_slide_title": "BATALLÓN DE LOGÍSTICO N° 21",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Selva de Protección de la Amazonía N° 15",
+    "app_modal_title": "Batallón de Selva de Protección de la Amazonía N° 15",
+    "pptx_slide_num": 224,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \"PUNO\" N° 15",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Selva de Protección de la Amazonía «Tte César Augusto López Rojas» N° 26",
+    "app_modal_title": "Batallón de Selva de Protección de la Amazonía «Tte César Augusto López Rojas» N° 26",
+    "pptx_slide_num": 226,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE \" CÉSAR AUGUSTO LOPEZ ROJAS\" N° 26",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Selva de Protección de la Amazonía «Gral Brig Guillermo Paz Bustamante» N° 201",
+    "app_modal_title": "Batallón de Selva de Protección de la Amazonía «Gral Brig Guillermo Paz Bustamante» N° 201",
+    "pptx_slide_num": 228,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \" GRAL BRIG PAZ BUSTAMANTE\" N° 201",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Selva de Protección de la Amazonía «Tte César López Rojas» N° 313",
+    "app_modal_title": "Batallón de Selva de Protección de la Amazonía «Tte César López Rojas» N° 313",
+    "pptx_slide_num": 230,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \" TTE CÉSAR LÓPEZ ROJAS\" N° 313",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Ingeniería de Combate Motorizado «Huascarán» N° 112",
+    "app_modal_title": "Batallón de Ingeniería de Combate Motorizado «Huascarán» N° 112",
+    "pptx_slide_num": 51,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 7",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Servicios N° 300",
+    "app_modal_title": "Batallón de Servicios N° 300",
+    "pptx_slide_num": 234,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 300",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía Comando N° 300",
+    "app_modal_title": "Compañía Comando N° 300",
+    "pptx_slide_num": 236,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 300",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía de Policía Militar N° 300",
+    "app_modal_title": "Compañía de Policía Militar N° 300",
+    "pptx_slide_num": 238,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 300",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía de Comunicaciones N° 300",
+    "app_modal_title": "Compañía de Comunicaciones N° 300",
+    "pptx_slide_num": 240,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 300",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Fuerzas Especiales",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 61",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 61",
+    "pptx_slide_num": 251,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 61",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Fuerzas Especiales",
+    "organigrama_name": "BATALLÓN DE COMANDOS 'COMANDANTE ESPINAR' N° 19",
+    "app_modal_title": "BATALLÓN DE COMANDOS \"COMANDANTE ESPINAR\" N° 19",
+    "pptx_slide_num": 245,
+    "pptx_slide_title": "BATALLÓN DE COMANDOS \"COMANDANTE ESPINAR\" N° 19",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Fuerzas Especiales",
+    "organigrama_name": "BATALLÓN DE COMANDOS 'CRL NARCISO DE LA COLINA' N° 61",
+    "app_modal_title": "BATALLÓN DE COMANDOS \"CRL NARCISO DE LA COLINA\" N° 61",
+    "pptx_slide_num": 51,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 7",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Fuerzas Especiales",
+    "organigrama_name": "COMPAÑÍA ESPECIAL CONTRATERRORISTA N° 19",
+    "app_modal_title": "COMPAÑÍA ESPECIAL CONTRATERRORISTA N° 19",
+    "pptx_slide_num": 245,
+    "pptx_slide_title": "BATALLÓN DE COMANDOS \"COMANDANTE ESPINAR\" N° 19",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Fuerzas Especiales",
+    "organigrama_name": "BATALLÓN DE SERVICIOS 'SO1 HUGO LARICO PAMPA' N° 61",
+    "app_modal_title": "BATALLÓN DE SERVICIOS \"SO1 HUGO LARICO PAMPA\" N° 61",
+    "pptx_slide_num": 249,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \"SO1 HUGO LARICO PAMPA\" N° 61",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "1ª BRIGADA de Fuerzas Especiales",
+    "organigrama_name": "COMPAÑÍA DE COMUNICACIONES N° 61",
+    "app_modal_title": "COMPAÑÍA DE COMUNICACIONES N° 61",
+    "pptx_slide_num": 114,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" GRAL DIV FRANCISCO VIDAL LAOS\" N° 61",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Comando de Asentamiento Rural",
+    "organigrama_name": "COMPAÑÍA COMANDO Y SERVICIOS",
+    "app_modal_title": "COMPAÑÍA COMANDO Y SERVICIOS",
+    "pptx_slide_num": 266,
+    "pptx_slide_title": "COMPAÑÍA COMANDO Y SERVICIOS",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Comando de Asentamiento Rural",
+    "organigrama_name": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 5",
+    "app_modal_title": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 5",
+    "pptx_slide_num": 260,
+    "pptx_slide_title": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 5",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Comando de Asentamiento Rural",
+    "organigrama_name": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 3",
+    "app_modal_title": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 3",
+    "pptx_slide_num": 262,
+    "pptx_slide_title": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 3",
+    "different": false
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Comando de Asentamiento Rural",
+    "organigrama_name": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 6",
+    "app_modal_title": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 6",
+    "pptx_slide_num": 62,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" CAP JUAN HOYLE PALACIOS\" N° 6",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Destacamento Aerotransportado",
+    "organigrama_name": "BATALLÓN DE FUERZAS ESPECIALES N° 41",
+    "app_modal_title": "BATALLÓN DE FUERZAS ESPECIALES N° 41",
+    "pptx_slide_num": 299,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA BLINDADO \" SAN PABLO\" N° 41",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Destacamento Aerotransportado",
+    "organigrama_name": "BATALLÓN DE AEROMÓVIL N° 40",
+    "app_modal_title": "BATALLÓN DE AEROMÓVIL N° 40",
+    "pptx_slide_num": 275,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA AEROMÓVIL N° 40",
+    "different": true
+  },
+  {
+    "div": "II DIVISIÓN de EJÉRCITO",
+    "brigada": "Destacamento Aerotransportado",
+    "organigrama_name": "BATALLÓN AEROTRANSPORTADO N° 39",
+    "app_modal_title": "BATALLÓN AEROTRANSPORTADO N° 39",
+    "pptx_slide_num": 273,
+    "pptx_slide_title": "BATALLÓN AEROTRANSPORTADO N° 39",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Agrupamiento de ARTILLERÍA 'Coronel Francisco Bolognesi' (Arequipa)",
+    "app_modal_title": "Agrupamiento de ARTILLERÍA 'Coronel Francisco Bolognesi' (Arequipa)",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN de POLICÍA Militar N° 301(Arequipa)",
+    "app_modal_title": "BATALLÓN de POLICÍA Militar N° 301(Arequipa)",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN de COMUNICACIONES N° 301(Arequipa)",
+    "app_modal_title": "BATALLÓN de COMUNICACIONES N° 301(Arequipa)",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 3",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 3",
+    "pptx_slide_num": 307,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 3",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 3",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 3",
+    "pptx_slide_num": 309,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 3",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 3",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 3",
+    "pptx_slide_num": 311,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 3",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE TANQUES N° 211",
+    "app_modal_title": "BATALLÓN DE TANQUES N° 211",
+    "pptx_slide_num": 81,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA BLINDADO \" CAHUIDE\" N° 211",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE TANQUES N° 221",
+    "app_modal_title": "BATALLÓN DE TANQUES N° 221",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA BLINDADO N° 41",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA BLINDADO N° 41",
+    "pptx_slide_num": 299,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA BLINDADO \" SAN PABLO\" N° 41",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 3",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 3",
+    "pptx_slide_num": 301,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CRL JUSTO ARIAS ARAGÜEZ\" N° 3",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 3",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 3",
+    "pptx_slide_num": 303,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO \"7 DE JUNIO\" N° 3",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 3",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 3",
+    "pptx_slide_num": 301,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CRL JUSTO ARIAS ARAGÜEZ\" N° 3",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 6",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 6",
+    "pptx_slide_num": 330,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 6",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 6",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 6",
+    "pptx_slide_num": 332,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 6",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 6",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 6",
+    "pptx_slide_num": 334,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 6",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE TANQUES N° 213",
+    "app_modal_title": "BATALLÓN DE TANQUES N° 213",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE TANQUES N° 212",
+    "app_modal_title": "BATALLÓN DE TANQUES N° 212",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA BLINDADO N° 45",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA BLINDADO N° 45",
+    "pptx_slide_num": 320,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA BLINDADO \"CONCEPCIÓN\" N° 45",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 17",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 17",
+    "pptx_slide_num": 322,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"CRL ESNAIDER VÁSQUEZ SILVA\" N° 17",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "GRUPO DE ARTILLERÍA ANTI AÉREA N° 501",
+    "app_modal_title": "GRUPO DE ARTILLERÍA ANTI AÉREA N° 501",
+    "pptx_slide_num": 186,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 501",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 6",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 6",
+    "pptx_slide_num": 62,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" CAP JUAN HOYLE PALACIOS\" N° 6",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "6ª BRIGADA Blindada",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 6",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 6",
+    "pptx_slide_num": 122,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \"CAP CÉSAR JÁUREGUI FALCÓN\" N° 116",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª BRIGADA de MONTAÑA",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 5",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 5",
+    "pptx_slide_num": 18,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZARUMILLA\" N° 5",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª BRIGADA de MONTAÑA",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 5",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 5",
+    "pptx_slide_num": 18,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZARUMILLA\" N° 5",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª BRIGADA de MONTAÑA",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 5",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 5",
+    "pptx_slide_num": 18,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZARUMILLA\" N° 5",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 9",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 9",
+    "pptx_slide_num": 339,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"CAQUETÁ \" N° 9",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 30",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 30",
+    "pptx_slide_num": 341,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"TTE EDUARDO ASTETE MENDOZA\" N° 30",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 35",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 35",
+    "pptx_slide_num": 343,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" GRAL FELIPE SANTIAGO SALAVERRY\" N° 35",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE N° 241",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE N° 241",
+    "pptx_slide_num": 345,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE COMBATE \"CRL GERARDO DIANDERAS SÁNCHEZ \" N° 241",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 9",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 9",
+    "pptx_slide_num": 347,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 9",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 4",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 4",
+    "pptx_slide_num": 382,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 4",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 4",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 4",
+    "pptx_slide_num": 384,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 4",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 4",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 4",
+    "pptx_slide_num": 386,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 4",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 55",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 55",
+    "pptx_slide_num": 358,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" CRL MARIANO BUSTAMANTE\" N° 55",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 21",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 21",
+    "pptx_slide_num": 360,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"JUNÍN\" N° 21",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 123",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 123",
+    "pptx_slide_num": 366,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \" MY ALFREDO NOVOA CAVA\" N° 123",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 111",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 111",
+    "pptx_slide_num": 368,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \" GRAL BRIG JOSÉ IDELFONSO COLOMA\" N° 111",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 33",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 33",
+    "pptx_slide_num": 362,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"LIMA\" N° 33",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 59",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA MOTORIZADO N° 59",
+    "pptx_slide_num": 64,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" ´PUCARÁ\" N° 37",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 9",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 9",
+    "pptx_slide_num": 370,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \" MY RÁZURI\" N° 9",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE N° 4",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE N° 4",
+    "pptx_slide_num": 372,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CRL JÓSÉ JUAQUÍN INCLAN\" N° 4",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 4",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 4",
+    "pptx_slide_num": 372,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CRL JÓSÉ JUAQUÍN INCLAN\" N° 4",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 11",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 11",
+    "pptx_slide_num": 20,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"TUMBES\" N° 11",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 8",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 8",
+    "pptx_slide_num": 376,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CRL PEDRO RUIZ GALLO\" N° 8",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª BRIGADA de MONTAÑA",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 4",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 4",
+    "pptx_slide_num": 380,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 4",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "ESCUADRÓN° DE COMANDO N° 20",
+    "app_modal_title": "ESCUADRÓN° DE COMANDO N° 20",
+    "pptx_slide_num": 201,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" MY FERNANDO ANTONIO SUÁRES\" N° 20",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 20",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 20",
+    "pptx_slide_num": 201,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" MY FERNANDO ANTONIO SUÁRES\" N° 20",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 20",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 20",
+    "pptx_slide_num": 411,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 20",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 113",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 113",
+    "pptx_slide_num": 391,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \" TTE CRL JOSE´ BUENAVENTURA SEPÚLVEDA FERNÁNDEZ\" N° 113",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 101",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 101",
+    "pptx_slide_num": 393,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO 2 MY SAMUEL DEL ALCÁZAR VALDIVIA\" N° 101",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 3",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 3",
+    "pptx_slide_num": 395,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"GRAL SAN MARTÍN\" N° 3",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE CABALLERÍA BLINDADO N° 211",
+    "app_modal_title": "REGIMIENTO DE CABALLERÍA BLINDADO N° 211",
+    "pptx_slide_num": 397,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"MARISCAL CASTILLA\" N° 211",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE N° 20",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE N° 20",
+    "pptx_slide_num": 403,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE COMBATE \"SUBTENIENTE JORGE MONTENEGRO GASCO\" N° 20",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA 113",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MARISCAL ELOY G. URETA MONTEHERMOSO\" N° 113",
+    "pptx_slide_num": 399,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MARISCAL ELOY G. URETA MONTEHERMOSO\" N° 113",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA 20",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" GRAL ISAAC RECAVARREN FLORES \" N° 20",
+    "pptx_slide_num": 401,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" GRAL ISAAC RECAVARREN FLORES \" N° 20",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Caballería",
+    "organigrama_name": "REGIMIENTO DE SERVICIOS N° 20",
+    "app_modal_title": "REGIMIENTO DE SERVICIOS N° 20",
+    "pptx_slide_num": 201,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" MY FERNANDO ANTONIO SUÁRES\" N° 20",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía «My Rubén de la Cruz Huarcaya» N° 612",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía «My Rubén de la Cruz Huarcaya» N° 612",
+    "pptx_slide_num": 228,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \" GRAL BRIG PAZ BUSTAMANTE\" N° 201",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía «Tte Crl Pedro Pablo Bermúdez» N° 613",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía «Tte Crl Pedro Pablo Bermúdez» N° 613",
+    "pptx_slide_num": 418,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 633",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía «My Marco Jara Schenone» N° 614",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía «My Marco Jara Schenone» N° 614",
+    "pptx_slide_num": 420,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 643",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Infantería de Selva de Protección de la Amazonía «Tte Marco Chacón Vargas» N° 615",
+    "app_modal_title": "Batallón de Infantería de Selva de Protección de la Amazonía «Tte Marco Chacón Vargas» N° 615",
+    "pptx_slide_num": 422,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 613",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Ingeniería y Construcción «Cap Moisés Tomás Bueno» N° 4",
+    "app_modal_title": "Batallón de Ingeniería y Construcción «Cap Moisés Tomás Bueno» N° 4",
+    "pptx_slide_num": 424,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA Y CONSTRUCCIÓN \"CAP MOISÉS TOMÁS BUENO\" N° 4",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Unidad Militar de Asentamiento Rural «Iberia» N° 4",
+    "app_modal_title": "Unidad Militar de Asentamiento Rural «Iberia» N° 4",
+    "pptx_slide_num": 426,
+    "pptx_slide_title": "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 4",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Batallón de Servicios «SO1 Edgar García Villena» N° 600",
+    "app_modal_title": "Batallón de Servicios «SO1 Edgar García Villena» N° 600",
+    "pptx_slide_num": 428,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \" SO1 EDGAR GARCÍA VILLENA\" N° 600",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía Especial de Comandos «Sgto2 Rolando Bendezú Rebata» N° 600",
+    "app_modal_title": "Compañía Especial de Comandos «Sgto2 Rolando Bendezú Rebata» N° 600",
+    "pptx_slide_num": 430,
+    "pptx_slide_title": "COMPAÑÍA ESPECIAL DE COMANDOS \"SGTO2 ROLANDO BENDEZÚ REBATA\" N° 600",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía de Policía Militar «SO1 Hugo Larico Pampa» N° 600",
+    "app_modal_title": "Compañía de Policía Militar «SO1 Hugo Larico Pampa» N° 600",
+    "pptx_slide_num": 432,
+    "pptx_slide_title": "COMPAÑIA POLICÍA MILITAR \"SO1 HUGO LARICO PAMPA\" N° 600",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Selva de Protección de la Amazonía",
+    "organigrama_name": "Compañía de Comunicaciones «SO1 Valentín Huanca Huilca» N° 600",
+    "app_modal_title": "Compañía de Comunicaciones «SO1 Valentín Huanca Huilca» N° 600",
+    "pptx_slide_num": 434,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES \"SO1 VALENTÍN HUANCA HUILCA\" N° 600",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento Antitanque 'Cazadores' N° 3",
+    "organigrama_name": "Batería Comando y Servicios N° 3",
+    "app_modal_title": "Batería Comando y Servicios N° 3",
+    "pptx_slide_num": 301,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CRL JUSTO ARIAS ARAGÜEZ\" N° 3",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento Antitanque 'Cazadores' N° 3",
+    "organigrama_name": "Compañía Antitanque 'Cazadores' N° 3",
+    "app_modal_title": "Compañía Antitanque 'Cazadores' N° 3",
+    "pptx_slide_num": 301,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CRL JUSTO ARIAS ARAGÜEZ\" N° 3",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento Antitanque 'Cazadores' N° 3",
+    "organigrama_name": "Compañía Antitanque N° 5",
+    "app_modal_title": "Compañía Antitanque N° 5",
+    "pptx_slide_num": 18,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZARUMILLA\" N° 5",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento Antitanque 'Cazadores' N° 3",
+    "organigrama_name": "Compañía Antitanque N° 7",
+    "app_modal_title": "Compañía Antitanque N° 7",
+    "pptx_slide_num": 41,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZEPITA\" N° 7",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento Antitanque 'Cazadores' N° 3",
+    "organigrama_name": "Compañía Antitanque N° 9",
+    "app_modal_title": "Compañía Antitanque N° 9",
+    "pptx_slide_num": 47,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MARCAVALLE\" N° 9",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Cohetes Antiaéreos 'Crl José Gálvez' N° 1",
+    "organigrama_name": "Batería Comando y Servicios N° 1",
+    "app_modal_title": "Batería Comando y Servicios N° 1",
+    "pptx_slide_num": 28,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \"MY ELÍAS BODERO RODRÍGUEZ\" N° 1",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Cohetes Antiaéreos 'Crl José Gálvez' N° 1",
+    "organigrama_name": "Grupo de Cohetes Antiaéreos N° 2",
+    "app_modal_title": "GRUPO DE COHETES ANTIAÉREOS N° 2",
+    "pptx_slide_num": 464,
+    "pptx_slide_title": "GRUPO DE COHETES ANTIAÉREOS N° 2",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Cohetes Antiaéreos 'Crl José Gálvez' N° 1",
+    "organigrama_name": "Grupo de Cohetes Antiaéreos N° 4",
+    "app_modal_title": "GRUPO DE COHETES ANTIAÉREOS N° 4",
+    "pptx_slide_num": 466,
+    "pptx_slide_title": "GRUPO DE COHETES ANTIAÉREOS N° 4",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Cohetes Antiaéreos 'Crl José Gálvez' N° 1",
+    "organigrama_name": "Grupo de Cohetes Antiaéreos N° 6",
+    "app_modal_title": "Grupo de Cohetes Antiaéreos N° 6",
+    "pptx_slide_num": 62,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" CAP JUAN HOYLE PALACIOS\" N° 6",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Cohetes Antiaéreos 'Crl José Gálvez' N° 1",
+    "organigrama_name": "Batería de Artillería de Campaña N° 1",
+    "app_modal_title": "Batería de Artillería de Campaña N° 1",
+    "pptx_slide_num": 28,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS \"MY ELÍAS BODERO RODRÍGUEZ\" N° 1",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería 'Crl Francisco Bolognesi'",
+    "organigrama_name": "BATERÍA COMANDO Y SERVICIOS N° 113",
+    "app_modal_title": "BATERÍA COMANDO Y SERVICIOS N° 113",
+    "pptx_slide_num": 26,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA ANTIAÉREA \" TTE CRL RICARDO O´DONOVAN\" N° 113",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería 'Crl Francisco Bolognesi'",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 4",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 4",
+    "pptx_slide_num": 372,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CRL JÓSÉ JUAQUÍN INCLAN\" N° 4",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería 'Crl Francisco Bolognesi'",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 113",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 113",
+    "pptx_slide_num": 399,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"MARISCAL ELOY G. URETA MONTEHERMOSO\" N° 113",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería 'Crl Francisco Bolognesi'",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 114",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 114",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Artillería 'Crl Francisco Bolognesi'",
+    "organigrama_name": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 501",
+    "app_modal_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 501",
+    "pptx_slide_num": 477,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" GRAL PEDRO SILVA GIL\" N° 501",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Comunicaciones 'José Olaya'",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 13",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 13",
+    "pptx_slide_num": 135,
+    "pptx_slide_title": "REGIMIENTO DE CABALLERÍA BLINDADO \"CRL GREGORIO ALBARRACÍN\" N° 13",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Comunicaciones 'José Olaya'",
+    "organigrama_name": "BATALLÓN DE COMUNICACIONES 'TTE ENRIQUE CHOCANO' N° 113",
+    "app_modal_title": "BATALLÓN DE COMUNICACIONES \" TTE ENRIQUE CHOCANO\" N° 113",
+    "pptx_slide_num": 492,
+    "pptx_slide_title": "BATALLÓN DE COMUNICACIONES \" TTE ENRIQUE CHOCANO\" N° 113",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Comunicaciones 'José Olaya'",
+    "organigrama_name": "BATALLÓN DE COMUNICACIONES N° 501",
+    "app_modal_title": "BATALLÓN DE COMUNICACIONES N° 501",
+    "pptx_slide_num": 186,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 501",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Comunicaciones 'José Olaya'",
+    "organigrama_name": "COMPAÑÍA DE COMUNICACIONES N° 8",
+    "app_modal_title": "COMPAÑÍA DE COMUNICACIONES N° 8",
+    "pptx_slide_num": 498,
+    "pptx_slide_title": "COMPAÑÍA DE COMUNICACIONES N° 8",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Comunicaciones 'José Olaya'",
+    "organigrama_name": "COMPAÑÍA DE GUERRA ELECTRÓNICA N° 113",
+    "app_modal_title": "COMPAÑÍA DE GUERRA ELECTRÓNICA N° 113",
+    "pptx_slide_num": 496,
+    "pptx_slide_title": "COMPAÑÍA DE GUERRA ELECTRÓNICA \" GRAL PEDRO PUENTE REVILLA\" N° 113",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Servicios",
+    "organigrama_name": "COMPAÑÍA COMANDO Y SERVICIOS N° 113",
+    "app_modal_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 113",
+    "pptx_slide_num": 517,
+    "pptx_slide_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 113",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Servicios",
+    "organigrama_name": "BATALLÓN DE TRANSPORTES N° 113",
+    "app_modal_title": "BATALLÓN DE TRANSPORTES N° 113",
+    "pptx_slide_num": 505,
+    "pptx_slide_title": "BATALLÓN DE TRANSPORTES N° 113",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Servicios",
+    "organigrama_name": "BATALLÓN DE INTENDENCIA N° 113",
+    "app_modal_title": "BATALLÓN DE INTENDENCIA N° 113",
+    "pptx_slide_num": 507,
+    "pptx_slide_title": "BATALLÓN DE INTENDENCIA N° 113",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Servicios",
+    "organigrama_name": "BATALLÓN DE MATERIAL DE GUERRA N° 113",
+    "app_modal_title": "BATALLÓN DE MATERIAL DE GUERRA N° 113",
+    "pptx_slide_num": 509,
+    "pptx_slide_title": "BATALLÓN DE MATERIAL DE GUERRA N° 113",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Servicios",
+    "organigrama_name": "COMPAÑÍA INGENIERÍA DE SERVICIOS N° 113",
+    "app_modal_title": "COMPAÑÍA INGENIERÍA DE SERVICIOS N° 113",
+    "pptx_slide_num": 515,
+    "pptx_slide_title": "COMPAÑÍA INGENIERÍA DE SERVICIOS N° 113",
+    "different": false
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Servicios",
+    "organigrama_name": "COMPAÑÍA DE COMUNICACIONES DE SERVICIOS N° 113",
+    "app_modal_title": "COMPAÑÍA DE COMUNICACIONES DE SERVICIOS N° 113",
+    "pptx_slide_num": 26,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA ANTIAÉREA \" TTE CRL RICARDO O´DONOVAN\" N° 113",
+    "different": true
+  },
+  {
+    "div": "III DIVISIÓN de EJÉRCITO",
+    "brigada": "3ª BRIGADA de Servicios",
+    "organigrama_name": "COMPAÑÍA SANIDAD Y VETERINARIA N° 113",
+    "app_modal_title": "COMPAÑÍA SANIDAD Y VETERINARIA N° 113",
+    "pptx_slide_num": 511,
+    "pptx_slide_title": "COMPAÑÍA SANIDAD Y VETERINARIA N° 113",
+    "different": false
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN de Comandos N° 116(Pichari)",
+    "app_modal_title": "BATALLÓN de Comandos N° 116(Pichari)",
+    "pptx_slide_num": 118,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE COMBATE SELVA N° 116",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN de Servicios N° 4(Pichari)",
+    "app_modal_title": "BATALLÓN de Servicios N° 4(Pichari)",
+    "pptx_slide_num": 372,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CRL JÓSÉ JUAQUÍN INCLAN\" N° 4",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Compañía de COMUNICACIONES N° 4",
+    "app_modal_title": "Compañía de COMUNICACIONES N° 4",
+    "pptx_slide_num": 372,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CRL JÓSÉ JUAQUÍN INCLAN\" N° 4",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 31",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 31",
+    "pptx_slide_num": 545,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 31",
+    "different": false
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 31",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 31",
+    "pptx_slide_num": 545,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 31",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 31",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 31",
+    "pptx_slide_num": 547,
+    "pptx_slide_title": "COMPAÑÍA COMUNICACIONES N° 31",
+    "different": false
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 43",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 43",
+    "pptx_slide_num": 529,
+    "pptx_slide_title": "BATALLÓN DE CONTRATERRORISTA \" MARISCAL CÁCERES\" N° 43",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 79",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 79",
+    "pptx_slide_num": 531,
+    "pptx_slide_title": "BATALLÓN DE CONTRATERRORISTA \"ALTO COMAINA\" N° 79",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 311",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 311",
+    "pptx_slide_num": 533,
+    "pptx_slide_title": "BATALLÓN DE CONTRATERRORISTA \" CRL DOMINGO AYARZA\" N° 311",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 312",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 312",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 324",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 324",
+    "pptx_slide_num": 537,
+    "pptx_slide_title": "BATALLÓN CONTRATERRORISTA \" TTE CRL NATALIO SÁNCHEZ PAREDES\" N° 324",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA ESPECIAL DE COMANDOS N° 31",
+    "app_modal_title": "COMPAÑÍA ESPECIAL DE COMANDOS N° 31",
+    "pptx_slide_num": 541,
+    "pptx_slide_title": "COMPAÑÍA ESPECIAL DE COMANDOS \"PACHACUTEC\" N° 31",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "31ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 31",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 31",
+    "pptx_slide_num": 51,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 7",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "33ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMANDO Y SERVICIOS N° 33",
+    "app_modal_title": "Compañía Comando y Servicios N° 33",
+    "pptx_slide_num": 362,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"LIMA\" N° 33",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "33ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 33",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 33",
+    "pptx_slide_num": 362,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"LIMA\" N° 33",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "33ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 314",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 314",
+    "pptx_slide_num": 552,
+    "pptx_slide_title": "BATALLÓN CONTRATERRORISTA \" CRL BUENAVENTURA AGUIRRE\" N° 314",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "33ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 331",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 331",
+    "pptx_slide_num": 554,
+    "pptx_slide_title": "BATALLÓN CONTRATERRORISTA \"TTE EDUARDO ASTETE MENDOZA\" N° 331",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "33ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 333",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 333",
+    "pptx_slide_num": 556,
+    "pptx_slide_title": "BATALLÓN CONTRATERRORISTA \"QUILLABAMBA\" N° 333",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "33ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 334",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 334",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "33ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA DE COMANDOS N° 33",
+    "app_modal_title": "COMPAÑÍA ESPECIAL DE COMANDOS N° 33",
+    "pptx_slide_num": 560,
+    "pptx_slide_title": "COMPAÑÍA ESPECIAL DE COMANDOS \"ARICA\" N° 33",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "33ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA DE INSTRUCCIÓN N° 33",
+    "app_modal_title": "Compañía de Instrucción N° 33",
+    "pptx_slide_num": 362,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"LIMA\" N° 33",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 2",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 2",
+    "pptx_slide_num": 587,
+    "pptx_slide_title": "COMPAÑÍA COMANDO N° 2",
+    "different": false
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 2",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 2",
+    "pptx_slide_num": 589,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 2",
+    "different": false
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES N° 2",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES N° 2",
+    "pptx_slide_num": 581,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 2",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE COMANDOS N° 116",
+    "app_modal_title": "BATALLÓN DE COMANDOS N° 116",
+    "pptx_slide_num": 571,
+    "pptx_slide_title": "BATALLÓN DE COMANDOS \"MY MARKO JARA SCHENONE\" N° 116",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 34",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 34",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 42",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 42",
+    "pptx_slide_num": 575,
+    "pptx_slide_title": "BATALLÓN CONTRATERRORISTA \"MOQUEGUA\" N° 42",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN CONTRA TERRORISTA N° 51",
+    "app_modal_title": "BATALLÓN CONTRATERRORISTA N° 51",
+    "pptx_slide_num": 141,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \"CAP ENRIQUE DELHORME\" N° 51",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE FUERZAS ESPECIALES N° 41",
+    "app_modal_title": "BATALLÓN DE FUERZAS ESPECIALES N° 41",
+    "pptx_slide_num": 299,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA BLINDADO \" SAN PABLO\" N° 41",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "COMPAÑÍA ESPECIAL DE COMANDOS N° 2",
+    "app_modal_title": "COMPAÑÍA ESPECIAL DE COMANDOS N° 2",
+    "pptx_slide_num": 585,
+    "pptx_slide_title": "COMPAÑÍA ESPECIAL DE COMANDOS \"LINCE\" N° 2",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "BATERÍA DE ARTILLERÍA DE CAMPAÑA N° 115",
+    "app_modal_title": "BATERÍA DE ARTILLERÍA DE CAMPAÑA N° 115",
+    "pptx_slide_num": 583,
+    "pptx_slide_title": "BATERÍA DE ARTILLERÍA DE CAMPAÑA \"CAP ROBERTO OBREGÓN ÁNGELES\" N° 115",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "2ª Brigada de Infantería",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 2",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 2",
+    "pptx_slide_num": 581,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 2",
+    "different": false
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Ingeniería 'Pedro Ruiz Gallo'",
+    "organigrama_name": "COMPAÑÍA COMANDO Y SERVICIOS N° 22",
+    "app_modal_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 22",
+    "pptx_slide_num": 602,
+    "pptx_slide_title": "COMPAÑÍA COMANDO Y SERVICIOS N° 22",
+    "different": false
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Ingeniería 'Pedro Ruiz Gallo'",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO N° 2",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO N° 2",
+    "pptx_slide_num": 596,
+    "pptx_slide_title": "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO \" JOSÉ OLAYA\" N° 2",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Ingeniería 'Pedro Ruiz Gallo'",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 2",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 2",
+    "pptx_slide_num": 581,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 2",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Ingeniería 'Pedro Ruiz Gallo'",
+    "organigrama_name": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 3",
+    "app_modal_title": "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 3",
+    "pptx_slide_num": 372,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" CRL JÓSÉ JUAQUÍN INCLAN\" N° 4",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Agrupamiento de Ingeniería 'Pedro Ruiz Gallo'",
+    "organigrama_name": "COMPAÑÍA DE FUERZAS ESPECIALES N° 61",
+    "app_modal_title": "COMPAÑÍA DE FUERZAS ESPECIALES N° 61",
+    "pptx_slide_num": 114,
+    "pptx_slide_title": "GRUPO DE ARTILLERÍA DE CAMPAÑA \" GRAL DIV FRANCISCO VIDAL LAOS\" N° 61",
+    "different": true
+  },
+  {
+    "div": "IV DIVISIÓN de EJÉRCITO",
+    "brigada": "Destacamento de Apoyo Administrativo",
+    "organigrama_name": "COMPAÑÍA DE TRANSPORTES",
+    "app_modal_title": "COMPAÑÍA DE TRANSPORTES",
+    "pptx_slide_num": 609,
+    "pptx_slide_title": "COMPAÑÍA DE TRANSPORTES",
+    "different": false
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "BATALLÓN de COMUNICACIONES N° 501(Iquitos)",
+    "app_modal_title": "BATALLÓN de COMUNICACIONES N° 501(Iquitos)",
+    "pptx_slide_num": 186,
+    "pptx_slide_title": "BATALLÓN POLICÍA MILITAR N° 501",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Compañía de Embarcaciones Fluviales N° 5(Iquitos)",
+    "app_modal_title": "Compañía de Embarcaciones Fluviales N° 5(Iquitos)",
+    "pptx_slide_num": 18,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \"ZARUMILLA\" N° 5",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª Brigada de Selva de Protección a la Amazonía",
+    "organigrama_name": "COMPAÑÍA COMANDO N° 35",
+    "app_modal_title": "COMPAÑÍA COMANDO N° 35",
+    "pptx_slide_num": 343,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" GRAL FELIPE SANTIAGO SALAVERRY\" N° 35",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª Brigada de Selva de Protección a la Amazonía",
+    "organigrama_name": "COMPAÑÍA POLICÍA MILITAR N° 35",
+    "app_modal_title": "COMPAÑÍA POLICÍA MILITAR N° 35",
+    "pptx_slide_num": 343,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" GRAL FELIPE SANTIAGO SALAVERRY\" N° 35",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª Brigada de Selva de Protección a la Amazonía",
+    "organigrama_name": "COMPAÑÍA DE COMUNICACIONES N° 35",
+    "app_modal_title": "COMPAÑÍA DE COMUNICACIONES N° 35",
+    "pptx_slide_num": 343,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA MOTORIZADO \" GRAL FELIPE SANTIAGO SALAVERRY\" N° 35",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª Brigada de Selva de Protección a la Amazonía",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 535",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 535",
+    "pptx_slide_num": 645,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PRITECCIÓN DE LA AMAZONÍA \"TTE CRL DOMINGO PIZARRO DIOSES\" N° 535",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª Brigada de Selva de Protección a la Amazonía",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 525",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 525",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª Brigada de Selva de Protección a la Amazonía",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 515",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 515",
+    "pptx_slide_num": 649,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \"CABO VÍCTOR PANTOJA CASTILLA\" N° 515",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª Brigada de Selva de Protección a la Amazonía",
+    "organigrama_name": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 49",
+    "app_modal_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 49",
+    "pptx_slide_num": 651,
+    "pptx_slide_title": "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA \"LA PEDRERA\" N° 49",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "4ª Brigada de Selva de Protección a la Amazonía",
+    "organigrama_name": "BATALLÓN DE SERVICIOS N° 35",
+    "app_modal_title": "BATALLÓN DE SERVICIOS N° 35",
+    "pptx_slide_num": 653,
+    "pptx_slide_title": "BATALLÓN DE SERVICIOS N° 35",
+    "different": false
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Servicios",
+    "organigrama_name": "COMPAÑÍA COMUNICACIONES Y SERVICIOS N° 115",
+    "app_modal_title": "COMPAÑÍA COMUNICACIONES Y SERVICIOS N° 115",
+    "pptx_slide_num": 522,
+    "pptx_slide_title": "COMPAÑÍA DE INGENIERÍA DE COMBATE N° 115",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Servicios",
+    "organigrama_name": "COMPAÑÍA INGENIERÍA Y SERVICIOS N° 115",
+    "app_modal_title": "COMPAÑÍA INGENIERÍA Y SERVICIOS N° 115",
+    "pptx_slide_num": 522,
+    "pptx_slide_title": "COMPAÑÍA DE INGENIERÍA DE COMBATE N° 115",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Servicios",
+    "organigrama_name": "BATALLÓN DE TRANSPORTES N° 115",
+    "app_modal_title": "BATALLÓN DE TRANSPORTES N° 115",
+    "pptx_slide_num": 664,
+    "pptx_slide_title": "BATALLÓN DE TRANSPORTES N° 115",
+    "different": false
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Servicios",
+    "organigrama_name": "BATALLÓN DE INTENDENCIA N° 115",
+    "app_modal_title": "BATALLÓN DE INTENDENCIA N° 115",
+    "pptx_slide_num": 664,
+    "pptx_slide_title": "BATALLÓN DE TRANSPORTES N° 115",
+    "different": true
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Servicios",
+    "organigrama_name": "BATALLÓN DE MATERIAL DE GUERRA N° 115",
+    "app_modal_title": "BATALLÓN DE MATERIAL DE GUERRA N° 115",
+    "pptx_slide_num": 668,
+    "pptx_slide_title": "BATALLÓN DE MATERIAL DE GUERRA N° 115",
+    "different": false
+  },
+  {
+    "div": "V DIVISIÓN de EJÉRCITO",
+    "brigada": "5ª Brigada de Servicios",
+    "organigrama_name": "COMPAÑÍA DE SANIDAD VETERINARIA N° 115",
+    "app_modal_title": "COMPAÑÍA DE SANIDAD VETERINARIA N° 115",
+    "pptx_slide_num": 522,
+    "pptx_slide_title": "COMPAÑÍA DE INGENIERÍA DE COMBATE N° 115",
+    "different": true
+  },
+  {
+    "div": "Aviación del EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Compañía Comando «Cap José Soto Merino» N° 800",
+    "app_modal_title": "Compañía Comando «Cap José Soto Merino» N° 800",
+    "pptx_slide_num": 74,
+    "pptx_slide_title": "COMPAÑÍA POLICÍA MILITAR N° 32",
+    "different": true
+  },
+  {
+    "div": "Aviación del EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Compañía POLICÍA Militar «Tco2 Victoriano Castillo Velarde» N° 800",
+    "app_modal_title": "Compañía Policía Militar «Tco2 Victoriano Castillo Velarde» N° 800",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  },
+  {
+    "div": "Aviación del EJÉRCITO",
+    "brigada": "Unidad Divisionaria Directa",
+    "organigrama_name": "Compañía de COMUNICACIONES «SO1 Rubén de la Cruz Huarcaya» N° 800",
+    "app_modal_title": "Compañía de Comunicaciones «SO1 Rubén de la Cruz Huarcaya» N° 800",
+    "pptx_slide_num": null,
+    "pptx_slide_title": "NO ENCONTRADA EN PPTX",
+    "different": true
+  }
+]

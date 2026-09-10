@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Armas y Servicios</string>
+    <string name="title_activity_main">Armas y Servicios</string>
+    <string name="package_name">pe.mil.ejercito.armas</string>
+    <string name="custom_url_scheme">pe.mil.ejercito.armas</string>
+</resources>

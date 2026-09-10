@@ -1,0 +1,106 @@
+{
+  "escuelas": [
+    {
+      "id": "infanteria",
+      "nombre": "Escuela de Infantería",
+      "lat": -12.1610,
+      "lng": -77.0210,
+      "x": 32.0,
+      "y": 62.0,
+      "sede": "Chorrillos, Lima",
+      "mision": "Formar oficiales líderes del arma de infantería, capacitados para planificar y conducir operaciones de combate terrestre cercano y maniobras tácticas.",
+      "logo": "assets/logos/infanteria.png",
+      "video_escuela": "assets/videos/infanteria.mp4",
+      "heroes_ids": ["caceres"]
+    },
+    {
+      "id": "caballeria",
+      "nombre": "Escuela de Caballería",
+      "lat": -4.9039,
+      "lng": -80.6853,
+      "x": 26.0,
+      "y": 28.0,
+      "sede": "Sullana, Piura",
+      "mision": "Desarrollar capacidades tácticas y operacionales en maniobras blindadas, operaciones de reconocimiento y misiones de seguridad rápida.",
+      "logo": "assets/logos/caballeria.png",
+      "video_escuela": "assets/videos/caballeria.mp4",
+      "heroes_ids": ["ugarte"]
+    },
+    {
+      "id": "artilleria",
+      "nombre": "Escuela de Artillería",
+      "lat": -16.4090,
+      "lng": -71.5375,
+      "x": 65.0,
+      "y": 78.0,
+      "sede": "La Joya, Arequipa",
+      "mision": "Instruir en el uso de apoyo de fuegos indirectos, artillería de campaña, sistemas de misiles y dirección técnica de tiro táctico.",
+      "logo": "assets/logos/artilleria.png",
+      "video_escuela": "assets/videos/artilleria.mp4",
+      "heroes_ids": ["bolognesi"]
+    },
+    {
+      "id": "ingenieria",
+      "nombre": "Escuela de Ingeniería",
+      "lat": -12.1580,
+      "lng": -77.0250,
+      "x": 36.0,
+      "y": 65.0,
+      "sede": "Chorrillos, Lima",
+      "mision": "Capacitar en movilidad, contramovilidad, fortificaciones, desactivación de explosivos y apoyo de ingeniería civil y militar.",
+      "logo": "assets/logos/ingenieria.png",
+      "video_escuela": "assets/videos/ingenieria.mp4",
+      "heroes_ids": ["ruiz_gallo"]
+    },
+    {
+      "id": "comunicaciones",
+      "nombre": "Escuela de Comunicaciones",
+      "lat": -13.5320,
+      "lng": -71.9675,
+      "x": 60.0,
+      "y": 73.0,
+      "sede": "Cusco",
+      "mision": "Garantizar la conectividad, el mando y control, y la seguridad de las telecomunicaciones militares en todo el territorio nacional.",
+      "logo": "assets/logos/comunicaciones.png",
+      "video_escuela": "assets/videos/comunicaciones.mp4",
+      "heroes_ids": ["olaya"]
+    }
+  ],
+  "heroes": [
+    {
+      "id": "caceres",
+      "nombre": "Mariscal Andrés Avelino Cáceres",
+      "foto": "assets/heroes/caceres.jpg",
+      "resena": "El Brujo de los Andes, líder de la Campaña de la Breña y patrono de la Infantería.",
+      "video_homenaje": "assets/videos/caceres_homenaje.mp4"
+    },
+    {
+      "id": "ugarte",
+      "nombre": "Coronel Alfonso Ugarte",
+      "foto": "assets/heroes/ugarte.jpg",
+      "resena": "Héroe de la Batalla de Arica que defendió el pabellón nacional saltando del morro.",
+      "video_homenaje": "assets/videos/ugarte_homenaje.mp4"
+    },
+    {
+      "id": "bolognesi",
+      "nombre": "Coronel Francisco Bolognesi",
+      "foto": "assets/heroes/bolognesi.jpg",
+      "resena": "Patrono del Ejército y la Artillería, célebre por su promesa de quemar el último cartucho.",
+      "video_homenaje": "assets/videos/bolognesi_homenaje.mp4"
+    },
+    {
+      "id": "ruiz_gallo",
+      "nombre": "Teniente Coronel Pedro Ruiz Gallo",
+      "foto": "assets/heroes/ruiz_gallo.jpg",
+      "resena": "Militar e inventor brillante, pionero de la aeronáutica y patrono de la Ingeniería.",
+      "video_homenaje": "assets/videos/ruiz_gallo_homenaje.mp4"
+    },
+    {
+      "id": "olaya",
+      "nombre": "José Olaya Balandra",
+      "foto": "assets/heroes/olaya.jpg",
+      "resena": "Pescador chorrillano y mártir de la independencia, patrono de las Comunicaciones.",
+      "video_homenaje": "assets/videos/olaya_homenaje.mp4"
+    }
+  ]
+}

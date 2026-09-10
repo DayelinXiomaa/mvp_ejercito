@@ -1,0 +1,10 @@
+export const KIOSK_CONFIG = {
+  INACTIVITY_TIMEOUT_SECONDS: 300,
+  ATTRACT_SLIDESHOW_INTERVAL_MS: 7000,
+  MIN_TOUCH_TARGET_SIZE_PX: 56,
+  DEFAULT_LANGUAGE: 'es' as const,
+  SUPPORTED_LANGUAGES: ['es', 'en', 'qu'] as const,
+  ANIMATION_DURATION_MS: 300,
+};
+
+export type SupportedLanguage = (typeof KIOSK_CONFIG.SUPPORTED_LANGUAGES)[number];

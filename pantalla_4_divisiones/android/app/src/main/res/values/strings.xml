@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Divisiones</string>
+    <string name="title_activity_main">Divisiones</string>
+    <string name="package_name">pe.mil.ejercito.divisiones</string>
+    <string name="custom_url_scheme">pe.mil.ejercito.divisiones</string>
+</resources>

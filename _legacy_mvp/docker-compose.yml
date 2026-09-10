@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      # Mapeamos el puerto 8085 de tu máquina al puerto 80 del contenedor
+      # Puedes cambiar el 8085 por otro si este también llega a estar ocupado
+      - "8085:80"
+    volumes:
+      # Montamos el directorio actual para que los cambios se reflejen sin reconstruir la imagen (ideal para desarrollo)
+      - .:/usr/share/nginx/html
