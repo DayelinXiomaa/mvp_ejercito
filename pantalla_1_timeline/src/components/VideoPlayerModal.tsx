@@ -115,15 +115,6 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
     }
   };
 
-  const handleRestart = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    video.currentTime = 0;
-    video.play();
-    setIsPlaying(true);
-    setIsEnded(false);
-  };
-
   return createPortal(
     <div
       style={{ zIndex: 9999 }}
