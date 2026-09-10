@@ -2,11 +2,17 @@ import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { X, Play, Pause, RotateCcw } from 'lucide-react';
 
-interface VideoPlayerModalProps {
+export interface VideoPlayerModalProps {
   videoUrl: string;
-  title: string;
+  title?: string;
+  poster?: string;
+  subtitle?: string;
+  badge?: string;
+  accentColor?: string;
+  fromDetail?: boolean;
   onClose: () => void;
   onViewDetails?: () => void;
+  onBackToCards?: () => void;
 }
 
 function extractYouTubeId(url: string): string | null {
@@ -19,7 +25,8 @@ function extractYouTubeId(url: string): string | null {
 
 export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
   videoUrl,
-  title,
+  title = '',
+  poster,
   onClose,
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -35,6 +42,15 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
     ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&controls=1&playsinline=1&vq=hd1080&hd=1&enablejsapi=1`
     : null;
 
+  // Cerrar y limpiar
+  const handleClose = useCallback(() => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+    onClose();
+  }, [onClose]);
+
   // AutoPlay al montar
   useEffect(() => {
     const video = videoRef.current;
@@ -47,7 +63,10 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
         .catch(() => {
           // Si el navegador bloquea autoplay con sonido, intentar en mute
           video.muted = true;
-          video.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+          video
+            .play()
+            .then(() => setIsPlaying(true))
+            .catch(() => setIsPlaying(false));
         });
     }
 
@@ -81,15 +100,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
-  const handleClose = useCallback(() => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-    onClose();
-  }, [onClose]);
+  }, [handleClose]);
 
   const togglePlay = () => {
     const video = videoRef.current;
@@ -97,7 +108,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
 
     if (isEnded) {
       video.currentTime = 0;
-      video.play();
+      video.play().catch(() => {});
       setIsPlaying(true);
       setIsEnded(false);
       return;
@@ -108,7 +119,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
       setIsPlaying(false);
       setShowCenterIcon(true);
     } else {
-      video.play();
+      video.play().catch(() => {});
       setIsPlaying(true);
       setShowCenterIcon(true);
       setTimeout(() => setShowCenterIcon(false), 900);
@@ -122,6 +133,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
     >
       {/* BOTÓN CERRAR FLOTANTE PROMINENTE (Sin ningún card alrededor) */}
       <button
+        type="button"
         onClick={handleClose}
         className="absolute top-6 right-6 z-50 flex items-center gap-2.5 px-6 py-3 rounded-full bg-red-600/95 hover:bg-red-500 text-white font-black text-sm tracking-wider uppercase shadow-[0_0_30px_rgba(239,68,68,0.7)] border-2 border-white/90 backdrop-blur-md cursor-pointer touch-active hover:scale-105 active:scale-95 transition-all"
         title="Cerrar video"
@@ -135,7 +147,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
         <div className="w-full h-full bg-black relative">
           <iframe
             src={youtubeEmbedUrl}
-            title={title}
+            title={title || 'Video'}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
             allowFullScreen
             className="w-full h-full border-0"
@@ -148,12 +160,14 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
         >
           <video
             ref={videoRef}
+            poster={poster}
             playsInline
             preload="auto"
             autoPlay
             className="w-full h-full object-contain"
           >
             <source src={videoUrl} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+            <source src={videoUrl} type="video/mp4" />
           </video>
 
           {/* OVERLAY CENTRAL FLOTANTE DE PLAY / PAUSA / REINICIO (Solo aparece al pausar o terminar) */}
@@ -172,9 +186,20 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
           )}
 
           {/* BARRA DE PROGRESO INFERIOR ULTRA DISCRETA (Sin panel ni card de controles) */}
-          <div className="absolute bottom-0 left-0 right-0 h-2 bg-white/15 pointer-events-none">
+          <div
+            className="absolute bottom-0 left-0 right-0 h-3 bg-white/15 cursor-pointer z-40 group/bar flex items-end"
+            onClick={(e) => {
+              e.stopPropagation();
+              const rect = e.currentTarget.getBoundingClientRect();
+              const pos = (e.clientX - rect.left) / rect.width;
+              if (videoRef.current && duration) {
+                videoRef.current.currentTime = Math.max(0, Math.min(pos * duration, duration));
+                setCurrentTime(videoRef.current.currentTime);
+              }
+            }}
+          >
             <div
-              className="h-full bg-emerald-400 transition-all duration-200"
+              className="h-2 group-hover/bar:h-3 bg-emerald-400 transition-all duration-150"
               style={{ width: `${duration ? (currentTime / duration) * 100 : 0}%` }}
             />
           </div>
@@ -184,3 +209,5 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
     document.body
   );
 };
+
+export default VideoPlayerModal;
