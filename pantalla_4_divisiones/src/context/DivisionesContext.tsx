@@ -173,7 +173,9 @@ export const DivisionesProvider: React.FC<{ children: ReactNode }> = ({ children
           !saved.includes('batallon-policia-militar-115') ||
           !saved.includes('bis-pa-17') ||
           !saved.includes('Centinela del Cenepa') ||
-          saved.includes('1ª BRIGADA DE SELVA DE PROT DE LA AMAZONÍA')
+          saved.includes('1ª BRIGADA DE SELVA DE PROT DE LA AMAZONÍA') ||
+          (saved.includes('1-brig-servicios') && saved.includes('Centro de Municionamiento')) ||
+          (saved.includes('6-brig-blind') && saved.includes('JUSTO ARIAS'))
         ) {
           localStorage.removeItem('cms_content_divisiones_principal');
         } else {

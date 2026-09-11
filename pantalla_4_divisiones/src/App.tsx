@@ -11,11 +11,11 @@ import './index.css';
 
 const DIVISION_FILTERS = [
   { key: 'TODOS', getLabel: (t: any) => t.filter_all || 'Todas', color: '#10b981' },
-  { key: '1de', getLabel: (t: any) => t.filter_1de || 'I DE (Piura)', color: '#00cfff' },
-  { key: '2de', getLabel: (t: any) => t.filter_2de || 'II DE (Rímac)', color: '#ff9f1a' },
-  { key: '3de', getLabel: (t: any) => t.filter_3de || 'III DE (Arequipa)', color: '#2aff6e' },
-  { key: '4de', getLabel: (t: any) => t.filter_4de || 'IV DE (Pichari)', color: '#ffe12d' },
-  { key: '5de', getLabel: (t: any) => t.filter_5de || 'V DE (Iquitos)', color: '#c565ff' },
+  { key: '1de', getLabel: (t: any) => t.filter_1de || 'I División', color: '#00cfff' },
+  { key: '2de', getLabel: (t: any) => t.filter_2de || 'II División', color: '#ff9f1a' },
+  { key: '3de', getLabel: (t: any) => t.filter_3de || 'III División', color: '#2aff6e' },
+  { key: '4de', getLabel: (t: any) => t.filter_4de || 'IV División', color: '#ffe12d' },
+  { key: '5de', getLabel: (t: any) => t.filter_5de || 'V División', color: '#c565ff' },
   { key: 'ae', getLabel: (t: any) => t.filter_ae || 'Aviación del Ejército', color: '#38bdf8' },
 ];
 

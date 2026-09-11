@@ -112,7 +112,7 @@
           "unidades": [
             "ESCUADRÓN° COMANDO Y SERVICIOS N° 51",
             "ESCUADRÓN° POLICÍA MILITAR N° 51",
-            "COMPAN° IA COMUNICACIONES N° 51",
+            "ESCUADRÓN COMUNICACIONES N° 51",
             "REGIMIENTO DE CABALLERÍA BLINDADO N° 5",
             "REGIMIENTO DE CABALLERÍA BLINDADO N° 13",
             "REGIMIENTO DE CABALLERÍA BLINDADO N° 15",
@@ -158,7 +158,7 @@
             [
               "ESCUADRÓN COMANDO Y SERVICIOS N° 51",
               "ESCUADRÓN POLICÍA MILITAR N° 51",
-              "COMPAÑÍA COMUNICACIONES N° 51"
+              "ESCUADRÓN DE COMUNICACIONES N° 51"
             ],
             [
               "REGIMIENTO DE CABALLERÍA BLINDADO N° 5",
@@ -168,7 +168,7 @@
             ],
             [
               "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 51",
-              "BATALLÓN DE INGENIERÍA DE COMBATE BLIN N° 51"
+              "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO N° 51"
             ],
             [
               "REGIMIENTO DE SERVICIOS N° 51"
@@ -477,7 +477,7 @@
           "sede": "Piura",
           "imagen": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
           "escudo": "/assets/divisiones/slide_165_img_1.png",
-          "resena": "BATALLÓN DE MATERIAL DE GUERRA N° 111 El Batallón de Material de Guerra, desde el año 2008 es una unidad logística establecida en la región Piura. Fue organizado para proporcionar abastecimiento, mantenimiento y evacuación del material de guerra perteneciente a las unidades operativas del norte del país. Entre sus funciones se encuentran la conservación y reparación de armamento, vehículos, municiones, equipos y otros medios técnicos asignados al Ejército. Su labor permite recuperar material averiado y mantener la disponibilidad operacional de las unidades apoyadas durante ejercicios, operaciones y emergencias. Su sede se encuentra en el Centro de Municionamiento del Ejército «Cóngora», distrito de Miguel Checa, provincia de Sullana, departamento de Piura",
+          "resena": "La 1ª Brigada de Servicios surgió como parte de la organización logística de la I División de Ejército, con la finalidad de garantizar el sostenimiento de sus grandes unidades de combate desplegadas en el norte del país. A lo largo de su evolución centralizó funciones de abastecimiento, mantenimiento, transporte, sanidad, intendencia y recuperación de material. Su trayectoria se encuentra estrechamente vinculada al apoyo logístico de las operaciones de vigilancia y defensa de la frontera norte. En los últimos años amplió sus funciones hacia la gestión del riesgo de desastres, el transporte de ayuda humanitaria y el apoyo a poblaciones afectadas por lluvias e inundaciones. Al año 2026 continúa integrada a la I División de Ejército y tiene su sede en el Cuartel «Soldado Isaac Rodríguez de Mendoza», sector El Chipe, ciudad de Piura.",
           "unidades": [
             "COMPAÑÍA COMANDO Y SERVICIOS N° 111",
             "COMPAÑÍA COMUNICACIONES DE SERVICIOS N° 111",
@@ -490,15 +490,15 @@
           "language": {
             "es": {
               "nombre": "1ª BRIGADA de Servicios",
-              "resena": "El Batallón de Material de Guerra, desde el año 2008 es una unidad logística establecida en la región Piura. Fue organizado para proporcionar abastecimiento, mantenimiento y evacuación del material de guerra perteneciente a las unidades operativas del norte del país. Entre sus funciones se encuentran la conservación y reparación de armamento, vehículos, municiones, equipos y otros medios técnicos asignados al Ejército. Su labor permite recuperar material averiado y mantener la disponibilidad operacional de las unidades apoyadas durante ejercicios, operaciones y emergencias.\n\nSu sede se encuentra en el Centro de Municionamiento del Ejército «Cóngora», distrito de Miguel Checa, provincia de Sullana, departamento de Piura"
+              "resena": "La 1ª Brigada de Servicios surgió como parte de la organización logística de la I División de Ejército, con la finalidad de garantizar el sostenimiento de sus grandes unidades de combate desplegadas en el norte del país. A lo largo de su evolución centralizó funciones de abastecimiento, mantenimiento, transporte, sanidad, intendencia y recuperación de material.\n\nSu trayectoria se encuentra estrechamente vinculada al apoyo logístico de las operaciones de vigilancia y defensa de la frontera norte.\n\nEn los últimos años amplió sus funciones hacia la gestión del riesgo de desastres, el transporte de ayuda humanitaria y el apoyo a poblaciones afectadas por lluvias e inundaciones. Al año 2026 continúa integrada a la I División de Ejército y tiene su sede en el Cuartel «Soldado Isaac Rodríguez de Mendoza», sector El Chipe, ciudad de Piura."
             },
             "en": {
               "nombre": "1ª BRIGADA de Servicios",
-              "resena": "Since 2008, the Batallón de Material de Guerra has been a logistics unit established in the Piura region. It was organized to provide supply, maintenance, and evacuation services for the military materiel belonging to operational units in northern Peru. Its functions include preserving and repairing weapons, vehicles, ammunition, equipment, and other technical resources assigned to the Army. Its work enables the recovery of damaged materiel and maintains the operational availability of supported units during exercises, operations, and emergencies. Its headquarters is at Centro de Municionamiento del Ejército «Cóngora», district of Miguel Checa, province of Sullana, department of Piura."
+              "resena": "The 1ª Brigada de Servicios emerged as part of the logistics organization of the I División de Ejército, with the purpose of sustaining its major combat units deployed in northern Peru. Throughout its development, it centralized supply, maintenance, transportation, healthcare, quartermaster, and materiel-recovery functions.\n\nIts history is closely linked to logistics support for surveillance and defense operations along the northern border.\n\nIn recent years, it expanded its functions to include disaster-risk management, transportation of humanitarian aid, and support for communities affected by rainfall and flooding. As of 2026, it remains part of the I División de Ejército and is headquartered at Cuartel «Soldado Isaac Rodríguez de Mendoza», sector El Chipe, city of Piura."
             },
             "qu": {
               "nombre": "1ª BRIGADA de Servicios",
-              "resena": "Batallón de Material de Guerra nisqaqa 2008 watamantapacha región Piurapi churasqa unidad logística-mi. Perúpa norte-ninpi kaq unidades operativas nisqakunapa material de guerra-ninman abastecimiento, mantenimiento hinallataq evacuación qunanpaq wakichisqa karqan. Rurayninkunapi armamento, vehículos, municiones, equipos hinallataq Ejército nisqaman churasqa huk medios técnicos nisqakunata waqaychaywan allinchay kachkan. Llamk'ayninwan waqllisqa materialta kutichin, yanapasqa unidadeskunata ejercicios, operaciones hinallataq emergencias pachapi operacionespaq listo hap'in. Sede-ninmi Centro de Municionamiento del Ejército «Cóngora», distrito de Miguel Checa, provincia de Sullana, departamento de Piura nisqapi kachkan."
+              "resena": "1ª Brigada de Servicios nisqaqa I División de Ejército nisqapa organización logística-nin ukhumanta paqarimurqan, Perúpa norte-ninpi desplegasqa grandes unidades de combate nisqakunapa sostenimiento-ninta qhawananpaq. Wiñayninpi abastecimiento, mantenimiento, transporte, sanidad, intendencia hinallataq material kutichiy ruraykunata hukllacharqan.\n\nPuririsqanmi frontera norte nisqapi vigilancia y defensa operacioneskunaman apoyo logístico quywan sinchi t'inkisqa.\n\nQhipa watakunapi gestión del riesgo de desastres, ayuda humanitaria apay, parawan inundacioneswan ñak'ariq llaqtakunata yanapay ruraykunatapas yaparqan. 2026 watakama I División de Ejército nisqaman hukllachisqalla kachkan; sede-ninmi Cuartel «Soldado Isaac Rodríguez de Mendoza», sector El Chipe, ciudad de Piura nisqapi."
             }
           },
           "columnas": [
@@ -546,15 +546,15 @@
           ],
           "columnas": [
             [
-              "Grupo de Artillería de Campaña «Dos de Mayo» N° 1",
-              "Grupo de Artillería de Campaña «Mariscal La Mar» N° 111"
+              "Batería Comando y Observación «Gral Alejandro Cuadra» N° 111"
             ],
             [
-              "Grupo de Artillería de Campaña «Cap Adolfo King» N° 502",
+              "Grupo de Artillería de Campaña «Dos de Mayo» N° 1",
+              "Grupo de Artillería de Campaña «Mariscal La Mar» N° 111",
               "Grupo de Artillería de Campaña «Qhapaq Ñan» N° 521"
             ],
             [
-              "Batería Comando y Observación «Gral Alejandro Cuadra» N° 111"
+              "Grupo de Artillería de Campaña «Cap Adolfo King» N° 502"
             ]
           ],
           "language": {
@@ -643,7 +643,7 @@
           "escudo": "/assets/divisiones/slide_195_img_1.png",
           "columnas": [
             [
-              "COMPAÑÍA COMANDO Y SERVICIOS N° 21",
+              "COMPAÑÍA COMANDO N° 21",
               "COMPAÑÍA POLICÍA MILITAR N° 21",
               "COMPAÑÍA COMUNICACIONES N° 21"
             ],
@@ -656,14 +656,14 @@
             [
               "BATALLÓN DE INGENIERÍA N° 21",
               "COMPAÑÍA DE DEFENSA NUCLEAR QUÍMICO RADIOLÓGICO N° 21",
-              "ESCUADRÓN DE RECONOCIMIENTO AÉREO TERRESTRE N° 21"
+              "ESCUADRÓN DE RECONOCIMIENTO AEREOTERRESTRE N° 21"
             ],
             [
               "BATALLÓN LOGÍSTICO N° 21"
             ]
           ],
           "unidades": [
-            "COMPAÑÍA COMANDO Y SERVICIOS N° 21",
+            "COMPAÑÍA COMANDO N° 21",
             "COMPAÑÍA POLICÍA MILITAR N° 21",
             "COMPAÑÍA COMUNICACIONES N° 21",
             "BATALLÓN DE INTERVENCIÓN° RÁPIDA ANTE DESASTRES N° 21",
@@ -672,8 +672,30 @@
             "BATALLÓN DE TANQUES N° 232",
             "BATALLÓN DE INGENIERÍA N° 21",
             "COMPAÑÍA DE DEFENSA NUCLEAR QUÍMICO RADIOLÓGICO N° 21",
-            "ESCUADRÓN° DE RECONOCIMIENTO AÉREO TERRESTRE N° 21",
+            "ESCUADRÓN DE RECONOCIMIENTO AEREOTERRESTRE N° 21",
             "BATALLÓN LOGÍSTICO N° 21"
+          ],
+          "unidadesDetalle": [
+            {
+              "nombre": "COMPAÑÍA COMANDO N° 21",
+              "escudo": "/assets/divisiones/slide_214_img_1.png"
+            },
+            {
+              "nombre": "COMPAÑÍA POLICÍA MILITAR N° 21",
+              "escudo": "/assets/divisiones/slide_216_img_1.png"
+            },
+            {
+              "nombre": "BATALLÓN DE INTERVENCIÓN RÁPIDA ANTE DESASTRES N° 21",
+              "escudo": "/assets/divisiones/slide_198_img_1.png"
+            },
+            {
+              "nombre": "BATALLÓN LOGÍSTICO N° 21",
+              "escudo": "/assets/divisiones/slide_218_img_1.png"
+            },
+            {
+              "nombre": "ESCUADRÓN DE RECONOCIMIENTO AEREOTERRESTRE N° 21",
+              "escudo": "/assets/divisiones/slide_212_img_1.png"
+            }
           ]
         },
         {
@@ -687,19 +709,21 @@
           "escudo": "/assets/divisiones/escudo_5_brigada_selva_pa.png",
           "columnas": [
             [
+              "Compañía Comando N° 300",
+              "Compañía de Policía Militar N° 300",
+              "Compañía de Comunicaciones N° 300"
+            ],
+            [
               "Batallón de Selva de Protección de la Amazonía N° 15",
               "Batallón de Selva de Protección de la Amazonía «Tte César Augusto López Rojas» N° 26",
               "Batallón de Selva de Protección de la Amazonía «Gral Brig Guillermo Paz Bustamante» N° 201",
               "Batallón de Selva de Protección de la Amazonía «Tte César López Rojas» N° 313"
             ],
             [
-              "Batallón de Ingeniería de Combate Motorizado «Huascarán» N° 112",
-              "Batallón de Servicios N° 300"
+              "Batallón de Ingeniería de Combate Motorizado «Huascarán» N° 112"
             ],
             [
-              "Compañía Comando N° 300",
-              "Compañía de Policía Militar N° 300",
-              "Compañía de Comunicaciones N° 300"
+              "Batallón de Servicios N° 300"
             ]
           ],
           "unidades": [
@@ -816,7 +840,7 @@
           "language": {
             "es": {
               "nombre": "Comando de Asentamiento Rural",
-              "resena": "Sus antecedentes se vinculan con la creación del Comando de Colonización en 1975, organismo que en 1976 pasó a denominarse Comando de Asentamiento Rural. Fue organizada para proporcionar apoyo de comando, administrativo, logístico y de seguridad al cuartel general del COAR y facilitar la conducción de las UMAR dependientes.\n\nSus funciones comprenden abastecimiento, transporte, mantenimiento, sanidad, comunicaciones, custodia de instalaciones y apoyo a la instrucción del personal militar. Su sede se encuentra en el cuartel “El Ingeniero”, kilómetro 11 de la carretera Federico Basadre, distrito de Manantay, provincia de Coronel Portillo, Ucayali."
+              "resena": "Sus antecedentes se remontan a 1964, cuando el Ejército inició legalmente el empleo de las UMAR. Fue organizado para dirigir las UMAR desplegadas en Ucayali. Históricamente ha conducido proyectos de infraestructura, producción agropecuaria, piscicultura, reforestación y apoyo sanitario y educativo a comunidades nativas y poblaciones fronterizas. Asimismo, participa en la vigilancia de hitos, defensa de la soberanía, gestión del riesgo de desastres y articulación de acciones cívicas con otras instituciones públicas. Ejerce el comando sobre las UMAR Nº 3, Nº 5 y Nº 6. Su sede se encuentra en el cuartel “El Ingeniero”, kilómetro 11 de la carretera Federico Basadre, distrito de Callería, provincia de Coronel Portillo, Ucayali"
             },
             "en": {
               "nombre": "Rural Settlement Command (COAR)",
@@ -879,7 +903,7 @@
           "resena": "II División de Ejército nisqa 1961 watapi diciembre killapa 15 p'unchawninpi Lima llaqtapi kamarisqa karqan, Segunda Región Militar sutiyuq. Qallariypi antiguo Ministerio de Guerra nisqawan wasikunata rak'inakurqan. 1975 watapi “Limazo” sutiyuq ruwaykunapi ukhupi kamachiyta kutichinapi llamk'arqan. 1987 watapi kamachiqnin Fuerte Militar General de División Rafael Hoyos Rubio nisqaman astakurqan, distrito del Rímac. 2003 watapi Región Militar del Centro sutita chaskirqan, chaymantataq kunan sutinta kutichirqan. 2026 watakama sede-ninqa Rímac, Lima nisqapi kachkan; chaymantam suyupa chawpi kaq unidades nisqakunata kamachin hinaspa tinkuchin."
         }
       },
-      "escudo": "/assets/divisiones/slide_276_img_1.png",
+      "escudo": "/assets/divisiones/slide_182_img_1.png",
       "organigrama_columnas": [
         [
           "BATALLÓN POLICÍA MILITAR N° 501",
@@ -897,7 +921,7 @@
         ],
         [
           "BATALLÓN LOGÍSTICO N° 112",
-          "COMPAÑÍA DE INTELIGENCIA N° 21"
+          "COMPAÑÍA DE INTELIGENCIA N° 112"
         ]
       ]
     },
@@ -926,7 +950,7 @@
           "tipo": "BRIGADA BLINDADA",
           "sede": "Fuerte La Torre, Moquegua",
           "creacion": "1 de enero de 2003",
-          "resena": "BATALLÓN DE INFANTERÍA MECANIZADO “VENCEDORES DE PICHINCHA” N° 13 Fue organizado como Batallón de Infantería Nº 13 en 1902. El 12 de septiembre de ese año, cincuenta de sus efectivos conformaron la 3ª Compañía de la Guarnición Militar de Loreto, constituyendo su primera misión registrada. En 1915 sirvió como base para formar el Regimiento de Infantería Nº 13 y, durante la década de 1930, pasó a integrar la IV División. Mediante RS Nº 31 IGE/MI del 19 de septiembre de 1949 recibió el nombre de “Vencedores de Pichincha”. El Batallón N.º 13 fue creado en 1902 y no debe confundirse históricamente con los batallones peruanos que combatieron en 1822. El 20 de marzo de 1978 fue reorganizado como Batallón Aerotransportado, Posteriormente adoptó la organización de BIM y, en su evolución más reciente, fue transformado en Batallón de Infantería Mecanizado Nº 13. Tiene su sede en el Fuerte Salaverry, Arequipa.",
+          "resena": "La 3ª Brigada Blindada «Bastión de Acero del Sur» fue organizada en aplicación del Decreto Supremo Nº 027-DE/EP, entrando en funcionamiento el 1 de enero de 2003. Su creación fue resultado de la fusión y reorganización de la antigua 3ª División Blindada y la 6ª División Blindada. Como 3ª División Blindada, sus fuerzas fueron movilizadas hacia la frontera norte durante el Conflicto del Cenepa de 1995, integrando el dispositivo estratégico de defensa nacional. También participa en la vigilancia territorial, apoyo al orden interno y atención de emergencias.\n\nMantiene unidades desplegadas en Moquegua y sectores del sur peruano. Su Cuartel General se encuentra en el Fuerte «La Torre», centro poblado San Francisco, provincia de Mariscal Nieto, departamento de Moquegua.",
           "escudo": "/assets/divisiones/slide_291_img_1.png",
           "columnas": [
             [
@@ -961,15 +985,15 @@
           "language": {
             "es": {
               "nombre": "3ª BRIGADA Blindada",
-              "resena": "Fue organizado como Batallón de Infantería Nº 13 en 1902. El 12 de septiembre de ese año, cincuenta de sus efectivos conformaron la 3ª Compañía de la Guarnición Militar de Loreto, constituyendo su primera misión registrada. En 1915 sirvió como base para formar el Regimiento de Infantería Nº 13 y, durante la década de 1930, pasó a integrar la IV División.\n\nMediante RS Nº 31 IGE/MI del 19 de septiembre de 1949 recibió el nombre de “Vencedores de Pichincha”. El Batallón N.º 13 fue creado en 1902 y no debe confundirse históricamente con los batallones peruanos que combatieron en 1822. El 20 de marzo de 1978 fue reorganizado como Batallón Aerotransportado, Posteriormente adoptó la organización de BIM y, en su evolución más reciente, fue transformado en Batallón de Infantería Mecanizado Nº 13.\n\nTiene su sede en el Fuerte Salaverry, Arequipa."
+              "resena": "La 3ª Brigada Blindada «Bastión de Acero del Sur» fue organizada en aplicación del Decreto Supremo Nº 027-DE/EP, entrando en funcionamiento el 1 de enero de 2003. Su creación fue resultado de la fusión y reorganización de la antigua 3ª División Blindada y la 6ª División Blindada. Como 3ª División Blindada, sus fuerzas fueron movilizadas hacia la frontera norte durante el Conflicto del Cenepa de 1995, integrando el dispositivo estratégico de defensa nacional. También participa en la vigilancia territorial, apoyo al orden interno y atención de emergencias.\n\nMantiene unidades desplegadas en Moquegua y sectores del sur peruano. Su Cuartel General se encuentra en el Fuerte «La Torre», centro poblado San Francisco, provincia de Mariscal Nieto, departamento de Moquegua."
             },
             "en": {
               "nombre": "3ª BRIGADA Blindada",
-              "resena": "It was organized as Batallón de Infantería Nº 13 in 1902. On September 12 of that year, fifty of its personnel formed the 3ª Compañía de la Guarnición Militar de Loreto, its first recorded mission. In 1915, it served as the basis for forming Regimiento de Infantería Nº 13 and, during the 1930s, became part of the IV División. By RS Nº 31 IGE/MI of September 19, 1949, it received the name “Vencedores de Pichincha.” Batallón N.º 13 was created in 1902 and should not be historically confused with the Peruvian battalions that fought in 1822. On March 20, 1978, it was reorganized as Batallón Aerotransportado. It later adopted the BIM organization and, in its most recent development, was transformed into Batallón de Infantería Mecanizado Nº 13. Its headquarters is at Fuerte Salaverry, Arequipa."
+              "resena": "The 3ª Brigada Blindada «Bastión de Acero del Sur» was organized pursuant to Decreto Supremo Nº 027-DE/EP and became operational on January 1, 2003. Its creation resulted from the merger and reorganization of the former 3ª División Blindada and 6ª División Blindada. As 3ª División Blindada, its forces were mobilized to the northern border during the 1995 Conflicto del Cenepa as part of the strategic national-defense deployment. It also participates in territorial surveillance, internal-order support, and emergency response. It maintains units deployed in Moquegua and other sectors of southern Peru. Its headquarters is at Fuerte «La Torre», centro poblado San Francisco, province of Mariscal Nieto, department of Moquegua."
             },
             "qu": {
               "nombre": "3ª BRIGADA Blindada",
-              "resena": "Batallón de Infantería Nº 13 hina 1902 watapi wakichisqa karqan. Chay watapi 12 septiembre p'unchawmi, chunka phisqayuq runankuna Guarnición Militar de Loreto nisqapa 3ª Compañía-ta kamariq rirqanku; kaymi ñawpaq qillqasqa llamk'aynin karqan. 1915 watapi Regimiento de Infantería Nº 13 kamarinapaq teqsi karqan; 1930 watakunapitaq IV División-man hukuchasqa karqan. RS Nº 31 IGE/MI, 19 septiembre 1949 kamachiywanmi “Vencedores de Pichincha” suti chaskirqan. Batallón N.º 13qa 1902 watapi kamasqa karqan, manataqmi 1822 watapi maqanakusqanku batallones peruanos nisqawan pantachinachu. 20 marzo 1978 p'unchawmi Batallón Aerotransportado hina wakmanta wakichisqa karqan. Chaymanta BIM wakichiyninta chaskirqan; qhipa pachapitaq Batallón de Infantería Mecanizado Nº 13-manmi tukuchisqa karqan. Kamachina wasinqa Fuerte Salaverry, Arequipa llaqtapin kachkan."
+              "resena": "3ª Brigada Blindada «Bastión de Acero del Sur»qa Decreto Supremo Nº 027-DE/EP kamachiywanmi wakichisqa karqan, 1 enero 2003 p'unchawtaq llamk'ayta qallarin. Ñawpaq 3ª División Blindada chaymanta 6ª División Blindada huñusqa, wakmanta wakichisqa kasqanmantan kamasqa karqan. 3ª División Blindada kaspan, 1995 watapi Conflicto del Cenepa rayku kallpankuna hanaq frontera-man apasqa karqanku, defensa nacional estratégica wakichiyman hukuchasqa. Hinallataq allpa qhawaypi, orden interno yanapaypi chaymanta emergencias kutichinapi llamk'an. Moquegua chaymanta Perú uray kitikunapi unidades mast'arisqata waqaychan. Cuartel General-ninqa Fuerte «La Torre», centro poblado San Francisco, Mariscal Nieto provincia, Moquegua departamentopin kachkan."
             }
           }
         },
@@ -980,7 +1004,7 @@
           "tipo": "BRIGADA BLINDADA",
           "sede": "Fuerte Arica, Locumba, Tacna",
           "creacion": "1975 (Reorganizada 2010)",
-          "resena": "GRUPO DE ARTILLERÍA DE CAMPAÑA “CRL JUSTO ARIAS ARAGÜEZ” N° 3 Su antecedente se remonta al Regimiento de Artillería de Montaña Nº 3, organizado en 1901, y fue creado oficialmente como Grupo de Artillería N.º 3 el 4 de abril de 1910. En 1914 recibió el nombre del coronel Justo Arias Aragüez, denominación ratificada mediante Resolución Suprema Nº 31 del 19 de septiembre de 1949. Durante sus primeras reorganizaciones, parte de la unidad fue trasladada a Arequipa y, en 1915, volvió a constituirse como regimiento con dos grupos de artillería. Participó en las acciones relacionadas con la delimitación de la frontera con Chile en 1925 y en el restablecimiento del orden interno durante los acontecimientos de 1948 y 1950. En 1995 integró el despliegue de la 3.ª Brigada Blindada hacia el Teatro de Operaciones del Norte durante el conflicto del Alto Cenepa. Sede en el Cuartel «Mariscal Nieto» de Moquegua.",
+          "resena": "La 6ª Brigada Blindada, conocida como “Los Blindados del Sur”, tiene sus antecedentes en la antigua 6ª División Blindada del Ejército.\n\nTras diversas reorganizaciones institucionales, adoptó su actual categoría de brigada.\n\nConstituye una importante fuerza de maniobra, protección y potencia de fuego.\n\nSu misión principal es contribuir a la defensa de la soberanía, la integridad territorial y la seguridad nacional.\n\nEn sus instalaciones funciona también el Centro de Entrenamiento y Mantenimiento Antitanque del Ejército.\n\nSu sede se encuentra en el Fuerte Arica, distrito de Locumba, provincia de Jorge Basadre, departamento de Tacna.",
           "escudo": "/assets/divisiones/slide_312_img_1.png",
           "columnas": [
             [
@@ -1016,16 +1040,16 @@
           ],
           "language": {
             "es": {
-              "nombre": "6ª BRIGADA Blindada",
-              "resena": "Su antecedente se remonta al Regimiento de Artillería de Montaña Nº 3, organizado en 1901, y fue creado oficialmente como Grupo de Artillería N.º 3 el 4 de abril de 1910. En 1914 recibió el nombre del coronel Justo Arias Aragüez, denominación ratificada mediante Resolución Suprema Nº 31 del 19 de septiembre de 1949.\n\nDurante sus primeras reorganizaciones, parte de la unidad fue trasladada a Arequipa y, en 1915, volvió a constituirse como regimiento con dos grupos de artillería. Participó en las acciones relacionadas con la delimitación de la frontera con Chile en 1925 y en el restablecimiento del orden interno durante los acontecimientos de 1948 y 1950.\n\nEn 1995 integró el despliegue de la 3.ª Brigada Blindada hacia el Teatro de Operaciones del Norte durante el conflicto del Alto Cenepa. Sede en el Cuartel «Mariscal Nieto» de Moquegua."
+              "nombre": "6ª BRIGADA BLINDADA",
+              "resena": "La 6ª Brigada Blindada, conocida como “Los Blindados del Sur”, tiene sus antecedentes en la antigua 6ª División Blindada del Ejército.\n\nTras diversas reorganizaciones institucionales, adoptó su actual categoría de brigada.\n\nConstituye una importante fuerza de maniobra, protección y potencia de fuego.\n\nSu misión principal es contribuir a la defensa de la soberanía, la integridad territorial y la seguridad nacional.\n\nEn sus instalaciones funciona también el Centro de Entrenamiento y Mantenimiento Antitanque del Ejército.\n\nSu sede se encuentra en el Fuerte Arica, distrito de Locumba, provincia de Jorge Basadre, departamento de Tacna."
             },
             "en": {
-              "nombre": "6ª BRIGADA Blindada",
-              "resena": "Its origins date back to Regimiento de Artillería de Montaña Nº 3, organized in 1901, and it was officially created as Grupo de Artillería N.º 3 on April 4, 1910. In 1914, it received the name of Colonel Justo Arias Aragüez, ratified by Resolución Suprema Nº 31 of September 19, 1949. During its early reorganizations, part of the unit was transferred to Arequipa and, in 1915, it was reconstituted as a regiment with two artillery groups. It participated in actions related to delimiting the border with Chile in 1925 and restoring internal order during the events of 1948 and 1950. In 1995, it formed part of the 3.ª Brigada Blindada deployment to Teatro de Operaciones del Norte during the Conflicto del Alto Cenepa. Its headquarters is at Cuartel «Mariscal Nieto» in Moquegua."
+              "nombre": "6ª BRIGADA BLINDADA",
+              "resena": "The 6ª Brigada Blindada, known as “Los Blindados del Sur,” traces its origins to the former 6ª División Blindada del Ejército. Following various institutional reorganizations, it adopted its current brigade status. It constitutes an important force for maneuver, protection, and firepower. Its primary mission is to contribute to the defense of national sovereignty, territorial integrity, and national security. Its facilities also house the Centro de Entrenamiento y Mantenimiento Antitanque del Ejército. Its headquarters are located at Fuerte Arica, distrito de Locumba, provincia de Jorge Basadre, departamento de Tacna."
             },
             "qu": {
-              "nombre": "6ª BRIGADA Blindada",
-              "resena": "Ñawpaqninmi 1901 watapi wakichisqa Regimiento de Artillería de Montaña Nº 3 karqan; 4 abril 1910 p'unchawtaq Grupo de Artillería N.º 3 hina kamasqa karqan. 1914 watapi coronel Justo Arias Aragüez-pa sutinta chaskirqan; Resolución Suprema Nº 31, 19 septiembre 1949 kamachiywanmi kay suti chiqapchasqa karqan. Unidad-pa huknin Arequipa-man apasqa karqan; 1915 watapitaq iskay grupos-niyuq regimiento hina wakmanta kamasqa karqan. 1925 watapi Chile frontera saywa churanapi, 1948 chaymanta 1950 watakunapitaq orden interno kutichinapi llamk'arqan. 1995 watapi conflicto del Alto Cenepa ukhupi, 3.ª Brigada Blindada-wan Teatro de Operaciones del Norte-man mast'arisqa karqan. Kamachina wasinqa Cuartel «Mariscal Nieto», Moquegua llaqtapin kachkan."
+              "nombre": "6ª BRIGADA BLINDADA",
+              "resena": "6ª Brigada Blindada, “Los Blindados del Sur” sutiyuqmi, Ejército-pa ñawpaq 6ª División Blindada-ninmanta paqarimurqan. Institución wakmanta wakichisqa kaptin, kunan brigada categoría chaskirqan. Maniobra, protección chaymanta potencia de fuego kallpawanmi llamk'an. Hatun misiónninmi soberanía, integridad territorial chaymanta seguridad nacional waqaychaypi yanapay. Wasinkunapi Centro de Entrenamiento y Mantenimiento Antitanque del Ejército nisqapas llamk'achkan. Kamachina wasinqa Fuerte Arica, Locumba distrito, Jorge Basadre provincia, Tacna departamentopin kachkan."
             }
           }
         },
@@ -1036,7 +1060,7 @@
           "tipo": "BRIGADA DE MONTAÑA",
           "sede": "Cuartel Avenida Pardo / Huancaro, Cusco",
           "creacion": "26 de agosto de 1919",
-          "resena": "BATALLÓN DE INGENIERÍA DE COMBATE BLINDADO “CRL REMIGIO MORALES BERMUDEZ” N° 6 La denominación oficial es Batallón de Ingeniería de Combate Blindado «Crl Remigio Morales Bermúdez» Nº 6, cuyos antecedentes se remontan a una compañía organizada en 1974. Esta compañía se formó en Arequipa con parte del personal y medios del Batallón de Ingeniería de Combate N.º 3, para apoyar a la entonces 6ª División Mecanizada. El 1 de enero de 1977 fue constituida como unidad orgánica y, mediante la OGE Nº 54/77, adquirió posteriormente la categoría de batallón de ingeniería blindado. Por Resolución Ministerial N.º 924 GU/SJEMGE-DH del 18 de julio de 1978 recibió el nombre del coronel Remigio Morales Bermúdez. Después de una fusión temporal con el Batallón de Ingeniería N.º 3 entre 2005 y 2010, fue reactivado junto con la 6ª Brigada Blindada el 2 de noviembre de 2010. Tiene su sede en el Fuerte «Arica», distrito de Locumba, provincia de Jorge Basadre, región Tacna.",
+          "resena": "La 5ª Brigada de Montaña tiene sus antecedentes en la IV División Ligera, creada el 26 de agosto de 1919 durante el gobierno de Augusto B. Leguía.\n\nEsta gran unidad abarcó inicialmente los departamentos de Cusco, Puno, Apurímac y Madre de Dios.\n\nPosteriormente se transformó en la Cuarta Región Militar, ampliando progresivamente sus capacidades operativas.\n\nMediante el Decreto Supremo N.º 027-DE/EP, del 18 de diciembre de 2002, fue creada oficialmente la actual 5.ª Brigada de Montaña.\n\nSe organizó sobre la base de las unidades pertenecientes a la desaparecida Cuarta Región Militar.\n\nEstá especializada en operaciones militares en terrenos montañosos y de gran altitud.\n\nTiene sede en la ciudad del Cusco, principalmente en el cuartel ubicado en la avenida Pardo.",
           "escudo": "/assets/divisiones/slide_335_img_1.png",
           "columnas": [
             [
@@ -1068,16 +1092,16 @@
           ],
           "language": {
             "es": {
-              "nombre": "5ª BRIGADA de MONTAÑA",
-              "resena": "La denominación oficial es Batallón de Ingeniería de Combate Blindado «Crl Remigio Morales Bermúdez» Nº 6, cuyos antecedentes se remontan a una compañía organizada en 1974. Esta compañía se formó en Arequipa con parte del personal y medios del Batallón de Ingeniería de Combate N.º 3, para apoyar a la entonces 6ª División Mecanizada. El 1 de enero de 1977 fue constituida como unidad orgánica y, mediante la OGE Nº 54/77, adquirió posteriormente la categoría de batallón de ingeniería blindado. Por Resolución Ministerial N.º 924 GU/SJEMGE-DH del 18 de julio de 1978 recibió el nombre del coronel Remigio Morales Bermúdez. Después de una fusión temporal con el Batallón de Ingeniería N.º 3 entre 2005 y 2010, fue reactivado junto con la 6ª Brigada Blindada el 2 de noviembre de 2010.\n\nTiene su sede en el Fuerte «Arica», distrito de Locumba, provincia de Jorge Basadre, región Tacna."
+              "nombre": "5ª BRIGADA DE MONTAÑA",
+              "resena": "La 5ª Brigada de Montaña tiene sus antecedentes en la IV División Ligera, creada el 26 de agosto de 1919 durante el gobierno de Augusto B. Leguía.\n\nEsta gran unidad abarcó inicialmente los departamentos de Cusco, Puno, Apurímac y Madre de Dios.\n\nPosteriormente se transformó en la Cuarta Región Militar, ampliando progresivamente sus capacidades operativas.\n\nMediante el Decreto Supremo N.º 027-DE/EP, del 18 de diciembre de 2002, fue creada oficialmente la actual 5.ª Brigada de Montaña.\n\nSe organizó sobre la base de las unidades pertenecientes a la desaparecida Cuarta Región Militar.\n\nEstá especializada en operaciones militares en terrenos montañosos y de gran altitud.\n\nTiene sede en la ciudad del Cusco, principalmente en el cuartel ubicado en la avenida Pardo."
             },
             "en": {
-              "nombre": "5ª BRIGADA de MONTAÑA",
-              "resena": "The official designation is Batallón de Ingeniería de Combate Blindado «Crl Remigio Morales Bermúdez» Nº 6, whose origins date back to a company organized in 1974. This company was formed in Arequipa with some of the personnel and equipment of Batallón de Ingeniería de Combate N.º 3 to support the then 6ª División Mecanizada. On January 1, 1977, it became an organic unit and, under OGE Nº 54/77, subsequently attained the status of an armored engineer battalion. By Resolución Ministerial N.º 924 GU/SJEMGE-DH of July 18, 1978, it received the name of coronel Remigio Morales Bermúdez. After a temporary merger with Batallón de Ingeniería N.º 3 between 2005 and 2010, it was reactivated together with the 6ª Brigada Blindada on November 2, 2010. Its headquarters are at Fuerte «Arica», distrito de Locumba, provincia de Jorge Basadre, región Tacna."
+              "nombre": "5ª BRIGADA DE MONTAÑA",
+              "resena": "The 5ª Brigada de Montaña traces its origins to the IV División Ligera, created on August 26, 1919, during the administration of Augusto B. Leguía. This major unit initially covered the departamentos de Cusco, Puno, Apurímac y Madre de Dios. It was later transformed into the Cuarta Región Militar, progressively expanding its operational capabilities. The current 5.ª Brigada de Montaña was officially created by Decreto Supremo N.º 027-DE/EP of December 18, 2002. It was organized on the basis of units belonging to the former Cuarta Región Militar. It specializes in military operations in mountainous and high-altitude terrain. Its headquarters are in the ciudad del Cusco, primarily at the barracks located on avenida Pardo."
             },
             "qu": {
-              "nombre": "5ª BRIGADA de MONTAÑA",
-              "resena": "Oficial sutinqa Batallón de Ingeniería de Combate Blindado «Crl Remigio Morales Bermúdez» Nº 6. Ñawpaqninmi 1974 watapi Arequipa llaqtapi wakichisqa compañía karqan, Batallón de Ingeniería de Combate N.º 3-pa runankunawan chaymanta equiponwan, ñawpaq 6ª División Mecanizada yanapananpaq. 1 enero 1977 p'unchaw unidad orgánica tukurqan; OGE Nº 54/77 kamachiywan qhipaman batallón de ingeniería blindado categoría chaskirqan. Resolución Ministerial N.º 924 GU/SJEMGE-DH, 18 julio 1978 kamachiywan coronel Remigio Morales Bermúdez-pa sutinta chaskirqan. 2005–2010 watakunapi Batallón de Ingeniería N.º 3-wan hukuchasqa qhipaman, 2 noviembre 2010 p'unchaw 6ª Brigada Blindada-wan kuska kutichisqa karqan. Kamachina wasinqa Fuerte «Arica», Locumba distrito, Jorge Basadre provincia, Tacna regiónpin kachkan."
+              "nombre": "5ª BRIGADA DE MONTAÑA",
+              "resena": "5ª Brigada de Montaña-pa ñawpaqninmi IV División Ligera karqan, Augusto B. Leguía-pa gobiernonpi 26 agosto 1919 p'unchaw kamasqa. Kay Gran Unidadqa qallariyninpi Cusco, Puno, Apurímac y Madre de Dios departamentokunata kamachirqan. Qhipaman Cuarta Región Militar tukuspa, capacidad operativa-ninkunata aswan yaparqan. Decreto Supremo N.º 027-DE/EP, 18 diciembre 2002 kamachiywan kunan 5.ª Brigada de Montaña oficialta kamasqa karqan. Chinkasqa Cuarta Región Militar-pa unidades-ninkunawanmi wakichisqa karqan. Urqukunapi chaymanta ancha hanaq kitikunapi operaciones militares ruwanapaq especializasqan. Kamachina wasinqa Cusco llaqtapi, aswanqa avenida Pardo nisqapi cuartel ukhupin kachkan."
             }
           }
         },
@@ -1238,27 +1262,29 @@
           "escudo": "/assets/divisiones/escudo_2_brigada_selva_pa.png",
           "columnas": [
             [
-              "Batallón de Infantería de Selva de Protección de la Amazonía «My Rubén de la Cruz Huarcaya» N° 612",
-              "Batallón de Infantería de Selva de Protección de la Amazonía «Tte Crl Pedro Pablo Bermúdez» N° 613",
-              "Batallón de Infantería de Selva de Protección de la Amazonía «My Marco Jara Schenone» N° 614",
-              "Batallón de Infantería de Selva de Protección de la Amazonía «Tte Marco Chacón Vargas» N° 615"
+              "Compañía de Policía Militar «SO1 Hugo Larico Pampa» N° 600",
+              "Compañía de Comunicaciones «SO1 Valentín Huanca Huilca» N° 600"
+            ],
+            [
+              "Batallón de Infantería de Selva de Protección de la Amazonía N° 623",
+              "Batallón de Infantería de Selva de Protección de la Amazonía N° 633",
+              "Batallón de Infantería de Selva de Protección de la Amazonía N° 643",
+              "Batallón de Infantería de Selva de Protección de la Amazonía N° 613"
             ],
             [
               "Batallón de Ingeniería y Construcción «Cap Moisés Tomás Bueno» N° 4",
               "Unidad Militar de Asentamiento Rural «Iberia» N° 4",
-              "Batallón de Servicios «SO1 Edgar García Villena» N° 600"
+              "Compañía Especial de Comandos «Sgto2 Rolando Bendezú Rebata» N° 600"
             ],
             [
-              "Compañía Especial de Comandos «Sgto2 Rolando Bendezú Rebata» N° 600",
-              "Compañía de Policía Militar «SO1 Hugo Larico Pampa» N° 600",
-              "Compañía de Comunicaciones «SO1 Valentín Huanca Huilca» N° 600"
+              "Batallón de Servicios «SO1 Edgar García Villena» N° 600"
             ]
           ],
           "unidades": [
-            "Batallón de Infantería de Selva de Protección de la Amazonía «My Rubén de la Cruz Huarcaya» N° 612",
-            "Batallón de Infantería de Selva de Protección de la Amazonía «Tte Crl Pedro Pablo Bermúdez» N° 613",
-            "Batallón de Infantería de Selva de Protección de la Amazonía «My Marco Jara Schenone» N° 614",
-            "Batallón de Infantería de Selva de Protección de la Amazonía «Tte Marco Chacón Vargas» N° 615",
+            "Batallón de Infantería de Selva de Protección de la Amazonía N° 623",
+            "Batallón de Infantería de Selva de Protección de la Amazonía N° 633",
+            "Batallón de Infantería de Selva de Protección de la Amazonía N° 643",
+            "Batallón de Infantería de Selva de Protección de la Amazonía N° 613",
             "Batallón de Ingeniería y Construcción «Cap Moisés Tomás Bueno» N° 4",
             "Unidad Militar de Asentamiento Rural «Iberia» N° 4",
             "Batallón de Servicios «SO1 Edgar García Villena» N° 600",
@@ -1330,23 +1356,43 @@
             ]
           ],
           "unidades": [
-            "Batería Comando y Servicios N° 3",
-            "Compañía Antitanque 'Cazadores' N° 3",
-            "Compañía Antitanque N° 5",
-            "Compañía Antitanque N° 7",
-            "Compañía Antitanque N° 9"
+            "COMPAÑÍA COMANDO Y SERVICIOS N° 603",
+            "COMPAÑÍA DE INSTRUCCIÓN DE APOYO TÉCNICO N° 3",
+            "COMPAÑÍA ANTITANQUE N° 642",
+            "COMPAÑÍA ANTITANQUE N° 634",
+            "COMPAÑÍA ANTITANQUE N° 638",
+            "COMPAÑÍA ANTITANQUE N° 644",
+            "COMPAÑÍA ANTITANQUE N° 636",
+            "COMPAÑÍA ANTITANQUE N° 633",
+            "COMPAÑÍA ANTITANQUE N° 646",
+            "COMPAÑÍA ANTITANQUE N° 640",
+            "COMPAÑÍA ANTITANQUE N° 632",
+            "COMPAÑÍA ANTITANQUE N° 630",
+            "CENTRO DE MANTENIMIENTO AT"
           ],
           "organigrama_columnas": [
             [
-              "Batería Comando y Servicios N° 3"
+              "COMPAÑÍA COMANDO Y SERVICIOS N° 603",
+              "COMPAÑÍA DE INSTRUCCIÓN DE APOYO TÉCNICO N° 3"
             ],
             [
-              "Compañía Antitanque 'Cazadores' N° 3",
-              "Compañía Antitanque N° 5"
+              "COMPAÑÍA ANTITANQUE N° 642",
+              "COMPAÑÍA ANTITANQUE N° 634",
+              "COMPAÑÍA ANTITANQUE N° 638",
+              "COMPAÑÍA ANTITANQUE N° 644"
             ],
             [
-              "Compañía Antitanque N° 7",
-              "Compañía Antitanque N° 9"
+              "COMPAÑÍA ANTITANQUE N° 636",
+              "COMPAÑÍA ANTITANQUE N° 633",
+              "COMPAÑÍA ANTITANQUE N° 646",
+              "COMPAÑÍA ANTITANQUE N° 640"
+            ],
+            [
+              "COMPAÑÍA ANTITANQUE N° 632",
+              "COMPAÑÍA ANTITANQUE N° 630"
+            ],
+            [
+              "CENTRO DE MANTENIMIENTO AT"
             ]
           ],
           "language": {
@@ -1428,8 +1474,8 @@
           "tipo": "AGRUPAMIENTO DE ARTILLERÍA",
           "sede": "Cuartel Crl Justo Arias Aragüés, Tingo, Arequipa",
           "creacion": "18 de noviembre de 1974",
-          "resena": "BOLOGNESI” Fue creado el 18 de noviembre de 1974, durante el proceso de modernización del Ejército impulsado por el gobierno del general Juan Velasco Alvarado. Su organización fue establecida mediante el Decreto Supremo N.º 106-71 GU/DIRODIN, como Gran Unidad de Artillería de Campaña. Lleva el nombre del Crl Francisco Bolognesi Cervantes, patrono del Ejército. Su misión es proporcionar apoyo de fuegos potente, oportuno y profundo a las fuerzas terrestres que operan en el sur del país. En 2009 fue integrado en la 3ª Brigada de Artillería “Crl. Francisco Bolognesi”, junto con unidades antiaéreas. Entre 2016 y 2017 se desactivó la 3ª Brigada de Artillería y se reactivó el actual Agrupamiento de Artillería “Crl. Francisco Bolognesi”. Tiene su sede en el Cuartel “Crl Justo Arias Aragüés”, Tingo, distrito de Jacobo Hunter, Arequipa.",
-          "escudo": "/assets/divisiones/slide_371_img_1.png",
+          "resena": "Fue creado el 18 de noviembre de 1974, durante el proceso de modernización del Ejército impulsado por el gobierno del general Juan Velasco Alvarado. Su organización fue establecida mediante el Decreto Supremo N.º 106-71 GU/DIRODIN, como Gran Unidad de Artillería de Campaña. Lleva el nombre del Crl Francisco Bolognesi Cervantes, patrono del Ejército. Su misión es proporcionar apoyo de fuegos potente, oportuno y profundo a las fuerzas terrestres que operan en el sur del país. En 2009 fue integrado en la 3ª Brigada de Artillería “Crl. Francisco Bolognesi”, junto con unidades antiaéreas. Entre 2016 y 2017 se desactivó la 3ª Brigada de Artillería y se reactivó el actual Agrupamiento de Artillería “Crl. Francisco Bolognesi”. Tiene su sede en el Cuartel “Crl Justo Arias Aragüés”, Tingo, distrito de Jacobo Hunter, Arequipa.",
+          "escudo": "/assets/divisiones/slide_473_img_1.png",
           "columnas": [
             [
               "BATERÍA COMANDO Y OBSERVACIÓN N° 113"
@@ -1445,23 +1491,25 @@
             ]
           ],
           "unidades": [
-            "BATERÍA COMANDO Y SERVICIOS N° 113",
-            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 4",
-            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 113",
-            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 114",
-            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 501"
+            "BATERÍA COMANDO Y OBSERVACIÓN N° 113",
+            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 501",
+            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 123",
+            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 503",
+            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 116",
+            "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 122"
           ],
           "organigrama_columnas": [
             [
-              "BATERÍA COMANDO Y SERVICIOS N° 113"
+              "BATERÍA COMANDO Y OBSERVACIÓN N° 113"
             ],
             [
-              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 4",
-              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 113"
+              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 501",
+              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 123",
+              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 503"
             ],
             [
-              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 114",
-              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 501"
+              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 116",
+              "GRUPO DE ARTILLERÍA DE CAMPAÑA N° 122"
             ]
           ],
           "language": {
@@ -1880,18 +1928,18 @@
           "tipo": "AGRUPAMIENTO DE INGENIERÍA",
           "sede": "Cuartel Ollantaytambo, La Merced, Chanchamayo, Junín",
           "creacion": "2009",
-          "resena": "GALLO” El Agrupamiento tiene como antecedente directo a la 22ª Brigada de Ingeniería, establecida en La Merced y documentada institucionalmente desde 2009; esta Gran Unidad desarrolló trabajos de ingeniería de combate, construcción y mantenimiento de infraestructura en la selva central y el VRAEM. Entre 2011 y 2012 ejecutó obras militares en el Fuerte Pichari, como alojamientos, servicios, cocina, comedor y mejoramiento de vías internas, posteriormente, la 22ª Brigada fue reorganizada como Agrupamiento de Ingeniería “Tte Crl Pedro Ruiz Gallo”. Su misión comprende facilitar la movilidad propia, restringir la del adversario, ejecutar construcciones y apoyar la supervivencia de las fuerzas desplegadas. Tiene su sede en el Cuartel Ollantaytambo, La Merced, distrito y provincia de Chanchamayo, Junín.",
+          "resena": "El Agrupamiento tiene como antecedente directo a la 22ª Brigada de Ingeniería, establecida en La Merced y documentada institucionalmente desde 2009; esta Gran Unidad desarrolló trabajos de ingeniería de combate, construcción y mantenimiento de infraestructura en la selva central y el VRAEM. Entre 2011 y 2012 ejecutó obras militares en el Fuerte Pichari, como alojamientos, servicios, cocina, comedor y mejoramiento de vías internas, posteriormente, la 22ª Brigada fue reorganizada como Agrupamiento de Ingeniería “Tte Crl Pedro Ruiz Gallo”. Su misión comprende facilitar la movilidad propia, restringir la del adversario, ejecutar construcciones y apoyar la supervivencia de las fuerzas desplegadas. Tiene su sede en el Cuartel Ollantaytambo, La Merced, distrito y provincia de Chanchamayo, Junín.",
           "escudo": "/assets/divisiones/slide_593_img_1.png",
           "columnas": [
             [
               "COMPAÑÍA COMANDO Y SERVICIOS N° 22"
             ],
             [
-              "BATALLÓN DE INGENIERÍA DE COMBATE N° 2",
-              "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 2",
-              "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 3"
+              "BATALLÓN DE INGENIERÍA DE COMBATE MOTORIZADO N° 2",
+              "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 2"
             ],
             [
+              "BATALLÓN DE INGENIERÍA DE CONSTRUCCIÓN N° 3",
               "COMPAÑÍA DE FUERZAS ESPECIALES N° 61"
             ]
           ],
@@ -2012,8 +2060,13 @@
       "lng": -73.2538,
       "resena": "La V División de Ejército fue creada el 27 de junio de 1961 con la denominación de Quinta Región Militar. Sus antecedentes históricos se relacionan con las unidades que participaron en la defensa de la Amazonía y en la Campaña Militar de 1941. En diciembre de 2002 fue reorganizada como Región Militar Oriental.\n\nPosteriormente, en 2013, adoptó su actual denominación de V División de Ejército. Su misión está vinculada con la defensa de las fronteras amazónicas y las operaciones en terreno selvático y fluvial. Al 2026, su sede se encuentra en Iquitos, Loreto, y su ámbito de responsabilidad comprende principalmente la Amazonía nororiental y las fronteras con Ecuador, Colombia y Brasil.",
       "unidadesDivisionarias": [
-        "BATALLÓN de COMUNICACIONES N° 501(Iquitos)",
-        "Compañía de Embarcaciones Fluviales N° 5(Iquitos)"
+        "BATALLÓN DE COMUNICACIONES N° 115",
+        "COMPAÑÍA COMANDO N° 115",
+        "BATALLÓN POLICÍA MILITAR N° 115",
+        "COMPAÑÍA ESPECIAL DE COMANDOS N° 125",
+        "BATALLÓN DE SELVA N° 53",
+        "BATALLÓN DE INGENIERÍA DE COMBATE SELVA N° 5",
+        "UNIDAD MILITAR DE ASENTAMIENTO RURAL “ANGAMOS” N° 2"
       ],
       "brigadas": [
         {
@@ -2140,7 +2193,33 @@
               "nombre": "5ª Brigada de Servicios",
               "resena": "Ñawpaqninmi Región Militar del Oriente-pa Brigada de Servicios Nº 115 karqan. Kunanqa V División de Ejército-pa Gran Unidad logística hinallataq administrativa-ninmi. Sedenmi Fuerte Militar “Soldado Alfredo Vargas Guerra”, Iquitos, Loreto llaqtapi kachkan. Misiónninmi Divisiónpa unidadninkunaman abastecimiento, transporte, mantenimiento hinallataq sostenimiento-ta allin purichiy. Amazonía hatun fronterapi mast'arisqa guarnicionkunata yanapananpaq ancha chaninniyuq llamk'ayta hunt'an. Mikhuykunata, combustibletā, armamentota, equipokunatapas aswanqa allpa, wayra hinallataq mayu mediokunawan apan."
             }
-          }
+          },
+          "unidadesDetalle": [
+            {
+              "nombre": "COMPAÑÍA COMUNICACIONES Y SERVICIOS N° 115",
+              "escudo": "/assets/divisiones/slide_673_img_1.png"
+            },
+            {
+              "nombre": "COMPAÑÍA INGENIERÍA Y SERVICIOS N° 115",
+              "escudo": "/assets/divisiones/slide_671_img_1.png"
+            },
+            {
+              "nombre": "BATALLÓN DE TRANSPORTES N° 115",
+              "escudo": "/assets/divisiones/slide_663_img_1.png"
+            },
+            {
+              "nombre": "BATALLÓN DE INTENDENCIA N° 115",
+              "escudo": "/assets/divisiones/slide_665_img_1.png"
+            },
+            {
+              "nombre": "BATALLÓN DE MATERIAL DE GUERRA N° 115",
+              "escudo": "/assets/divisiones/slide_667_img_1.png"
+            },
+            {
+              "nombre": "COMPAÑÍA SANIDAD Y VETERINARIA N° 115",
+              "escudo": "/assets/divisiones/slide_669_img_1.png"
+            }
+          ]
         }
       ],
       "language": {
@@ -2162,19 +2241,20 @@
         [
           "BATALLÓN DE COMUNICACIONES N° 115",
           "COMPAÑÍA COMANDO N° 115",
-          "BATALLÓN POLICÍA MILITAR N° 115"
+          "BATALLÓN POLICÍA MILITAR N° 115",
+          "COMPAÑÍA ESPECIAL DE COMANDOS N° 125"
         ],
         [
           "4ª Brigada de Selva de Protección a la Amazonía",
           "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 3",
           "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 17",
           "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 28",
-          "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 83"
-        ],
-        [
+          "BATALLÓN DE INFANTERÍA DE SELVA DE PROTECCIÓN DE LA AMAZONÍA N° 83",
           "BATALLÓN DE SELVA N° 27",
           "BATALLÓN DE SELVA N° 29",
-          "BATALLÓN DE SELVA N° 47",
+          "BATALLÓN DE SELVA N° 47"
+        ],
+        [
           "BATALLÓN DE SELVA N° 53",
           "BATALLÓN DE INGENIERÍA DE COMBATE SELVA N° 5",
           "UNIDAD MILITAR DE ASENTAMIENTO RURAL N° 2"

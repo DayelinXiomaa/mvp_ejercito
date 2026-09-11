@@ -33,3 +33,4 @@ build/
 **/android/build/
 apks/
 *.apk
+backups_videos/

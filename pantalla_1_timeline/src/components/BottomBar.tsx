@@ -11,11 +11,11 @@ interface BottomBarProps {
 
 const LANG_CONFIG: Record<
   SupportedLanguage,
-  { label: string; name: string; shortName: string; flag: string }
+  { label: string; name: string; flag: string }
 > = {
-  es: { label: 'ES', name: 'Español', shortName: 'ES', flag: '🇵🇪' },
-  en: { label: 'EN', name: 'English', shortName: 'EN', flag: '🇬🇧' },
-  qu: { label: 'QU', name: 'Quechua', shortName: 'QU', flag: '🇵🇪' },
+  es: { label: 'ES', name: 'Español', flag: '🇵🇪' },
+  en: { label: 'EN', name: 'English', flag: '🇬🇧' },
+  qu: { label: 'QU', name: 'Quechua', flag: '🇵🇪' },
 };
 
 export const BottomBar: React.FC<BottomBarProps> = ({ children }) => {
@@ -33,12 +33,9 @@ export const BottomBar: React.FC<BottomBarProps> = ({ children }) => {
         {/* Right: Language + Timer */}
         <div className="flex items-center gap-1.5 flex-shrink-0">
           {/* Botonera Estandarizada Compacta de Idiomas */}
-          <div className="flex items-center gap-1 bg-slate-900/90 rounded-full border border-emerald-500/30 p-0.5 shadow-inner">
-            <div className="flex items-center gap-1 pl-2.5 pr-1 text-emerald-400">
+          <div className="flex items-center gap-1 bg-slate-900/90 rounded-full border border-emerald-500/30 p-1 shadow-inner">
+            <div className="flex items-center gap-1 pl-2 pr-1 text-emerald-400">
               <Globe className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
-              <span className="text-[10px] font-black uppercase tracking-wider text-emerald-300">
-                {language === 'en' ? 'Language' : language === 'qu' ? 'Simi' : 'Idioma'}
-              </span>
             </div>
             <div className="flex items-center gap-0.5">
               {KIOSK_CONFIG.SUPPORTED_LANGUAGES.map((lang) => {
@@ -48,7 +45,7 @@ export const BottomBar: React.FC<BottomBarProps> = ({ children }) => {
                   <button
                     key={lang}
                     onClick={() => setLanguage(lang)}
-                    className={`flex items-center gap-1 px-2 py-1 rounded-full text-xs font-bold transition-all touch-active ${
+                    className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold transition-all touch-active cursor-pointer ${
                       isSelected
                         ? 'bg-gradient-to-r from-green-800 to-emerald-600 text-white shadow-md ring-1 ring-emerald-400/40 font-black'
                         : 'text-slate-400 hover:text-white hover:bg-slate-800/90'
@@ -56,7 +53,7 @@ export const BottomBar: React.FC<BottomBarProps> = ({ children }) => {
                     title={cfg.name}
                   >
                     <span className="text-xs leading-none">{cfg.flag}</span>
-                    <span className="tracking-wide font-extrabold">{cfg.shortName}</span>
+                    <span className="tracking-wide font-black text-[11px]">{cfg.label}</span>
                   </button>
                 );
               })}
@@ -64,7 +61,7 @@ export const BottomBar: React.FC<BottomBarProps> = ({ children }) => {
           </div>
 
           {/* Inactivity timer */}
-          <div className="flex items-center gap-1 px-2 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-slate-400 text-[10px] font-mono h-8">
+          <div className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-slate-400 text-xs font-mono">
             <Clock className="w-3 h-3 text-emerald-400/70" />
             <span>{timeRemaining >= 60 ? `${Math.floor(timeRemaining / 60)}m ${String(timeRemaining % 60).padStart(2, '0')}s` : `${timeRemaining}s`}</span>
           </div>

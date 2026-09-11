@@ -21,26 +21,26 @@ const UnitShield: React.FC<{
   iconClass = 'w-4 h-4 text-emerald-400',
   alt = '',
 }) => {
-  const [hasError, setHasError] = useState(false);
-  const cleanSrc = cleanEscudoPath(src);
+    const [hasError, setHasError] = useState(false);
+    const cleanSrc = cleanEscudoPath(src);
 
-  useEffect(() => {
-    setHasError(false);
-  }, [src]);
+    useEffect(() => {
+      setHasError(false);
+    }, [src]);
 
-  if (!cleanSrc || hasError) {
-    return <Shield className={iconClass} />;
-  }
+    if (!cleanSrc || hasError) {
+      return <Shield className={iconClass} />;
+    }
 
-  return (
-    <img
-      src={cleanSrc}
-      alt={alt}
-      className={className}
-      onError={() => setHasError(true)}
-    />
-  );
-};
+    return (
+      <img
+        src={cleanSrc}
+        alt={alt}
+        className={className}
+        onError={() => setHasError(true)}
+      />
+    );
+  };
 
 const cleanUnitName = (text: string) => {
   if (!text) return '';
@@ -86,6 +86,9 @@ export const DivisionesView: React.FC = () => {
       .replace(/ingde/g, 'ingenierade')
       .replace(/comunicacionesy/g, 'comunicacionesde')
       .replace(/blin/g, 'blindado')
+      .replace(/inf/g, 'infanteriade')
+      .replace(/infde/g, 'infanteriade')
+      .replace(/infselva/g, 'infanteriadeselva')
       .replace(/tanques(\d+)/g, 'tanquesn$1');
 
     if ((unitDatabase as any)[expandedKey]) return (unitDatabase as any)[expandedKey];
@@ -215,11 +218,11 @@ export const DivisionesView: React.FC = () => {
                               const nb = b.nombre.toLowerCase().replace(/[^a-z0-9]/g, '');
                               const na = (b.alias || '').toLowerCase().replace(/[^a-z0-9]/g, '');
                               const nid = b.id.toLowerCase().replace(/[^a-z0-9]/g, '');
-                              
+
                               if (nb.includes(normItem) || normItem.includes(nb)) return true;
                               if (na && (normItem === na || normItem.includes(na))) return true;
                               if (nid && (normItem === nid || normItem.includes(nid))) return true;
-                              
+
                               // Coincidencias clave por brigada explícita
                               if (normItem.includes('brig') || normItem.includes('agrupamiento')) {
                                 if (normItem.includes('selva') && (normItem.includes('1brig') || normItem.includes('1ra') || normItem.includes('1a')) && b.id.includes('1-brig-selva')) return true;

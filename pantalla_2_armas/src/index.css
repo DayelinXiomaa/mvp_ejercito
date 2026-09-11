@@ -69,3 +69,11 @@ html, body, #root {
 
 .high-contrast-mode { filter: contrast(1.4) brightness(1.1); }
 .large-text-mode { font-size: 120%; }
+
+/* MediaTek / Kiosk Video Optimization: suspend background heavy DOM painting while modal is open */
+body.video-modal-open main,
+body.video-modal-open header {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+

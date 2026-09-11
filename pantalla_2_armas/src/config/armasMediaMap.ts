@@ -72,4 +72,11 @@ export const ARMAS_MEDIA: Record<string, ArmaMedia> = {
     videoTitle: 'Servicio de Ciencia y Tecnología — Video Institucional',
     himnoTitle: 'Himno del Servicio de Ciencia y Tecnología',
   },
+  veterinaria: {
+    videoUrl: '/assets/multimedia/videos/veterinaria.mp4',
+    himnoUrl: '/assets/multimedia/audio/veterinaria.mp3',
+    videoTitle: 'Servicio de Veterinaria — Video Institucional',
+    himnoTitle: 'Himno del Servicio de Veterinaria',
+  },
 };
+

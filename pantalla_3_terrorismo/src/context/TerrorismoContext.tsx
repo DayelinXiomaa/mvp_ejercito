@@ -10,6 +10,13 @@ export interface ArchivoPeriodistico {
   id: string;
   numero: number;
   titulo: string;
+  titulos?: MultilingualText;
+  title?: MultilingualText;
+  language?: {
+    es?: { titulo?: string; coleccion?: string };
+    en?: { titulo?: string; coleccion?: string };
+    qu?: { titulo?: string; coleccion?: string };
+  };
   descripcion: string;
   imagen: string;
   fuente: string;

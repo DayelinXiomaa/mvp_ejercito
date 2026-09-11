@@ -97,3 +97,10 @@ html, body, #root {
 .large-text-mode {
   font-size: 120%;
 }
+
+/* MediaTek / Kiosk Video Optimization: suspend background heavy DOM painting while modal is open */
+body.video-modal-open main,
+body.video-modal-open header {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

@@ -30,9 +30,8 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
   onClose,
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const progressBarRef = useRef<HTMLDivElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
-  const [currentTime, setCurrentTime] = useState<number>(0);
-  const [duration, setDuration] = useState<number>(0);
   const [showCenterIcon, setShowCenterIcon] = useState<boolean>(false);
   const [isEnded, setIsEnded] = useState<boolean>(false);
 
@@ -41,15 +40,6 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
   const youtubeEmbedUrl = youtubeId
     ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&controls=1&playsinline=1&vq=hd1080&hd=1&enablejsapi=1`
     : null;
-
-  // Cerrar y limpiar
-  const handleClose = useCallback(() => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-    onClose();
-  }, [onClose]);
 
   // AutoPlay al montar
   useEffect(() => {
@@ -63,33 +53,48 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
         .catch(() => {
           // Si el navegador bloquea autoplay con sonido, intentar en mute
           video.muted = true;
-          video
-            .play()
-            .then(() => setIsPlaying(true))
-            .catch(() => setIsPlaying(false));
+          video.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
         });
     }
 
-    const handleTimeUpdate = () => setCurrentTime(video.currentTime);
-    const handleLoadedMetadata = () => {
-      setDuration(video.duration);
-      video.play().catch(() => {});
+    const handleTimeUpdate = () => {
+      if (progressBarRef.current && video.duration) {
+        const pct = (video.currentTime / video.duration) * 100;
+        progressBarRef.current.style.width = `${pct}%`;
+      }
     };
     const handleEnded = () => {
       setIsPlaying(false);
       setIsEnded(true);
+      if (progressBarRef.current) {
+        progressBarRef.current.style.width = '100%';
+      }
     };
 
     video.addEventListener('timeupdate', handleTimeUpdate);
-    video.addEventListener('loadedmetadata', handleLoadedMetadata);
     video.addEventListener('ended', handleEnded);
 
     return () => {
       video.removeEventListener('timeupdate', handleTimeUpdate);
-      video.removeEventListener('loadedmetadata', handleLoadedMetadata);
       video.removeEventListener('ended', handleEnded);
     };
   }, [isYouTube]);
+
+  // Suspender renderizado de fondo para dar 100% de GPU/CPU al decodificador de video
+  useEffect(() => {
+    document.body.classList.add('video-modal-open');
+    return () => {
+      document.body.classList.remove('video-modal-open');
+    };
+  }, []);
+
+  const handleClose = useCallback(() => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+    onClose();
+  }, [onClose]);
 
   // Tecla Escape para cerrar
   useEffect(() => {
@@ -108,6 +113,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
 
     if (isEnded) {
       video.currentTime = 0;
+      if (progressBarRef.current) progressBarRef.current.style.width = '0%';
       video.play().catch(() => {});
       setIsPlaying(true);
       setIsEnded(false);
@@ -128,7 +134,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
 
   return createPortal(
     <div
-      style={{ zIndex: 9999 }}
+      style={{ zIndex: 9999, transform: 'translateZ(0)', willChange: 'transform' }}
       className="fixed inset-0 bg-black w-screen h-screen overflow-hidden select-none flex items-center justify-center animate-fade-in"
     >
       {/* BOTÓN CERRAR FLOTANTE PROMINENTE (Sin ningún card alrededor) */}
@@ -165,6 +171,7 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
             preload="auto"
             autoPlay
             className="w-full h-full object-contain"
+            style={{ transform: 'translateZ(0)' }}
           >
             <source src={videoUrl} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             <source src={videoUrl} type="video/mp4" />
@@ -185,22 +192,25 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({
             </div>
           )}
 
-          {/* BARRA DE PROGRESO INFERIOR ULTRA DISCRETA (Sin panel ni card de controles) */}
+          {/* BARRA DE PROGRESO INFERIOR ULTRA DISCRETA (Interactiva y sin re-renders) */}
           <div
-            className="absolute bottom-0 left-0 right-0 h-3 bg-white/15 cursor-pointer z-40 group/bar flex items-end"
+            className="absolute bottom-0 left-0 right-0 h-3.5 bg-white/20 cursor-pointer z-40 group/bar flex items-end"
             onClick={(e) => {
               e.stopPropagation();
+              const video = videoRef.current;
+              if (!video || !video.duration) return;
               const rect = e.currentTarget.getBoundingClientRect();
               const pos = (e.clientX - rect.left) / rect.width;
-              if (videoRef.current && duration) {
-                videoRef.current.currentTime = Math.max(0, Math.min(pos * duration, duration));
-                setCurrentTime(videoRef.current.currentTime);
+              video.currentTime = Math.max(0, Math.min(pos * video.duration, video.duration));
+              if (progressBarRef.current) {
+                progressBarRef.current.style.width = `${(video.currentTime / video.duration) * 100}%`;
               }
             }}
           >
             <div
-              className="h-2 group-hover/bar:h-3 bg-emerald-400 transition-all duration-150"
-              style={{ width: `${duration ? (currentTime / duration) * 100 : 0}%` }}
+              ref={progressBarRef}
+              className="h-1.5 group-hover/bar:h-2.5 bg-emerald-400 transition-all duration-150"
+              style={{ width: '0%' }}
             />
           </div>
         </div>

@@ -25,6 +25,26 @@ export const ArchivosPeriodisticosView: React.FC = () => {
   const [search, setSearch] = useState('');
   const [activeCollection, setActiveCollection] = useState<'TODOS' | 'ARCHIVOS' | 'PRENSA'>('TODOS');
 
+  const getTitulo = (item: (typeof archivosPeriodisticos)[0] | null | undefined): string => {
+    if (!item) return '';
+    if (item.language && item.language[language]?.titulo) return item.language[language]!.titulo!;
+    if (item.titulos && item.titulos[language]) return item.titulos[language];
+    if (item.title && item.title[language]) return item.title[language];
+    return item.titulo;
+  };
+
+  const getColeccionBadge = (item: (typeof archivosPeriodisticos)[0] | null | undefined): string => {
+    if (!item) return '';
+    const isTerrorismo = item.coleccion.includes('Terrorismo');
+    if (language === 'en') {
+      return isTerrorismo ? 'Archive' : 'Press';
+    }
+    if (language === 'qu') {
+      return isTerrorismo ? 'Panqa' : 'Willakuy';
+    }
+    return isTerrorismo ? 'Archivo' : 'Prensa';
+  };
+
   // Filter items
   const filteredItems = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -34,13 +54,16 @@ export const ArchivosPeriodisticosView: React.FC = () => {
       if (activeCollection === 'PRENSA' && !item.coleccion.includes('Prensa')) return false;
 
       if (!q) return true;
+      const localizedTitle = getTitulo(item).toLowerCase();
+      const spanishTitle = (item.titulo || '').toLowerCase();
       return (
-        item.titulo.toLowerCase().includes(q) ||
+        localizedTitle.includes(q) ||
+        spanishTitle.includes(q) ||
         item.descripcion.toLowerCase().includes(q) ||
         `#${item.numero}`.includes(q)
       );
     });
-  }, [archivosPeriodisticos, search, activeCollection]);
+  }, [archivosPeriodisticos, search, activeCollection, language]);
 
   // Zoom & Pan state
   const [scale, setScale] = useState<number>(1);
@@ -296,7 +319,7 @@ export const ArchivosPeriodisticosView: React.FC = () => {
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              {t.press_tab_archives || (language === 'en' ? 'Terrorism Dossiers' : 'Archivos Terrorismo')}
+              {t.press_tab_archives || (language === 'en' ? 'Terrorism Dossiers' : language === 'qu' ? 'Terrorismo Panqakuna' : 'Archivos Terrorismo')}
             </button>
             <button
               onClick={() => setActiveCollection('PRENSA')}
@@ -306,7 +329,7 @@ export const ArchivosPeriodisticosView: React.FC = () => {
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              {t.press_tab_press || (language === 'en' ? 'National Press' : 'Prensa Nacional')}
+              {t.press_tab_press || (language === 'en' ? 'National Press' : language === 'qu' ? 'Mamallakta Willakuy' : 'Prensa Nacional')}
             </button>
           </div>
 
@@ -365,7 +388,7 @@ export const ArchivosPeriodisticosView: React.FC = () => {
                     #{item.numero}
                   </span>
                   <span className="text-[9px] font-bold text-slate-400 truncate max-w-[110px]">
-                    {item.coleccion.includes('Terrorismo') ? 'Archivo' : 'Prensa'}
+                    {getColeccionBadge(item)}
                   </span>
                 </div>
 
@@ -373,14 +396,14 @@ export const ArchivosPeriodisticosView: React.FC = () => {
                 <div className="relative w-full aspect-[3/4] bg-black/95 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center group-hover:border-amber-500/60 transition-colors p-1">
                   <img
                     src={item.imagen}
-                    alt={item.titulo}
+                    alt={getTitulo(item)}
                     className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <span className="text-[11px] font-black text-amber-300 bg-black/80 px-3 py-1 rounded-full border border-amber-500/50 flex items-center gap-1.5 shadow-lg">
                       <ZoomIn className="w-3.5 h-3.5" />
-                      {t.press_fullscreen_badge || (language === 'en' ? 'Fullscreen' : 'Pantalla Completa')}
+                      {t.press_fullscreen_badge || (language === 'en' ? 'Fullscreen' : language === 'qu' ? "Hunt'asqa Pantalla" : 'Pantalla Completa')}
                     </span>
                   </div>
                 </div>
@@ -389,9 +412,9 @@ export const ArchivosPeriodisticosView: React.FC = () => {
                 <div className="mt-2 px-1 pb-0.5">
                   <h4
                     className="text-[11px] font-black text-slate-200 line-clamp-2 leading-tight group-hover:text-amber-300 transition-colors uppercase tracking-tight"
-                    title={item.titulo}
+                    title={getTitulo(item)}
                   >
-                    {item.titulo}
+                    {getTitulo(item)}
                   </h4>
                 </div>
               </div>
@@ -419,7 +442,7 @@ export const ArchivosPeriodisticosView: React.FC = () => {
                 <span className="text-amber-300 bg-amber-950/90 px-2 py-0.5 rounded-md border border-amber-500/40 flex-shrink-0">
                   #{selectedArchivoPeriodistico.numero}
                 </span>
-                <span className="truncate text-white font-bold">{selectedArchivoPeriodistico.titulo}</span>
+                <span className="truncate text-white font-bold">{getTitulo(selectedArchivoPeriodistico)}</span>
               </span>
               <span className="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-amber-300 bg-slate-900/90 px-4 py-2 rounded-2xl border border-amber-500/40 shadow-lg backdrop-blur-md flex-shrink-0">
                 <span>{scale === 1 ? (t.press_fit_page || 'Ajuste a Página (100%)') : `${t.press_zoom || 'Zoom:'} ${(scale * 100).toFixed(0)}%`}</span>
@@ -507,7 +530,7 @@ export const ArchivosPeriodisticosView: React.FC = () => {
             >
               <img
                 src={selectedArchivoPeriodistico.imagen}
-                alt={selectedArchivoPeriodistico.titulo}
+                alt={getTitulo(selectedArchivoPeriodistico)}
                 className="max-h-[calc(100vh-200px)] max-w-[calc(100vw-300px)] w-auto h-auto object-contain rounded-2xl shadow-[0_0_60px_rgba(0,0,0,0.95)] border border-amber-500/30 pointer-events-none select-none"
                 draggable={false}
               />
